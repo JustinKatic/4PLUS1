@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: 4Plus1
+  companyName: FourPlusOne
   productName: CarnivalSlapper
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -127,7 +127,11 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 0}
+  - {fileID: -5399571661972940330, guid: 8bbfffdc1d940ec4495cf87ef2db1e0a, type: 2}
+  - {fileID: 11400000, guid: 910728b03cb6db24cb78f7b6bbd8e801, type: 2}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
