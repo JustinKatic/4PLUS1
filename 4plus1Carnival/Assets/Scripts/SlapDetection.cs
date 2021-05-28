@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[RequireComponent(typeof(Collider))]
 public class SlapDetection : MonoBehaviour
 {
     [Min(0)]
@@ -18,8 +17,6 @@ public class SlapDetection : MonoBehaviour
             OnSlap.Invoke();
         }
 
-        Debug.Log("Relative Force: " + collision.relativeVelocity.magnitude.ToString() + ". " + gameObject.name);
+        if (collision.relativeVelocity.magnitude != 0) Debug.Log("Relative Force: " + collision.relativeVelocity.magnitude.ToString() + ". " + gameObject.name);
     }
-
-
 }
