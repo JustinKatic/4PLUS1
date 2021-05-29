@@ -6,19 +6,19 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class TestActionController : MonoBehaviour
 {
 
-    private ActionBasedController controller;
+    //private ActionBasedController controller;
 
-    void Start()
-    {
-        controller = GetComponent<ActionBasedController>();
+    //void Start()
+    //{
+    //    controller = GetComponent<ActionBasedController>();
 
-        controller.selectAction.action.performed += Action_performed;
-    }
+    //    controller.selectAction.action.performed += Action_performed;
+    //}
 
 
-    private void Action_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-    {
-        Debug.Log("Button was pushed");
-    }
+    //private void Action_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    //{
+    //    Debug.Log("Button was pushed");
+    //}
 
 }
