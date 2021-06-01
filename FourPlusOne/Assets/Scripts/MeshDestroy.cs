@@ -13,8 +13,13 @@ public class MeshDestroy : MonoBehaviour
     private Vector2 edgeUV = Vector2.zero;
     private Plane edgePlane = new Plane();
 
+    [Range(1,5)]
+    [Tooltip("How Many cuts, usually recommend 2-3")]
     public int CutCascades = 1;
     public float ExplodeForce = 0;
+
+    [Tooltip("If a piece is created that's small enough (size vector  < 0.1f) destroys it.")]
+    public bool DestoryTinyPieces = true;
 
     public void OnMouseDown()
     {
@@ -40,22 +45,22 @@ public class MeshDestroy : MonoBehaviour
         mainPart.ObjectBounds = originalMesh.bounds;
 
         // Add Triangles to Main Part
-        for(int i = 0; i < originalMesh.subMeshCount; i++)
+        for (int i = 0; i < originalMesh.subMeshCount; i++)
         {
             mainPart.Triangles[i] = originalMesh.GetTriangles(i);
         }
 
         parts.Add(mainPart);
 
-        for(int c = 0; c < CutCascades; c++)
+        for (int c = 0; c < CutCascades; c++)
         {
-            for(int i = 0; i < parts.Count; i++)
+            for (int i = 0; i < parts.Count; i++)
             {
                 Bounds bounds = parts[i].ObjectBounds;
                 bounds.Expand(0.5f);
 
                 //Randomly construct a plane to slice the mesh 
-                Plane plane = new Plane(Random.onUnitSphere, new Vector3(Random.Range(bounds.min.x,bounds.max.x),
+                Plane plane = new Plane(Random.onUnitSphere, new Vector3(Random.Range(bounds.min.x, bounds.max.x),
                     Random.Range(bounds.min.y, bounds.max.y),
                     Random.Range(bounds.min.z, bounds.max.z)));
 
@@ -66,15 +71,18 @@ public class MeshDestroy : MonoBehaviour
             subParts.Clear();
         }
 
-        for(int i = 0; i < parts.Count; i++)
+        for (int i = 0; i < parts.Count; i++)
         {
             parts[i].MakeGameObject(this);
 
             //Give force to the parts
+            if(parts[i].SpawnedObject != null)
             parts[i].SpawnedObject.GetComponent<Rigidbody>().AddForceAtPosition(parts[i].ObjectBounds.center * ExplodeForce, transform.position);
         }
 
         Destroy(gameObject);
+        parts.Clear();
+        subParts.Clear();
     }
 
     private PartMesh GenerateMesh(PartMesh original, Plane plane, bool left)
@@ -83,25 +91,25 @@ public class MeshDestroy : MonoBehaviour
         Ray ray1 = new Ray();
         Ray ray2 = new Ray();
 
-        for(int i = 0; i < original.Triangles.Length; i++)
+        for (int i = 0; i < original.Triangles.Length; i++)
         {
             int[] triangles = original.Triangles[i];
             edgeSet = false;
 
-            for(int j = 0; j < triangles.Length; j += 3)
+            for (int j = 0; j < triangles.Length; j += 3)
             {
-                bool sideA = plane.GetSide(original.Verticies[triangles[ j ]]) == left;
-                bool sideB = plane.GetSide(original.Verticies[triangles[j+1]]) == left;
-                bool sideC = plane.GetSide(original.Verticies[triangles[j+2]]) == left;
+                bool sideA = plane.GetSide(original.Verticies[triangles[j]]) == left;
+                bool sideB = plane.GetSide(original.Verticies[triangles[j + 1]]) == left;
+                bool sideC = plane.GetSide(original.Verticies[triangles[j + 2]]) == left;
 
-                int sideCount = ((sideA)? 1 : 0) + ((sideB)? 1 : 0) + ((sideC)? 1 : 0);
+                int sideCount = ((sideA) ? 1 : 0) + ((sideB) ? 1 : 0) + ((sideC) ? 1 : 0);
 
                 if (sideCount == 0) continue;
 
                 if (sideCount == 3)
                 {
-                    partMesh.AddTriangle(i,original.Verticies[triangles[j]],original.Verticies[triangles[j+1]], original.Verticies[triangles[j+2]],
-                        original.Normals[triangles[j]], original.Normals[triangles[j+1]], original.Normals[triangles[j + 2]],
+                    partMesh.AddTriangle(i, original.Verticies[triangles[j]], original.Verticies[triangles[j + 1]], original.Verticies[triangles[j + 2]],
+                        original.Normals[triangles[j]], original.Normals[triangles[j + 1]], original.Normals[triangles[j + 2]],
                         original.UV[triangles[j]], original.UV[triangles[j + 1]], original.UV[triangles[j + 2]]);
 
                     continue;
@@ -110,14 +118,18 @@ public class MeshDestroy : MonoBehaviour
                 // Cut Points
                 int singleIndex = (sideB == sideC) ? 0 : ((sideA == sideC) ? 1 : 2);
 
-                ray1.origin = original.Verticies[triangles[j + singleIndex]];
-                Vector3 dir1 = original.Verticies[triangles[j + ((singleIndex + 1) % 3)]] - original.Verticies[triangles[j + singleIndex]];
+                int triIndex1 = triangles[j+singleIndex];
+                int triIndex2 = triangles[j+((singleIndex + 1) % 3)];
+                int triIndex3 = triangles[j+((singleIndex + 2) % 3)];
+
+                ray1.origin = original.Verticies[triIndex1];
+                Vector3 dir1 = original.Verticies[triIndex2] - original.Verticies[triIndex1];
                 ray1.direction = dir1;
                 plane.Raycast(ray1, out float enter1);
                 float lerp1 = enter1 / dir1.magnitude;
 
-                ray2.origin = original.Verticies[triangles[j + singleIndex]];
-                Vector3 dir2 = original.Verticies[triangles[j + ((singleIndex + 2) % 3)]] - original.Verticies[triangles[j + singleIndex]];
+                ray2.origin = original.Verticies[triIndex1];
+                Vector3 dir2 = original.Verticies[triIndex3] - original.Verticies[triIndex1];
                 ray2.direction = dir2;
                 plane.Raycast(ray2, out float enter2);
                 float lerp2 = enter2 / dir2.magnitude;
@@ -125,43 +137,43 @@ public class MeshDestroy : MonoBehaviour
                 //First Vertex is an anchor
                 AddEdge(i, partMesh, (left) ? plane.normal * -1f : plane.normal,
                     ray1.origin + ray1.direction.normalized * enter1, ray2.origin + ray2.direction.normalized * enter2,
-                    Vector2.Lerp(original.UV[triangles[j + singleIndex]], original.UV[triangles[j + ((singleIndex + 1) % 3)]], lerp1),
-                    Vector2.Lerp(original.UV[triangles[j + singleIndex]], original.UV[triangles[j + ((singleIndex + 2) % 3)]], lerp1));
+                    Vector2.Lerp(original.UV[triIndex1], original.UV[triIndex2], lerp1),
+                    Vector2.Lerp(original.UV[triIndex1], original.UV[triIndex3], lerp1));
 
-                if(sideCount == 1)
+                if (sideCount == 1)
                 {
-                    partMesh.AddTriangle(i,original.Verticies[triangles[j + singleIndex]],
+                    partMesh.AddTriangle(i, original.Verticies[triIndex1],
                         ray1.origin + ray1.direction.normalized * enter1, ray2.origin + ray2.direction.normalized * enter2,
-                        original.Normals[triangles[j + singleIndex]],
-                        Vector3.Lerp(original.Normals[triangles[j + singleIndex]], original.Normals[triangles[j + ((singleIndex + 1) % 3)]], lerp1),
-                        Vector3.Lerp(original.Normals[triangles[j + singleIndex]], original.Normals[triangles[j + ((singleIndex + 2) % 3)]], lerp2),
-                        original.UV[triangles[j + singleIndex]],
-                        Vector2.Lerp(original.UV[triangles[j + singleIndex]], original.UV[triangles[j + ((singleIndex + 1) % 3)]], lerp1),
-                        Vector2.Lerp(original.UV[triangles[j + singleIndex]], original.UV[triangles[j + ((singleIndex + 2) % 3)]], lerp2));
+                        original.Normals[triIndex1],
+                        Vector3.Lerp(original.Normals[triIndex1], original.Normals[triIndex2], lerp1),
+                        Vector3.Lerp(original.Normals[triIndex1], original.Normals[triIndex3], lerp2),
+                        original.UV[triIndex1],
+                        Vector2.Lerp(original.UV[triIndex1], original.UV[triIndex2], lerp1),
+                        Vector2.Lerp(original.UV[triIndex1], original.UV[triIndex3], lerp2));
 
                     continue;
                 }
 
-                if(sideCount == 2)
+                if (sideCount == 2)
                 {
                     partMesh.AddTriangle(i, ray1.origin + ray1.direction.normalized * enter1,
-                        original.Verticies[triangles[j + ((singleIndex + 1) % 3)]], original.Verticies[triangles[j + ((singleIndex + 2) % 3)]],
-                        Vector3.Lerp(original.Normals[triangles[j + singleIndex]], original.Normals[triangles[j + ((singleIndex + 1) % 3)]], lerp1),
-                        original.Normals[triangles[j + ((singleIndex + 1) % 3)]],
-                        original.Normals[triangles[j + ((singleIndex + 2) % 3)]],
-                        Vector2.Lerp(original.UV[triangles[j + singleIndex]], original.UV[triangles[j + ((singleIndex + 1) % 3)]], lerp1),
-                        original.UV[triangles[j + ((singleIndex + 1) % 3)]],
-                        original.UV[triangles[j + ((singleIndex + 2) % 3)]]);
+                        original.Verticies[triIndex2], original.Verticies[triIndex3],
+                        Vector3.Lerp(original.Normals[triIndex1], original.Normals[triIndex2], lerp1),
+                        original.Normals[triIndex2],
+                        original.Normals[triIndex3],
+                        Vector2.Lerp(original.UV[triIndex1], original.UV[triIndex2], lerp1),
+                        original.UV[triIndex2],
+                        original.UV[triIndex3]);
 
                     partMesh.AddTriangle(i, ray1.origin + ray1.direction.normalized * enter1,
-                        original.Verticies[triangles[j + ((singleIndex + 2) % 3)]],
+                        original.Verticies[triIndex3],
                         ray2.origin + ray2.direction.normalized * enter2,
-                        Vector3.Lerp(original.Normals[triangles[j +singleIndex]], original.Normals[triangles[j + (singleIndex + 2) % 3]],lerp1),
-                        original.Normals[triangles[j + (singleIndex + 2) % 3]],
-                        Vector3.Lerp(original.Normals[triangles[j + singleIndex]],original.Normals[triangles[j + (singleIndex + 2) % 3]],lerp2),
-                        Vector2.Lerp(original.UV[triangles[j + singleIndex]],original.UV[triangles[j + (singleIndex + 1) % 3]],lerp1),
-                        original.UV[triangles[j + (singleIndex + 2) % 3]],
-                        Vector2.Lerp(original.UV[triangles[j + singleIndex]], original.UV[triangles[j + (singleIndex + 2) % 3]], lerp2));
+                        Vector3.Lerp(original.Normals[triIndex1], original.Normals[triIndex3], lerp1),
+                        original.Normals[triIndex3],
+                        Vector3.Lerp(original.Normals[triIndex1], original.Normals[triIndex3], lerp2),
+                        Vector2.Lerp(original.UV[triIndex1], original.UV[triIndex2], lerp1),
+                        original.UV[triIndex3],
+                        Vector2.Lerp(original.UV[triIndex1], original.UV[triIndex3], lerp2));
 
                     continue;
                 }
@@ -173,7 +185,7 @@ public class MeshDestroy : MonoBehaviour
 
     private void AddEdge(int subMesh, PartMesh partMesh, Vector3 normal, Vector3 vertex1, Vector3 vertex2, Vector2 uv1, Vector2 uv2)
     {
-        if(!edgeSet)
+        if (!edgeSet)
         {
             edgeSet = true;
             edgeVertex = vertex1;
@@ -244,7 +256,7 @@ public class MeshDestroy : MonoBehaviour
 
             //Move nested triangles list into 2D array
             Triangles = new int[lTriangles.Count][];
-            for(int i = 0; i < lTriangles.Count; i++)
+            for (int i = 0; i < lTriangles.Count; i++)
             {
                 Triangles[i] = lTriangles[i].ToArray();
             }
@@ -253,8 +265,8 @@ public class MeshDestroy : MonoBehaviour
         public void MakeGameObject(MeshDestroy original)
         {
             SpawnedObject = new GameObject(original.name + "Shard");
-            SpawnedObject.transform.position   = original.transform.position;
-            SpawnedObject.transform.rotation   = original.transform.rotation;
+            SpawnedObject.transform.position = original.transform.position;
+            SpawnedObject.transform.rotation = original.transform.rotation;
             SpawnedObject.transform.localScale = original.transform.localScale;
 
             Mesh mesh = new Mesh();
@@ -271,6 +283,13 @@ public class MeshDestroy : MonoBehaviour
             }
 
             ObjectBounds = mesh.bounds;
+
+            if(ObjectBounds.size.magnitude < 0.1f)
+            {
+                Destroy(SpawnedObject);
+                SpawnedObject = null;
+                return;
+            }
 
             //Add Correct Components to game object
             MeshRenderer renderer = SpawnedObject.AddComponent<MeshRenderer>();

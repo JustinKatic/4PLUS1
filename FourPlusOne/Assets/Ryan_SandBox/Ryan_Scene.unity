@@ -239,7 +239,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!75 &26777582
 ConstantForce:
@@ -452,7 +452,7 @@ Transform:
   - {fileID: 118130745}
   - {fileID: 772035860}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 8.419, y: 0, z: 0}
 --- !u!1 &412718905
 GameObject:
@@ -488,8 +488,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 4
+  CutCascades: 2
   ExplodeForce: 250
+  DestoryTinyPieces: 1
 --- !u!114 &412718907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,7 +814,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 89.96, y: 0, z: 0}
 --- !u!114 &575731157
 MonoBehaviour:
@@ -827,8 +828,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 4
+  CutCascades: 2
   ExplodeForce: 250
+  DestoryTinyPieces: 1
 --- !u!1001 &611967400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2093,7 +2095,7 @@ Transform:
   m_Children:
   - {fileID: 1118541388}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1524638569 stripped
 Transform:
@@ -2227,8 +2229,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 4
+  CutCascades: 2
   ExplodeForce: 250
+  DestoryTinyPieces: 1
 --- !u!114 &1547295052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2453,8 +2456,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 4
+  CutCascades: 2
   ExplodeForce: 250
+  DestoryTinyPieces: 1
 --- !u!114 &1770093481
 MonoBehaviour:
   m_ObjectHideFlags: 0
