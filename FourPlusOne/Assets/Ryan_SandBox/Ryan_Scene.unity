@@ -142,6 +142,8 @@ GameObject:
   - component: {fileID: 26777578}
   - component: {fileID: 26777577}
   - component: {fileID: 26777582}
+  - component: {fileID: 26777584}
+  - component: {fileID: 26777583}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -235,11 +237,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26777576}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.23, y: 2.94, z: 30.43}
+  m_LocalPosition: {x: 0.23, y: 1.89, z: 30.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!75 &26777582
 ConstantForce:
@@ -253,6 +255,49 @@ ConstantForce:
   m_RelativeForce: {x: 0, y: 0, z: 0}
   m_Torque: {x: 0, y: 0, z: 0}
   m_RelativeTorque: {x: 0, y: 0, z: 0}
+--- !u!114 &26777583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26777576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CutCascades: 2
+  ExplodeForce: 0
+  DestoryTinyPieces: 1
+--- !u!114 &26777584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26777576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SlapStrengthThreshold: 12
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 26777583}
+        m_TargetAssemblyTypeName: MeshDestroy, Assembly-CSharp
+        m_MethodName: DestoryMesh
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!850595691 &113661334
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -452,7 +497,7 @@ Transform:
   - {fileID: 118130745}
   - {fileID: 772035860}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 8.419, y: 0, z: 0}
 --- !u!1 &412718905
 GameObject:
@@ -488,8 +533,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 4
+  CutCascades: 3
   ExplodeForce: 250
+  DestoryTinyPieces: 1
 --- !u!114 &412718907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,7 +859,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 89.96, y: 0, z: 0}
 --- !u!114 &575731157
 MonoBehaviour:
@@ -827,8 +873,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 4
+  CutCascades: 2
   ExplodeForce: 250
+  DestoryTinyPieces: 1
 --- !u!1001 &611967400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1561,7 +1608,7 @@ MonoBehaviour:
   - {fileID: 1808237040206996807, guid: 701e5f862f5edca43a66fb641ed6c63f, type: 3}
   Kerning: 0.05
   VerticalSpacing: 0.25
-  Text: AHHHHH ASHHHHHHH AHADHD AHHHHHHHHHHHHAH GH
+  Text: text
   UseTypewritter: 1
   TimeBetweeenLetters: 0.1
   MaxWidth: 4
@@ -2093,7 +2140,7 @@ Transform:
   m_Children:
   - {fileID: 1118541388}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1524638569 stripped
 Transform:
@@ -2227,8 +2274,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 4
+  CutCascades: 3
   ExplodeForce: 250
+  DestoryTinyPieces: 1
 --- !u!114 &1547295052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2453,8 +2501,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 4
+  CutCascades: 3
   ExplodeForce: 250
+  DestoryTinyPieces: 1
 --- !u!114 &1770093481
 MonoBehaviour:
   m_ObjectHideFlags: 0

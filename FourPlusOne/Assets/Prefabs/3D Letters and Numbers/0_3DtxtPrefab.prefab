@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &243763250765646849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1998537108271206230}
+  - component: {fileID: 6569443709061188383}
+  m_Layer: 0
+  m_Name: Collider (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1998537108271206230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243763250765646849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0012, y: 0.0163, z: 0}
+  m_LocalScale: {x: 0.099291, y: 0.10546201, z: 0.025407936}
+  m_Children: []
+  m_Father: {fileID: 5145538786041123563}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6569443709061188383
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243763250765646849}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6689507, y: 0.75132483, z: 1}
+  m_Center: {x: -0.003521619, y: -0.097813964, z: 0}
 --- !u!1 &2901425907420436276
 GameObject:
   m_ObjectHideFlags: 0
@@ -29,6 +73,7 @@ Transform:
   m_Children:
   - {fileID: 8848667675221300461}
   - {fileID: 7802175074866843313}
+  - {fileID: 1998537108271206230}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -58,7 +103,7 @@ Transform:
   m_GameObject: {fileID: 7946172143673587795}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.0012, y: 0.0163, z: 0}
-  m_LocalScale: {x: 0.099291, y: 0.12742344, z: 0.025407936}
+  m_LocalScale: {x: 0.099291, y: 0.10546201, z: 0.025407936}
   m_Children: []
   m_Father: {fileID: 5145538786041123563}
   m_RootOrder: 1
@@ -74,8 +119,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.49990568, y: 1.036475, z: 1}
+  m_Center: {x: 0.010565532, y: -0.10112952, z: 0}
 --- !u!1001 &9027026899115799302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83,6 +128,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5145538786041123563}
     m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 3e70761d3f1e6fe4caee38d2acf40c65, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e70761d3f1e6fe4caee38d2acf40c65, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0031954236
@@ -96,6 +145,10 @@ PrefabInstance:
       value: -0.012499999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e70761d3f1e6fe4caee38d2acf40c65, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3e70761d3f1e6fe4caee38d2acf40c65, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
@@ -106,14 +159,6 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3e70761d3f1e6fe4caee38d2acf40c65, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 3e70761d3f1e6fe4caee38d2acf40c65, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 3e70761d3f1e6fe4caee38d2acf40c65, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3e70761d3f1e6fe4caee38d2acf40c65, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
