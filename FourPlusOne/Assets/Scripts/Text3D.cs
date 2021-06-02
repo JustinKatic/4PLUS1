@@ -105,12 +105,12 @@ public class Text3D : MonoBehaviour
             while(typewritterTimer >= TimeBetweeenLetters)
             {
                 typewritterTimer -= TimeBetweeenLetters;
-                transform.GetChild(charAvailable).gameObject.SetActive(true);
-                charAvailable++;
+                transform.GetChild(charAvailable++).gameObject.SetActive(true);
 
-                if (charAvailable+1 >= transform.childCount)
+                if (charAvailable >= transform.childCount)
                 {
                     UseTypewritter = false;
+                    break;
                 }
             }
         }
