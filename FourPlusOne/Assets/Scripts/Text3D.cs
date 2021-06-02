@@ -64,7 +64,7 @@ public class Text3D : MonoBehaviour
                 int length = 0;
                 float temp = 0;
 
-                while (i <= Text.Length && Text[i] != ' ' && storedLetters.ContainsKey(Text.ToUpper()[i]))
+                while (i < Text.Length && Text[i] != ' ' && storedLetters.ContainsKey(Text.ToUpper()[i]))
                 {
                     temp += storedLetters[Text.ToUpper()[i]].LetterBounds.size.x + Kerning;
                     length++;
@@ -105,9 +105,10 @@ public class Text3D : MonoBehaviour
             while(typewritterTimer >= TimeBetweeenLetters)
             {
                 typewritterTimer -= TimeBetweeenLetters;
-                transform.GetChild(charAvailable++).gameObject.SetActive(true);
+                transform.GetChild(charAvailable).gameObject.SetActive(true);
+                charAvailable++;
 
-                if(charAvailable >= transform.childCount)
+                if (charAvailable+1 >= transform.childCount)
                 {
                     UseTypewritter = false;
                 }

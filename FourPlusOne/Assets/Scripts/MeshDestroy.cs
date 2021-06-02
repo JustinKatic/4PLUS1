@@ -291,6 +291,8 @@ public class MeshDestroy : MonoBehaviour
                 return;
             }
 
+            Rigidbody originalBody = original.GetComponent<Rigidbody>();
+
             //Add Correct Components to game object
             MeshRenderer renderer = SpawnedObject.AddComponent<MeshRenderer>();
             renderer.materials = original.GetComponent<MeshRenderer>().materials;
@@ -301,7 +303,7 @@ public class MeshDestroy : MonoBehaviour
             MeshCollider collider = SpawnedObject.AddComponent<MeshCollider>();
             collider.convex = true; // Needs to be true so rigidbodies work with mesh colliders
 
-            SpawnedObject.AddComponent<Rigidbody>();
+            SpawnedObject.AddComponent<Rigidbody>().AddRelativeForce((originalBody != null)? originalBody.velocity : Vector3.zero,ForceMode.Impulse);
             MeshDestroy meshDestroy = SpawnedObject.AddComponent<MeshDestroy>(); // Probably remove later, for more destruction
 
             meshDestroy.CutCascades = original.CutCascades;
