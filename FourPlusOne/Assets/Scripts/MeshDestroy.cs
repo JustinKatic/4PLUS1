@@ -76,8 +76,8 @@ public class MeshDestroy : MonoBehaviour
             parts[i].MakeGameObject(this);
 
             //Give force to the parts
-            if(parts[i].SpawnedObject != null)
-            parts[i].SpawnedObject.GetComponent<Rigidbody>().AddForceAtPosition(parts[i].ObjectBounds.center * ExplodeForce, transform.position);
+            if(parts[i].SpawnedObject.WorldObject != null)
+            parts[i].SpawnedObject.Body.AddForceAtPosition(parts[i].ObjectBounds.center * ExplodeForce, transform.position);
         }
 
         Destroy(gameObject);
@@ -211,7 +211,7 @@ public class MeshDestroy : MonoBehaviour
         public Vector3[] Normals;
         public int[][] Triangles;
         public Vector2[] UV;
-        public GameObject SpawnedObject;
+        public DebriePooler.Debrie SpawnedObject;
         public Bounds ObjectBounds = new Bounds();
 
         public void AddTriangle(int submesh, Vector3 vert1, Vector3 vert2, Vector3 vert3, Vector3 normal1, Vector3 normal2, Vector3 normal3,
@@ -263,10 +263,10 @@ public class MeshDestroy : MonoBehaviour
 
         public void MakeGameObject(MeshDestroy original)
         {
-            SpawnedObject = new GameObject(original.name + "Shard");
-            SpawnedObject.transform.position = original.transform.position;
-            SpawnedObject.transform.rotation = original.transform.rotation;
-            SpawnedObject.transform.localScale = original.transform.localScale;
+            SpawnedObject = DebriePooler.SharedInstance.GetPooledObject("Debrie");
+            SpawnedObject.WorldObject.transform.position = original.transform.position;
+            SpawnedObject.WorldObject.transform.rotation = original.transform.rotation;
+            SpawnedObject.WorldObject.transform.localScale = original.transform.localScale;
 
             Mesh mesh = new Mesh();
             MeshFilter originalFilter = original.GetComponent<MeshFilter>();
@@ -286,35 +286,28 @@ public class MeshDestroy : MonoBehaviour
 
             if(ObjectBounds.size.magnitude < 0.1f)
             {
-                Destroy(SpawnedObject);
-                SpawnedObject = null;
+                SpawnedObject.WorldObject.SetActive(false);
+                SpawnedObject.WorldObject = null;
                 return;
             }
+
+            SpawnedObject.WorldObject.SetActive(true);
 
             Rigidbody originalBody = original.GetComponent<Rigidbody>();
 
             //Add Correct Components to game object
-            MeshRenderer renderer = SpawnedObject.AddComponent<MeshRenderer>();
-            renderer.materials = original.GetComponent<MeshRenderer>().materials;
+            SpawnedObject.Renderer.materials = original.GetComponent<MeshRenderer>().materials;
+            SpawnedObject.Filter.mesh = mesh;
+            SpawnedObject.Collider.sharedMesh = mesh;
 
-            MeshFilter filter = SpawnedObject.AddComponent<MeshFilter>();
-            filter.mesh = mesh;
+            SpawnedObject.Collider.convex = true; // Needs to be true so rigidbodies work with mesh colliders
 
-            MeshCollider collider = SpawnedObject.AddComponent<MeshCollider>();
-            collider.convex = true; // Needs to be true so rigidbodies work with mesh colliders
-
-            Rigidbody body = SpawnedObject.AddComponent<Rigidbody>();
             if(originalBody !=  null) 
             {
-                body.AddRelativeForce(originalBody.velocity, ForceMode.Impulse);
+                SpawnedObject.Body.AddRelativeForce(originalBody.velocity, ForceMode.Impulse);
                 float massMulti = (ObjectBounds.size.magnitude / originalFilter.mesh.bounds.size.magnitude);
-                body.mass = originalBody.mass * massMulti; // Gives a very rough apporximation of the objects mass
+                SpawnedObject.Body.mass = originalBody.mass * massMulti; // Gives a very rough apporximation of the objects mass
             }
-
-            MeshDestroy meshDestroy = SpawnedObject.AddComponent<MeshDestroy>(); // Probably remove later, for more destruction
-
-            meshDestroy.CutCascades = original.CutCascades;
-            meshDestroy.ExplodeForce = original.ExplodeForce;
         }
     }
 }

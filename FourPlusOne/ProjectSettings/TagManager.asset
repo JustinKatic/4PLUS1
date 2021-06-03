@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LHand
   - RHand
+  - Debrie
   layers:
   - Default
   - TransparentFX
