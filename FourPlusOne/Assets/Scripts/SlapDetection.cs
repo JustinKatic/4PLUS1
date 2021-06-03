@@ -10,13 +10,19 @@ public class SlapDetection : MonoBehaviour
     public float SlapStrengthThreshold = 5;
     public UnityEvent OnSlap;
 
+
+
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.relativeVelocity.magnitude >= SlapStrengthThreshold)
+        if (collision.rigidbody != null)
         {
-            OnSlap.Invoke();
+            Debug.Log(collision.rigidbody.velocity.magnitude);
+            if (collision.rigidbody.velocity.magnitude >= SlapStrengthThreshold)
+            {
+                OnSlap.Invoke();
+            }
         }
 
-        if (collision.relativeVelocity.magnitude != 0) Debug.Log("Relative Force: " + collision.relativeVelocity.magnitude.ToString() + ". " + gameObject.name);
+        //  if (collision.relativeVelocity.magnitude != 0) Debug.Log("Relative Force: " + collision.relativeVelocity.magnitude.ToString() + ". " + gameObject.name);
     }
 }
