@@ -8,7 +8,7 @@ public class LookAtCam : MonoBehaviour
     public Transform cam; 
     private void OnEnable()
     {
-        transform.LookAt(cam.position);
+        transform.LookAt(Camera.main.transform);
         Debug.Log(cam.position);
     }
 }
