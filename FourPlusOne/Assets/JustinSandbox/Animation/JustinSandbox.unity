@@ -2099,6 +2099,14 @@ PrefabInstance:
       propertyPath: rotationOffset.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 881035564361507660, guid: afbc085b2096fa44fa78544c43329aa4, type: 3}
+      propertyPath: controllerActionGrip
+      value: 
+      objectReference: {fileID: 2344878390379685566, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 881035564361507660, guid: afbc085b2096fa44fa78544c43329aa4, type: 3}
+      propertyPath: controllerActionTrigger
+      value: 
+      objectReference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 881035564627107531, guid: afbc085b2096fa44fa78544c43329aa4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.044
@@ -2115,6 +2123,14 @@ PrefabInstance:
       propertyPath: rotationOffset.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 881035565034398966, guid: afbc085b2096fa44fa78544c43329aa4, type: 3}
+      propertyPath: controllerActionGrip
+      value: 
+      objectReference: {fileID: -5380046696468521061, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 881035565034398966, guid: afbc085b2096fa44fa78544c43329aa4, type: 3}
+      propertyPath: controllerActionTrigger
+      value: 
+      objectReference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 881035566244181008, guid: afbc085b2096fa44fa78544c43329aa4, type: 3}
       propertyPath: m_RootOrder
       value: 22
