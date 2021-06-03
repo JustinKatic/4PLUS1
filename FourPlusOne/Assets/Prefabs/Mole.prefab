@@ -257,8 +257,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Stiffness: 250
   Damping: 15
-  ValueThresh: 0.1
-  VelocityThresh: 0.1
+  ValueThresh: 0.01
+  VelocityThresh: 0.01
   HealthBeforeBreak: 150
   StayDuration: 2
   TimeBeforePopout: 4
