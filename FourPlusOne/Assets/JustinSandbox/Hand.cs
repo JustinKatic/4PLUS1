@@ -31,6 +31,8 @@ public class Hand : MonoBehaviour
     private FixedJoint _joint1;
     private FixedJoint _joint2;
 
+    private Collider[] cols;
+
 
 
     void Start()
@@ -50,6 +52,9 @@ public class Hand : MonoBehaviour
         //Teleport hands
         _body.position = _followTarget.position;
         _body.rotation = _followTarget.rotation;
+
+        cols = gameObject.GetComponentsInChildren<Collider>();
+        
     }
 
 
@@ -101,24 +106,34 @@ public class Hand : MonoBehaviour
                 return;
         }
 
+        foreach (var col in cols)
+        {
+            col.enabled = false;
+        }
+
         StartCoroutine(GrabObject(grabbableColliders[0], objectBody));
     }
 
     private void Released(InputAction.CallbackContext obj)
     {
         if (_joint1 != null)
-            Destroy(_joint1); 
+            Destroy(_joint1);
         if (_joint2 != null)
             Destroy(_joint2);
         if (_grabPoint != null)
             Destroy(_grabPoint.gameObject);
 
-        if(_heldObject != null)
+        if (_heldObject != null)
         {
             var targetBody = _heldObject.GetComponent<Rigidbody>();
             targetBody.collisionDetectionMode = CollisionDetectionMode.Discrete;
             targetBody.interpolation = RigidbodyInterpolation.None;
             _heldObject = null;
+        }
+
+        foreach (var col in cols)
+        {
+            col.enabled = true;
         }
 
         _isGrabbing = false;
@@ -131,6 +146,7 @@ public class Hand : MonoBehaviour
     private IEnumerator GrabObject(Collider collider, Rigidbody targetBody)
     {
         _isGrabbing = true;
+
 
         //create a grab point
         _grabPoint = new GameObject().transform;
