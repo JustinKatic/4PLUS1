@@ -9,7 +9,7 @@ public class Hand : MonoBehaviour
 {
     //Physics Movement
     [Space]
-    [SerializeField] private ActionBasedController controller;
+    [SerializeField] public ActionBasedController controller;
     [SerializeField] InputActionReference controllerActionGrip;
     [SerializeField] InputActionReference controllerActionTrigger;
 
@@ -60,12 +60,11 @@ public class Hand : MonoBehaviour
 
     private void TriggerReleased(InputAction.CallbackContext obj)
     {
-
+        
     }
 
     private void TriggerPress(InputAction.CallbackContext obj)
     {
-
     }
 
     private void GripPress(InputAction.CallbackContext obj)
