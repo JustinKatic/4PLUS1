@@ -289,6 +289,7 @@ GameObject:
   - component: {fileID: 2333625410014161267}
   - component: {fileID: 9097570563966224768}
   - component: {fileID: 3245147379761496890}
+  - component: {fileID: 7391853436594910666}
   m_Layer: 0
   m_Name: Right Hand Model
   m_TagString: Untagged
@@ -345,6 +346,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controllerActionGrip: {fileID: 2344878390379685566, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   controllerActionTrigger: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!65 &7391853436594910666
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965499211080839250}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.15505578, y: 0.041409314, z: 0.20718601}
+  m_Center: {x: -0.030953221, y: 0.03854336, z: 0.021286517}
 --- !u!1 &1404147222284041111
 GameObject:
   m_ObjectHideFlags: 0
