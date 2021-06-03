@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CutCascades: 4
-  ExplodeForce: 250
+  ExplodeForce: 25
   DestoryTinyPieces: 1
 --- !u!114 &5811401143964141803
 MonoBehaviour:
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SlapStrengthThreshold: 10
+  SlapStrengthThreshold: 3
   OnSlap:
     m_PersistentCalls:
       m_Calls:

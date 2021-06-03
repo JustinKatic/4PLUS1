@@ -24,6 +24,8 @@ public class Hand : MonoBehaviour
     [SerializeField] float jointDistance = 0.05f;
     [SerializeField] LayerMask grabbableLayer;
 
+    IEnumerator colliderBufferCo;
+
 
     private Transform _followTarget;
     private Rigidbody _body;
@@ -54,6 +56,8 @@ public class Hand : MonoBehaviour
 
     }
 
+
+
     private void TriggerReleased(InputAction.CallbackContext obj)
     {
 
@@ -64,21 +68,32 @@ public class Hand : MonoBehaviour
 
     }
 
+    private void GripPress(InputAction.CallbackContext obj)
+    {
+        if (colliderBufferCo != null)
+            StopCoroutine(colliderBufferCo);
+        foreach (var col in cols)
+        {
+            col.enabled = false;
+        }
+    }
     private void GripReleased(InputAction.CallbackContext obj)
     {
+        colliderBufferCo = DisableColliders();
+        StartCoroutine(colliderBufferCo);
+
+    }
+
+    IEnumerator DisableColliders()
+    {
+        yield return new WaitForSeconds(1f);
+
         foreach (var col in cols)
         {
             col.enabled = true;
         }
     }
 
-    private void GripPress(InputAction.CallbackContext obj)
-    {
-        foreach (var col in cols)
-        {
-            col.enabled = false;
-        }
-    }
 
     void Update()
     {
@@ -100,4 +115,4 @@ public class Hand : MonoBehaviour
     }
 }
 
-   
+
