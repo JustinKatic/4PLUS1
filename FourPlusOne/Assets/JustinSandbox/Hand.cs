@@ -18,11 +18,6 @@ public class Hand : MonoBehaviour
     [Space]
     [SerializeField] private Vector3 positionOffset;
     [SerializeField] private Vector3 rotationOffset;
-    [Space]
-    [SerializeField] private Transform palm;
-    [SerializeField] float reachDistance = 0.1f;
-    [SerializeField] float jointDistance = 0.05f;
-    [SerializeField] LayerMask grabbableLayer;
 
     IEnumerator colliderBufferCo;
 
