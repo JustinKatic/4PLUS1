@@ -14,7 +14,7 @@ public class MeshDestroy : MonoBehaviour
     private Plane edgePlane = new Plane();
 
     [Range(1,5)]
-    [Tooltip("How Many cuts, usually recommend 2-3")]
+    [Tooltip("How many cuts, usually recommend 2-3")]
     public int CutCascades = 1;
     public float ExplodeForce = 0;
 
@@ -38,11 +38,11 @@ public class MeshDestroy : MonoBehaviour
         PartMesh mainPart = new PartMesh();
 
         // Set parts variables
-        mainPart.UV = originalMesh.uv;
-        mainPart.Verticies = originalMesh.vertices;
-        mainPart.Normals = originalMesh.normals;
-        mainPart.Triangles = new int[originalMesh.subMeshCount][];
-        mainPart.ObjectBounds = originalMesh.bounds;
+        mainPart.UV             = originalMesh.uv;
+        mainPart.Verticies      = originalMesh.vertices;
+        mainPart.Normals        = originalMesh.normals;
+        mainPart.Triangles      = new int[originalMesh.subMeshCount][];
+        mainPart.ObjectBounds   = originalMesh.bounds;
 
         // Add Triangles to Main Part
         for (int i = 0; i < originalMesh.subMeshCount; i++)
@@ -221,7 +221,6 @@ public class MeshDestroy : MonoBehaviour
             {
                 //Add triangles data to lists
                 lTriangles.Add(new List<int>());
-
             }
 
             lTriangles[submesh].Add(lVerticies.Count);
@@ -270,7 +269,8 @@ public class MeshDestroy : MonoBehaviour
             SpawnedObject.transform.localScale = original.transform.localScale;
 
             Mesh mesh = new Mesh();
-            mesh.name = original.GetComponent<MeshFilter>().mesh.name;
+            MeshFilter originalFilter = original.GetComponent<MeshFilter>();
+            mesh.name = originalFilter.mesh.name;
 
             //Fill mesh with new data
             mesh.vertices = Verticies;
@@ -303,7 +303,14 @@ public class MeshDestroy : MonoBehaviour
             MeshCollider collider = SpawnedObject.AddComponent<MeshCollider>();
             collider.convex = true; // Needs to be true so rigidbodies work with mesh colliders
 
-            SpawnedObject.AddComponent<Rigidbody>().AddRelativeForce((originalBody != null)? originalBody.velocity : Vector3.zero,ForceMode.Impulse);
+            Rigidbody body = SpawnedObject.AddComponent<Rigidbody>();
+            if(originalBody !=  null) 
+            {
+                body.AddRelativeForce(originalBody.velocity, ForceMode.Impulse);
+                float massMulti = (ObjectBounds.size.magnitude / originalFilter.mesh.bounds.size.magnitude);
+                body.mass = originalBody.mass * massMulti; // Gives a very rough apporximation of the objects mass
+            }
+
             MeshDestroy meshDestroy = SpawnedObject.AddComponent<MeshDestroy>(); // Probably remove later, for more destruction
 
             meshDestroy.CutCascades = original.CutCascades;
