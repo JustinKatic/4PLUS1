@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,8 +20,28 @@ public class Text3D : MonoBehaviour
     [Tooltip("The space between letters")]
     public float Kerning = 0.05f;
     public float VerticalSpacing = 0.25f;
+
     [TextArea(5,5)]
-    public string Text = "";
+    public string StartText = "";
+
+    public string Text
+    {
+        get
+        {
+            return text;
+        }
+
+        set
+        {
+            text = value;
+            CleanText();
+        }
+    }
+
+    [HideInInspector]
+    public bool TypeWrittingDone = false;
+
+    private string text = "";
 
     [Header("Typewritter Settings")]
     public bool UseTypewritter = true;
@@ -41,6 +62,14 @@ public class Text3D : MonoBehaviour
 
     private void Start()
     {
+        Text = StartText;
+        CreateLetters();
+    }
+
+    private void CreateLetters()
+    {
+        if (storedLetters != null) return;
+        //Log all letters
         storedLetters = new Dictionary<char, LetterInfo>();
         for(int i = 0; i < Letters.Count; i++)
         {
@@ -49,24 +78,38 @@ public class Text3D : MonoBehaviour
 
         storedLetters[' '] = new LetterInfo();
 
+        CleanText();
+    }
+
+    private void CleanText()
+    {
+        for(int i = 0; i < transform.childCount; i++)
+        {
+            Destroy(transform.GetChild(i).gameObject);
+        }
+
         float XDiff = 0;
         float YDiff = 0;
+        charAvailable = 0;
+        TypeWrittingDone = false;
 
-        for(int i = 0; i < Text.Length; i++)
+        CreateLetters();
+
+        for (int i = 0; i < text.Length; i++)
         {
-            if (!storedLetters.ContainsKey(Text.ToUpper()[i])) continue;
-            LetterInfo letter = storedLetters[Text.ToUpper()[i]];
+            if (!storedLetters.ContainsKey(text.ToUpper()[i])) continue;
+            LetterInfo letter = storedLetters[text.ToUpper()[i]];
 
             //Create the actual letter
-            if(letter.LetterObject != null)
+            if (letter.LetterObject != null)
             {
                 //Get World Width
                 int length = 0;
                 float temp = 0;
 
-                while (i < Text.Length && Text[i] != ' ' && storedLetters.ContainsKey(Text.ToUpper()[i]))
+                while (i < text.Length && text[i] != ' ' && storedLetters.ContainsKey(text.ToUpper()[i]))
                 {
-                    temp += storedLetters[Text.ToUpper()[i]].LetterBounds.size.x + Kerning;
+                    temp += storedLetters[text.ToUpper()[i]].LetterBounds.size.x + Kerning;
                     length++;
                     i++;
                 }
@@ -81,7 +124,7 @@ public class Text3D : MonoBehaviour
                 {
                     XDiff += temp;
                 }
-                
+
                 i -= length;
 
                 GameObject obje = Instantiate(letter.LetterObject, transform.TransformPoint(new Vector3(XDiff, YDiff, 0)), Quaternion.identity, transform);
@@ -89,7 +132,7 @@ public class Text3D : MonoBehaviour
                 XDiff -= letter.LetterBounds.size.x + Kerning;
 
             }
-            else if(Text[i] == ' ')
+            else if (text[i] == ' ')
             {
                 XDiff -= letter.LetterBounds.size.x + (Kerning * 4f);
             }
@@ -98,20 +141,24 @@ public class Text3D : MonoBehaviour
 
     private void Update()
     {
-        if (UseTypewritter)
+        if (UseTypewritter && !TypeWrittingDone)
         {
             typewritterTimer += Time.deltaTime;
 
             while(typewritterTimer >= TimeBetweeenLetters)
             {
-                typewritterTimer -= TimeBetweeenLetters;
-                transform.GetChild(charAvailable++).gameObject.SetActive(true);
-
                 if (charAvailable >= transform.childCount)
                 {
-                    UseTypewritter = false;
+                    charAvailable = 0;
+                    typewritterTimer = 0;
+                    TypeWrittingDone = true;
                     break;
                 }
+
+                typewritterTimer -= TimeBetweeenLetters;
+                transform.GetChild(charAvailable).gameObject.SetActive(true);
+
+                charAvailable++;
             }
         }
     }
