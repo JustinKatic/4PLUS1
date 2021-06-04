@@ -31,7 +31,7 @@ public class SlapDetection : MonoBehaviour
     private bool hasSlappedObj = false;
 
     [HideInInspector]
-    public Vector3 PreviousHitVelocity = new Vector3(0,0,0);
+    public Vector3 PreviousHitVelocity = new Vector3(0, 0, 0);
 
     private void Start()
     {
@@ -75,7 +75,7 @@ public class SlapDetection : MonoBehaviour
 
                 if (hasSlappedObj == false)
                 {
-                    SpawnComicText(collision.transform);
+                    SpawnComicText(collision.contacts[0].point);
                 }
                 PreviousHitVelocity = collision.rigidbody.velocity.normalized;
                 OnSlap.Invoke();
@@ -85,8 +85,7 @@ public class SlapDetection : MonoBehaviour
         else if (collision.relativeVelocity.magnitude >= SlapStrengthThreshold)
         {
             PreviousHitVelocity = collision.relativeVelocity.normalized;
-
-            SpawnComicText(transform);
+            SpawnComicText(collision.contacts[0].point);
             OnSlap.Invoke();
         }
     }
@@ -99,11 +98,10 @@ public class SlapDetection : MonoBehaviour
 
     }
 
-    public void SpawnComicText(Transform pos)
+    public void SpawnComicText(Vector3 pos)
     {
-        comicTxtToSpawn = Instantiate(comicTxtToSpawn, pos.position, Quaternion.identity);
-        comicTxtToSpawn.transform.LookAt(cam.transform);
-
+        GameObject spawnedObj = Instantiate(comicTxtToSpawn, pos, Quaternion.identity);
+        spawnedObj.transform.LookAt(cam.transform);
     }
     //  if (collision.relativeVelocity.magnitude != 0) Debug.Log("Relative Force: " + collision.relativeVelocity.magnitude.ToString() + ". " + gameObject.name);
 }

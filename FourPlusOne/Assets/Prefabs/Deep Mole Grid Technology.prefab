@@ -338,7 +338,7 @@ Transform:
   m_GameObject: {fileID: 4151284194883538210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.73279, y: 0.73279, z: 0.73279}
+  m_LocalScale: {x: 0.73279, y: 0.5, z: 0.73279}
   m_Children:
   - {fileID: 4151284196603621266}
   - {fileID: 7463681775762952493}
@@ -894,6 +894,34 @@ PrefabInstance:
       value: Mole (6)
       objectReference: {fileID: 0}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticImpulseOnSlap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1026,6 +1054,34 @@ PrefabInstance:
     - target: {fileID: 5170446385501170379, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: m_Name
       value: Mole (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticImpulseOnSlap
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
@@ -1162,6 +1218,34 @@ PrefabInstance:
       value: Mole (9)
       objectReference: {fileID: 0}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticImpulseOnSlap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1296,8 +1380,32 @@ PrefabInstance:
       value: Mole (7)
       objectReference: {fileID: 0}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: comicTxtToSpawn
       value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticImpulseOnSlap
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
@@ -1434,6 +1542,34 @@ PrefabInstance:
       value: Mole (4)
       objectReference: {fileID: 0}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticImpulseOnSlap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1566,6 +1702,34 @@ PrefabInstance:
     - target: {fileID: 5170446385501170379, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: m_Name
       value: Mole (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticImpulseOnSlap
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
@@ -1702,6 +1866,34 @@ PrefabInstance:
       value: Mole
       objectReference: {fileID: 0}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticImpulseOnSlap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1826,6 +2018,34 @@ PrefabInstance:
     - target: {fileID: 5170446385501170379, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: m_Name
       value: Mole (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: LhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: RhandSlapPerson
+      value: 
+      objectReference: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: hapticImpulseOnSlap
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
