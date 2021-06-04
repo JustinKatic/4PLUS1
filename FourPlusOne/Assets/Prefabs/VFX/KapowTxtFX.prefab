@@ -233,6 +233,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9002056139348374445}
     m_Modifications:
+    - target: {fileID: 172455983816732536, guid: 21917db786e36754daf8928b71ea542b, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3333561479719523006, guid: 21917db786e36754daf8928b71ea542b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -347,6 +351,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9002056139348374445}
     m_Modifications:
+    - target: {fileID: -4161592789320380323, guid: 08101dea1a6e87042b63210888958872, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 255782034927084696, guid: 08101dea1a6e87042b63210888958872, type: 3}
       propertyPath: m_Name
       value: A_3DtxtPrefab
@@ -429,6 +437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: W_3DtxtPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 3079706527748519201, guid: e12c366ac2c5e934482d3f74f042da96, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3686892253662095587, guid: e12c366ac2c5e934482d3f74f042da96, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -507,6 +519,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9002056139348374445}
     m_Modifications:
+    - target: {fileID: -2937110507041884631, guid: acca9e61c9ca64f429769b5b3562816c, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 465384472632277197, guid: acca9e61c9ca64f429769b5b3562816c, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -665,6 +681,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.002304
       objectReference: {fileID: 0}
+    - target: {fileID: 4383563750856319887, guid: 636b2cb73d873df46b5b3e008e8327e4, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4533084113521811970, guid: 636b2cb73d873df46b5b3e008e8327e4, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -747,6 +767,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9002056139348374445}
     m_Modifications:
+    - target: {fileID: -876371991445392117, guid: eb25d31450530284c9653ae8abc21e91, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -876371991445392117, guid: eb25d31450530284c9653ae8abc21e91, type: 3}
       propertyPath: m_IsKinematic
       value: 1

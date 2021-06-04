@@ -304,6 +304,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8605394409873137435, guid: 87502ebf062d1e3478e9afd832ea6302, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605394409873137435, guid: 87502ebf062d1e3478e9afd832ea6302, type: 3}
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
@@ -321,6 +325,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9002056139348374445}
     m_Modifications:
+    - target: {fileID: -4161592789320380323, guid: 08101dea1a6e87042b63210888958872, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4161592789320380323, guid: 08101dea1a6e87042b63210888958872, type: 3}
       propertyPath: m_IsKinematic
       value: 1
@@ -415,6 +423,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9002056139348374445}
     m_Modifications:
+    - target: {fileID: -876371991445392117, guid: eb25d31450530284c9653ae8abc21e91, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -876371991445392117, guid: eb25d31450530284c9653ae8abc21e91, type: 3}
       propertyPath: m_IsKinematic
       value: 1
@@ -577,6 +589,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 18d1cdf0d6301fc479aedbf7c56a54e3, type: 2}
+    - target: {fileID: 8802467757216392956, guid: ff54878bb7cfc3045ba0d6ab97ec66f5, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8802467757216392956, guid: ff54878bb7cfc3045ba0d6ab97ec66f5, type: 3}
       propertyPath: m_IsKinematic
       value: 1
