@@ -922,6 +922,26 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[3]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1083,6 +1103,26 @@ PrefabInstance:
       propertyPath: hapticImpulseOnSlap
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[3]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -1246,6 +1286,26 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[3]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1407,6 +1467,26 @@ PrefabInstance:
       propertyPath: hapticImpulseOnSlap
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[3]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -1570,6 +1650,26 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[3]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1731,6 +1831,26 @@ PrefabInstance:
       propertyPath: hapticImpulseOnSlap
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[3]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -1894,6 +2014,26 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[3]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -2047,6 +2187,26 @@ PrefabInstance:
       propertyPath: hapticImpulseOnSlap
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn.Array.data[3]
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
       value: 2
