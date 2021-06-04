@@ -20,7 +20,7 @@ public class SlapDetection : MonoBehaviour
 
 
     private Camera cam;
-    public GameObject comicTxtToSpawn;
+    public GameObject[] comicTxtToSpawn;
 
     public GameEvent LhandSlapPerson;
     public GameEvent RhandSlapPerson;
@@ -101,7 +101,7 @@ public class SlapDetection : MonoBehaviour
 
     public void SpawnComicText(Vector3 pos)
     {
-        GameObject spawnedObj = Instantiate(comicTxtToSpawn, pos, Quaternion.identity);
+        GameObject spawnedObj = Instantiate(comicTxtToSpawn[Random.Range(0, comicTxtToSpawn.Length)], pos, Quaternion.identity);
         spawnedObj.transform.LookAt(cam.transform);
     }
     //  if (collision.relativeVelocity.magnitude != 0) Debug.Log("Relative Force: " + collision.relativeVelocity.magnitude.ToString() + ". " + gameObject.name);

@@ -270,7 +270,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  comicTxtToSpawn: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+  comicTxtToSpawn:
+  - {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+  - {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+  - {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
+  - {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
   LhandSlapPerson: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
   RhandSlapPerson: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
   LhandSlapObject: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
