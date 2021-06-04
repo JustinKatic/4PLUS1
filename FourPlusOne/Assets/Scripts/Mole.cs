@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Mole : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class Mole : MonoBehaviour
     private Vector3 initalScale;
     private float timer = 0;
     private float popoutChange = 0;
+
+    public UnityEvent OnMoleBreak;
 
 
     public void Start()
@@ -63,7 +66,7 @@ public class Mole : MonoBehaviour
         }
     }
 
-    public void MoleHit()
+    public void MoleHit(SlapDetection slap)
     {
         if(Active)
         {
@@ -71,7 +74,12 @@ public class Mole : MonoBehaviour
             Active = false;
             popoutChange = TimeBeforePopout + Random.Range(-PopoutTimeVariance, PopoutTimeVariance);
 
-            //Add stuff here for score
+            HealthBeforeBreak -= 10;
+
+            if(HealthBeforeBreak <= 10)
+            {
+                OnMoleBreak.Invoke();
+            }
         }
     }
 }
