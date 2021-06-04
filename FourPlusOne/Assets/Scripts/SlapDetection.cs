@@ -21,7 +21,6 @@ public class SlapDetection : MonoBehaviour
 
     private Camera cam;
     public GameObject comicTxtToSpawn;
-    private bool hasSpawned = false;
 
     public GameEvent LhandSlapPerson;
     public GameEvent RhandSlapPerson;
@@ -31,6 +30,8 @@ public class SlapDetection : MonoBehaviour
 
     private bool hasSlappedObj = false;
 
+    [HideInInspector]
+    public Vector3 PreviousHitVelocity = new Vector3(0,0,0);
 
     private void Start()
     {
@@ -71,14 +72,13 @@ public class SlapDetection : MonoBehaviour
                         LhandSlapObject.Raise();
                     }
                 }
-                OnSlap.Invoke();
-                StartCoroutine(HasSlapped());
 
-                if (hasSpawned == false)
+                if (hasSlappedObj == false)
                 {
                     SpawnComicText(collision.transform);
-                    hasSpawned = true;
                 }
+                OnSlap.Invoke();
+                StartCoroutine(HasSlapped());
             }
         }
         else if (collision.relativeVelocity.magnitude >= SlapStrengthThreshold)

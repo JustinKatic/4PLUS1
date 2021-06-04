@@ -478,7 +478,11 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   comicTxtToSpawn: {fileID: 0}
-  objToLookAt: {fileID: 0}
+  LhandSlapPerson: {fileID: 0}
+  RhandSlapPerson: {fileID: 0}
+  LhandSlapObject: {fileID: 0}
+  RhandSlapObject: {fileID: 0}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!54 &324777817
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1504,7 +1508,11 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   comicTxtToSpawn: {fileID: 919132149155446097, guid: 0e3ca7d844c6c6245b83b793f5faa3f3, type: 3}
-  objToLookAt: {fileID: 1205872721}
+  LhandSlapPerson: {fileID: 0}
+  RhandSlapPerson: {fileID: 0}
+  LhandSlapObject: {fileID: 0}
+  RhandSlapObject: {fileID: 0}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &1453753660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1520,6 +1528,7 @@ MonoBehaviour:
   CutCascades: 5
   ExplodeForce: 250
   DestoryTinyPieces: 1
+  LastSlapSource: {fileID: 0}
 --- !u!64 &1453753661
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2133,7 +2142,14 @@ PrefabInstance:
       propertyPath: comicTxtToSpawn
       value: 
       objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8151601095940731355, guid: aad808ca9ef4c5d4090279b9f16eef12, type: 3}
+    - {fileID: 8151601095647099323, guid: aad808ca9ef4c5d4090279b9f16eef12, type: 3}
+    - {fileID: 8151601094049881264, guid: aad808ca9ef4c5d4090279b9f16eef12, type: 3}
+    - {fileID: 8151601095088871427, guid: aad808ca9ef4c5d4090279b9f16eef12, type: 3}
+    - {fileID: 8151601095783729431, guid: aad808ca9ef4c5d4090279b9f16eef12, type: 3}
+    - {fileID: 8151601094885306307, guid: aad808ca9ef4c5d4090279b9f16eef12, type: 3}
+    - {fileID: 8151601094956506486, guid: aad808ca9ef4c5d4090279b9f16eef12, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: aad808ca9ef4c5d4090279b9f16eef12, type: 3}
 --- !u!1001 &8686433549552673046
 PrefabInstance:

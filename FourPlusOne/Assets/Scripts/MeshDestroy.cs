@@ -21,13 +21,13 @@ public class MeshDestroy : MonoBehaviour
     [Tooltip("If a piece is created that's small enough (size vector  < 0.1f) destroys it.")]
     public bool DestoryTinyPieces = true;
 
-    public void OnMouseDown()
-    {
-        DestoryMesh();
-    }
+    [HideInInspector]
+    public SlapDetection LastSlapSource;
 
-    public void DestoryMesh()
+    public void DestoryMesh(SlapDetection slapSource)
     {
+        LastSlapSource = slapSource;
+
         Mesh originalMesh = GetComponent<MeshFilter>().mesh;
         if (originalMesh == null) return; // Don't run method if we have no mesh
 
@@ -304,7 +304,7 @@ public class MeshDestroy : MonoBehaviour
 
             if(originalBody !=  null) 
             {
-                SpawnedObject.Body.AddRelativeForce(originalBody.velocity, ForceMode.Impulse);
+                SpawnedObject.Body.AddRelativeForce(originalBody.velocity + ((original.LastSlapSource != null)? original.LastSlapSource.PreviousHitVelocity :  Vector3.zero), ForceMode.Impulse);
                 float massMulti = (ObjectBounds.size.magnitude / originalFilter.mesh.bounds.size.magnitude);
                 SpawnedObject.Body.mass = originalBody.mass * massMulti; // Gives a very rough apporximation of the objects mass
             }
