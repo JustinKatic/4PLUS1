@@ -74,6 +74,7 @@ public class Hand : MonoBehaviour
 
     private void TriggerPress(InputAction.CallbackContext obj)
     {
+
     }
 
     private void GripPress(InputAction.CallbackContext obj)
