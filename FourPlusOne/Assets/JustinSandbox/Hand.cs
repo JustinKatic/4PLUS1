@@ -27,6 +27,11 @@ public class Hand : MonoBehaviour
 
     private Collider[] cols;
 
+    public AudioSource source;
+
+    public AudioClip slapObj;
+    public AudioClip slapPerson;
+
 
 
     void Start()
@@ -51,11 +56,20 @@ public class Hand : MonoBehaviour
 
     }
 
+    public void PlaySlapPersonSound()
+    {
+        source.PlayOneShot(slapPerson);
+    }
+
+    public void PlaySlapObjectSound()
+    {
+        source.PlayOneShot(slapObj);
+    }
 
 
     private void TriggerReleased(InputAction.CallbackContext obj)
     {
-        
+
     }
 
     private void TriggerPress(InputAction.CallbackContext obj)

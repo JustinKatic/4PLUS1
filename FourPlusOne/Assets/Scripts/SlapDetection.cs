@@ -23,19 +23,25 @@ public class SlapDetection : MonoBehaviour
     public GameObject comicTxtToSpawn;
     private bool hasSpawned = false;
 
-    public Transform objToLookAt; 
+    public GameEvent LhandSlapPerson;
+    public GameEvent RhandSlapPerson;
 
+    public GameEvent LhandSlapObject;
+    public GameEvent RhandSlapObject;
+
+    private bool hasSlappedObj = false;
 
 
     private void Start()
     {
         cam = Camera.main;
-        //controllerL = GameObject.FindGameObjectWithTag("LHand").GetComponent<Hand>().controller;
-        //controllerR = GameObject.FindGameObjectWithTag("RHand").GetComponent<Hand>().controller;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (hasSlappedObj)
+            return;
+
         if (collision.rigidbody != null)
         {
             if (collision.rigidbody.velocity.magnitude >= SlapStrengthThreshold)
@@ -44,12 +50,29 @@ public class SlapDetection : MonoBehaviour
                 if (collision.gameObject.name == "RightHand")
                 {
                     controllerR.SendHapticImpulse(hapticImpulseOnSlap, hapticDuration);
+                    if (gameObject.tag == "Person")
+                    {
+                        RhandSlapPerson.Raise();
+                    }
+                    if (gameObject.tag == "Object")
+                    {
+                        RhandSlapObject.Raise();
+                    }
                 }
                 else if (collision.gameObject.name == "LeftHand")
                 {
                     controllerL.SendHapticImpulse(hapticImpulseOnSlap, hapticDuration);
+                    if (gameObject.tag == "Person")
+                    {
+                        LhandSlapPerson.Raise();
+                    }
+                    if (gameObject.tag == "Object")
+                    {
+                        LhandSlapObject.Raise();
+                    }
                 }
                 OnSlap.Invoke();
+                StartCoroutine(HasSlapped());
 
                 if (hasSpawned == false)
                 {
@@ -65,10 +88,18 @@ public class SlapDetection : MonoBehaviour
         }
     }
 
+    IEnumerator HasSlapped()
+    {
+        hasSlappedObj = true;
+        yield return new WaitForSeconds(0.5f);
+        hasSlappedObj = false;
+
+    }
+
     public void SpawnComicText(Transform pos)
     {
         comicTxtToSpawn = Instantiate(comicTxtToSpawn, pos.position, Quaternion.identity);
-        comicTxtToSpawn.transform.LookAt(objToLookAt);
+        comicTxtToSpawn.transform.LookAt(cam.transform);
 
     }
     //  if (collision.relativeVelocity.magnitude != 0) Debug.Log("Relative Force: " + collision.relativeVelocity.magnitude.ToString() + ". " + gameObject.name);
