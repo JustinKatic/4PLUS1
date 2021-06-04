@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 3897058164497665379}
   - component: {fileID: 3897058164497665381}
   m_Layer: 0
-  m_Name: Textbox
+  m_Name: DialougeBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,7 +152,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8, y: 2, z: 0.33}
+  m_Size: {x: 8, y: 0, z: 0.33}
   m_Center: {x: 0, y: 0, z: 0.06}
 --- !u!1 &3897058165213259407
 GameObject:
@@ -279,6 +279,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerL: {fileID: 0}
+  controllerR: {fileID: 0}
+  hapticImpulseOnSlap: 0
+  hapticDuration: 0
   SlapStrengthThreshold: 2
   OnSlap:
     m_PersistentCalls:
@@ -295,3 +299,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  comicTxtToSpawn: {fileID: 0}
+  LhandSlapPerson: {fileID: 0}
+  RhandSlapPerson: {fileID: 0}
+  LhandSlapObject: {fileID: 0}
+  RhandSlapObject: {fileID: 0}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
