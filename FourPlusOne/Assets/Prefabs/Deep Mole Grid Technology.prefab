@@ -857,6 +857,38 @@ PrefabInstance:
       propertyPath: HealthBeforeBreak
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4416555352996658629}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6212416708366418441}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5170446385501170379, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: m_Name
       value: Mole (6)
@@ -958,6 +990,38 @@ PrefabInstance:
     - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: HealthBeforeBreak
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4416555352996658629}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6212416708366418441}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5170446385501170379, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: m_Name
@@ -1061,6 +1125,38 @@ PrefabInstance:
       propertyPath: HealthBeforeBreak
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4416555352996658629}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6212416708366418441}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5170446385501170379, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: m_Name
       value: Mole (9)
@@ -1163,9 +1259,45 @@ PrefabInstance:
       propertyPath: HealthBeforeBreak
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4416555352996658629}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6212416708366418441}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5170446385501170379, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: m_Name
       value: Mole (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
@@ -1264,6 +1396,38 @@ PrefabInstance:
     - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: HealthBeforeBreak
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4416555352996658629}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6212416708366418441}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5170446385501170379, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: m_Name
@@ -1367,6 +1531,38 @@ PrefabInstance:
       propertyPath: HealthBeforeBreak
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4416555352996658629}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6212416708366418441}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5170446385501170379, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: m_Name
       value: Mole (5)
@@ -1468,6 +1664,38 @@ PrefabInstance:
     - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: HealthBeforeBreak
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4416555352996658629}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6212416708366418441}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5170446385501170379, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: m_Name
@@ -1571,6 +1799,30 @@ PrefabInstance:
       propertyPath: HealthBeforeBreak
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8151601094049881264}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5170446385501170377, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5170446385501170379, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: m_Name
       value: Mole (8)
@@ -1613,8 +1865,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+--- !u!114 &8151601094049881264 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+  m_PrefabInstance: {fileID: 4151284196581389093}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &9105521349355559405 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5170446385501170376, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
   m_PrefabInstance: {fileID: 4151284196581389093}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6212416708366418441 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8046422834316898604, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+  m_PrefabInstance: {fileID: 4151284196581389093}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4416555352996658629 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 348627971111259872, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+  m_PrefabInstance: {fileID: 4151284196581389093}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 5811401143964141803}
   m_Layer: 6
   m_Name: Bottle
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -249,6 +249,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controllerL: {fileID: 0}
+  controllerR: {fileID: 0}
+  hapticImpulseOnSlap: 1
+  hapticDuration: 1
   SlapStrengthThreshold: 3
   OnSlap:
     m_PersistentCalls:
@@ -265,3 +269,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  comicTxtToSpawn: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+  LhandSlapPerson: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+  RhandSlapPerson: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+  LhandSlapObject: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+  RhandSlapObject: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}

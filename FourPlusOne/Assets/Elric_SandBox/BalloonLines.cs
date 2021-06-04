@@ -4,18 +4,26 @@ using UnityEngine;
 
 public class BalloonLines : MonoBehaviour
 {
-    public LineRenderer balloon1;
+    LineRenderer line;
+    public Transform knot;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        line = GetComponent<LineRenderer>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        balloon1.SetPosition(0, gameObject.transform.position);
-        balloon1.SetPosition(0, balloon1.transform.position);
+        line.SetPosition(0, knot.position);
+        line.SetPosition(1, transform.parent.position);
+        
+    }
+    private void OnJointBreak(float breakForce)
+    {
+        line.enabled = false;
+        Destroy(gameObject, 20);
 
     }
 }
