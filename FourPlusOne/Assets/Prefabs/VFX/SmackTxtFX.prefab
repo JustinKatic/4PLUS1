@@ -264,6 +264,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9002056139348374445}
     m_Modifications:
+    - target: {fileID: -2937110507041884631, guid: acca9e61c9ca64f429769b5b3562816c, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 465384472632277197, guid: acca9e61c9ca64f429769b5b3562816c, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -422,6 +426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: C_3DtxtPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 7793353511430164514, guid: 509463d47cdbf9541be2bad0735ded9b, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 509463d47cdbf9541be2bad0735ded9b, type: 3}
 --- !u!4 &894023038185978687 stripped
@@ -436,6 +444,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9002056139348374445}
     m_Modifications:
+    - target: {fileID: -4161592789320380323, guid: 08101dea1a6e87042b63210888958872, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 255782034927084696, guid: 08101dea1a6e87042b63210888958872, type: 3}
       propertyPath: m_Name
       value: A_3DtxtPrefab
@@ -598,6 +610,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bd3ca59a8692c4044ad43f93736d9a02, type: 2}
+    - target: {fileID: 9032378933825327319, guid: 9c1dde58e60729847814a34f0e75887c, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c1dde58e60729847814a34f0e75887c, type: 3}
 --- !u!4 &7467932204117192464 stripped
@@ -612,6 +628,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9002056139348374445}
     m_Modifications:
+    - target: {fileID: -876371991445392117, guid: eb25d31450530284c9653ae8abc21e91, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -876371991445392117, guid: eb25d31450530284c9653ae8abc21e91, type: 3}
       propertyPath: m_IsKinematic
       value: 1
@@ -773,6 +793,10 @@ PrefabInstance:
     - target: {fileID: 5062987812914262798, guid: 87502ebf062d1e3478e9afd832ea6302, type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605394409873137435, guid: 87502ebf062d1e3478e9afd832ea6302, type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87502ebf062d1e3478e9afd832ea6302, type: 3}
