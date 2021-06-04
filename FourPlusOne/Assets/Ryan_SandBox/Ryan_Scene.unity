@@ -361,14 +361,13 @@ GameObject:
   - component: {fileID: 324777813}
   - component: {fileID: 324777812}
   - component: {fileID: 324777817}
-  - component: {fileID: 324777816}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &324777812
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -445,44 +444,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &324777816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 324777811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controllerL: {fileID: 0}
-  controllerR: {fileID: 0}
-  hapticImpulseOnSlap: 0
-  hapticDuration: 0
-  SlapStrengthThreshold: 5
-  OnSlap:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  comicTxtToSpawn: {fileID: 0}
-  LhandSlapPerson: {fileID: 0}
-  RhandSlapPerson: {fileID: 0}
-  LhandSlapObject: {fileID: 0}
-  RhandSlapObject: {fileID: 0}
-  PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!54 &324777817
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -517,7 +478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &367012411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -776,7 +737,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &522533912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -869,7 +830,7 @@ GameObject:
   - component: {fileID: 681713972}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: LHand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -915,7 +876,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!135 &681713974
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1092,7 +1053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &982843103
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1885,7 +1846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1965837632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1962,6 +1923,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1974466241 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+  m_PrefabInstance: {fileID: 3897058165361609225}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 508a10800aa83c14ca79eda97117767c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3897058165361609225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1972,6 +1944,10 @@ PrefabInstance:
     - target: {fileID: 3897058164497665376, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
       propertyPath: m_Name
       value: Textbox
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665376, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: m_TagString
+      value: Object
       objectReference: {fileID: 0}
     - target: {fileID: 3897058164497665378, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
       propertyPath: m_RootOrder
@@ -2016,6 +1992,26 @@ PrefabInstance:
     - target: {fileID: 3897058164497665378, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058165213259397, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: comicTxtToSpawn
+      value: 
+      objectReference: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+    - target: {fileID: 3897058165213259397, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058165213259397, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1974466241}
+    - target: {fileID: 3897058165213259397, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InterupDialouge
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058165213259397, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialougeBox, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}

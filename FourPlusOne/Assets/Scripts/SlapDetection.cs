@@ -78,6 +78,7 @@ public class SlapDetection : MonoBehaviour
                     SpawnComicText(collision.contacts[0].point);
                 }
                 PreviousHitVelocity = collision.rigidbody.velocity.normalized;
+                Debug.Log("HHJUSHJHSDGJH");
                 OnSlap.Invoke();
                 StartCoroutine(HasSlapped());
             }
