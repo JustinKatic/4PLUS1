@@ -66,17 +66,21 @@ public class Mole : MonoBehaviour
         }
     }
 
+    int hitCount = 0;
+
     public void MoleHit(SlapDetection slap)
     {
         if(Active)
         {
+            hitCount++;
+            Debug.Log("MOLE HITTTYTETT: " + hitCount.ToString());
             timer = 0;
             Active = false;
             popoutChange = TimeBeforePopout + Random.Range(-PopoutTimeVariance, PopoutTimeVariance);
 
             HealthBeforeBreak -= 10;
 
-            if(HealthBeforeBreak <= 10)
+            if(HealthBeforeBreak <= 0)
             {
                 OnMoleBreak.Invoke();
             }

@@ -1168,6 +1168,10 @@ PrefabInstance:
       value: Mole (7)
       objectReference: {fileID: 0}
     - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
+      propertyPath: comicTxtToSpawn
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5241095930503655317, guid: ada65a82f159e294f8fd38c0118b0326, type: 3}
       propertyPath: OnSlap.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
