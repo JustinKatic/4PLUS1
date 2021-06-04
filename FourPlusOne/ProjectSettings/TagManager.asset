@@ -7,6 +7,8 @@ TagManager:
   - LHand
   - RHand
   - Debrie
+  - Person
+  - Object
   layers:
   - Default
   - TransparentFX
