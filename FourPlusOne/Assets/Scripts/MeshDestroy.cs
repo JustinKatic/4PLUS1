@@ -266,7 +266,7 @@ public class MeshDestroy : MonoBehaviour
             SpawnedObject = DebriePooler.SharedInstance.GetPooledObject("Debrie");
             SpawnedObject.WorldObject.transform.position = original.transform.position;
             SpawnedObject.WorldObject.transform.rotation = original.transform.rotation;
-            SpawnedObject.WorldObject.transform.localScale = original.transform.localScale;
+            SpawnedObject.WorldObject.transform.localScale = original.transform.lossyScale;
 
             Mesh mesh = new Mesh();
             MeshFilter originalFilter = original.GetComponent<MeshFilter>();

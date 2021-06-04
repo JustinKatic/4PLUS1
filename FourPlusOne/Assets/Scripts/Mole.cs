@@ -6,6 +6,8 @@ using UnityEngine.Events;
 public class Mole : MonoBehaviour
 {
     public Spring ScaleSpring;
+    public Spring Rotspring;
+    public Quaternion RotDirection = Quaternion.identity;
 
     [Header("Spring Values")]
     public float Stiffness = 0;
@@ -44,6 +46,7 @@ public class Mole : MonoBehaviour
     {
         //Make object scale down or up depending on Active
         transform.localScale = initalScale * ScaleSpring.UpdateSpring((Active)? 1f : 0,Stiffness, Damping,ValueThresh,VelocityThresh);
+        //transform.localRotation = ScaleSpring.UpdateSpring(0, Stiffness, Damping, ValueThresh, VelocityThresh) * RotDirection;
 
         timer += Time.deltaTime;
 
@@ -72,6 +75,11 @@ public class Mole : MonoBehaviour
     {
         if(Active)
         {
+            if(slap != null)
+            {
+                Rotspring = new Spring(slap.PreviousHitVelocity.magnitude);
+            }
+
             hitCount++;
             Debug.Log("MOLE HITTTYTETT: " + hitCount.ToString());
             timer = 0;
