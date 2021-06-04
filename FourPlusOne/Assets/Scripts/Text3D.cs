@@ -127,7 +127,7 @@ public class Text3D : MonoBehaviour
 
                 i -= length;
 
-                GameObject obje = Instantiate(letter.LetterObject, transform.TransformPoint(new Vector3(XDiff, YDiff, 0)), Quaternion.identity, transform);
+                GameObject obje = Instantiate(letter.LetterObject, transform.TransformPoint(new Vector3(XDiff, YDiff, 0)), transform.rotation, transform);
                 if (UseTypewritter) obje.SetActive(false);
                 XDiff -= letter.LetterBounds.size.x + Kerning;
 
