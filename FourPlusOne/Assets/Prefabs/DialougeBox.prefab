@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 3897058164497665379}
   m_Layer: 0
   m_Name: DialougeBox
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -273,10 +273,10 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3897058164497665376}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 3897058164497665379}
+        m_TargetAssemblyTypeName: DialougeBox, Assembly-CSharp
+        m_MethodName: InterupDialouge
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -285,7 +285,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  comicTxtToSpawn: {fileID: 0}
+  comicTxtToSpawn: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
   LhandSlapPerson: {fileID: 0}
   RhandSlapPerson: {fileID: 0}
   LhandSlapObject: {fileID: 0}

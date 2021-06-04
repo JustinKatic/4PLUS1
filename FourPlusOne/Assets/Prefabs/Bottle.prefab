@@ -237,6 +237,7 @@ MonoBehaviour:
   CutCascades: 4
   ExplodeForce: 25
   DestoryTinyPieces: 1
+  LastSlapSource: {fileID: 0}
 --- !u!114 &5811401143964141803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,10 +261,10 @@ MonoBehaviour:
       - m_Target: {fileID: 5811401143964141802}
         m_TargetAssemblyTypeName: MeshDestroy, Assembly-CSharp
         m_MethodName: DestoryMesh
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 5811401143964141803}
+          m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -274,3 +275,4 @@ MonoBehaviour:
   RhandSlapPerson: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
   LhandSlapObject: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
   RhandSlapObject: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
