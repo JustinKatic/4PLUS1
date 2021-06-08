@@ -113,6 +113,7 @@ MonoBehaviour:
   CutCascades: 2
   ExplodeForce: 25
   DestoryTinyPieces: 1
+  LastSlapSource: {fileID: 0}
 --- !u!1 &5170446384435715447
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,8 +224,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CutCascades: 2
-  ExplodeForce: 250
+  ExplodeForce: 50
   DestoryTinyPieces: 1
+  LastSlapSource: {fileID: 0}
 --- !u!1 &5170446385501170379
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,6 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbd7329850a07124bb6cca1958caf8bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RotDirection: {x: 0, y: 0, z: 0, w: 1}
   Stiffness: 250
   Damping: 15
   ValueThresh: 0.1
@@ -367,5 +370,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  comicTxtToSpawn: {fileID: 0}
-  objToLookAt: {fileID: 0}
+  comicTxtToSpawn:
+  - {fileID: 0}
+  LhandSlapPerson: {fileID: 0}
+  RhandSlapPerson: {fileID: 0}
+  LhandSlapObject: {fileID: 0}
+  RhandSlapObject: {fileID: 0}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}

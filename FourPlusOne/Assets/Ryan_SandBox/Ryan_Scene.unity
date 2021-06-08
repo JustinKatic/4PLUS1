@@ -190,7 +190,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1234
+  m_Name: pb_Mesh-1502
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -561,7 +561,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1524
+  m_Name: pb_Mesh-1792
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1207,8 +1207,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130540018}
-  m_LocalRotation: {x: 0.009536156, y: 0.7231797, z: -0.009987593, w: 0.6905219}
-  m_LocalPosition: {x: -30.182766, y: 5.4961843, z: -2.9569225}
+  m_LocalRotation: {x: 0.00419084, y: -0.9919183, z: 0.122927785, w: 0.031132758}
+  m_LocalPosition: {x: 6.3112874, y: 3.951044, z: 2.0722718}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1456,7 +1456,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  comicTxtToSpawn: {fileID: 919132149155446097, guid: 0e3ca7d844c6c6245b83b793f5faa3f3, type: 3}
+  comicTxtToSpawn:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   LhandSlapPerson: {fileID: 0}
   RhandSlapPerson: {fileID: 0}
   LhandSlapObject: {fileID: 0}

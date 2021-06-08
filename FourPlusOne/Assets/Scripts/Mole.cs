@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class Mole : MonoBehaviour
 {
@@ -37,7 +38,7 @@ public class Mole : MonoBehaviour
     public void Start()
     {
         initalScale = transform.localScale;
-        ScaleSpring = new Spring(0);
+        ScaleSpring = new Spring(1);
 
         popoutChange = TimeBeforePopout + Random.Range(-PopoutTimeVariance, PopoutTimeVariance);
     }
@@ -69,8 +70,6 @@ public class Mole : MonoBehaviour
         }
     }
 
-    int hitCount = 0;
-
     public void MoleHit(SlapDetection slap)
     {
         if(Active)
@@ -80,8 +79,6 @@ public class Mole : MonoBehaviour
                 Rotspring = new Spring(slap.PreviousHitVelocity.magnitude);
             }
 
-            hitCount++;
-            Debug.Log("MOLE HITTTYTETT: " + hitCount.ToString());
             timer = 0;
             Active = false;
             popoutChange = TimeBeforePopout + Random.Range(-PopoutTimeVariance, PopoutTimeVariance);

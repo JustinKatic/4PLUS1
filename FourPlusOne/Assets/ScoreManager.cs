@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -19,5 +20,4 @@ public class ScoreManager : MonoBehaviour
             texts.Text = Score.ToString();
         }
     }
-    
 }

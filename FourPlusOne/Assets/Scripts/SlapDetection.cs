@@ -47,7 +47,6 @@ public class SlapDetection : MonoBehaviour
         {
             if (collision.rigidbody.velocity.magnitude >= SlapStrengthThreshold)
             {
-                Debug.Log(collision.gameObject.name);
                 if (collision.gameObject.name == "RightHand")
                 {
                     controllerR.SendHapticImpulse(hapticImpulseOnSlap, hapticDuration);
