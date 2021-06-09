@@ -33,6 +33,8 @@ public class Hand : MonoBehaviour
     public AudioClip slapPerson;
     public AudioClip slapBaloon;
 
+    bool canPlayBalloonPokeSound = true;
+
 
 
 
@@ -70,7 +72,23 @@ public class Hand : MonoBehaviour
 
     public void PlaySlapBalloonSound()
     {
-        source.PlayOneShot(slapBaloon,50);
+        source.PlayOneShot(slapBaloon, 5);
+    }
+
+    public void PlayPokeBalloonSound()
+    {
+        if (canPlayBalloonPokeSound)
+        {
+            StartCoroutine(PlayBalloonPokeSound());
+            source.PlayOneShot(slapBaloon, 1);
+        }
+    }
+
+    IEnumerator PlayBalloonPokeSound()
+    {
+        canPlayBalloonPokeSound = false;
+        yield return new WaitForSeconds(.3f);
+        canPlayBalloonPokeSound = true;
     }
 
 

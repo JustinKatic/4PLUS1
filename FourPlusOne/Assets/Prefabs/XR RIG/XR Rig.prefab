@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7044637702624588509}
   - component: {fileID: 7044637702624588510}
   m_Layer: 0
-  m_Name: BaseController
+  m_Name: BaseControllerL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 7044637703451239221}
   - component: {fileID: 7044637703451239222}
   m_Layer: 0
-  m_Name: BaseController
+  m_Name: BaseControllerR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

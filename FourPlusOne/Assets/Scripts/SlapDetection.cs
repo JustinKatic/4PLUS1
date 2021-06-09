@@ -45,10 +45,12 @@ public class SlapDetection : MonoBehaviour
         {
             if (collision.rigidbody.velocity.magnitude >= SlapStrengthThreshold)
             {
+
+                //HIT RIGHT HAND
                 if (collision.gameObject.name == "RightHand")
                 {
                     //Vibrate
-                    if(controllerR != null) controllerR.SendHapticImpulse(hapticImpulseOnSlap, hapticDuration);
+                    if (controllerR != null) controllerR.SendHapticImpulse(hapticImpulseOnSlap, hapticDuration);
 
                     //Raise sound events
                     if (gameObject.tag == "Person")
@@ -70,6 +72,8 @@ public class SlapDetection : MonoBehaviour
                         SpawnComicText(collision.contacts[0].point);
                     }
                 }
+
+                //HIT LEFT HAND
                 else if (collision.gameObject.name == "LeftHand")
                 {
                     //Vibrate
@@ -88,7 +92,7 @@ public class SlapDetection : MonoBehaviour
                     {
                         SlapData.LhandSlapBalloon.Raise();
                     }
-                    
+
                     //Spawn effect object
                     if (hasSlappedObj == false)
                     {
@@ -100,12 +104,40 @@ public class SlapDetection : MonoBehaviour
                 OnSlap.Invoke();
                 StartCoroutine(HasSlapped());
             }
+            else if (collision.relativeVelocity.magnitude <= SlapStrengthThreshold)
+            {
+
+                //HIT RIGHT HAND
+                if (collision.gameObject.name == "RightHand")
+                {
+                    //Vibrate
+                    if (controllerR != null) controllerR.SendHapticImpulse(hapticImpulseOnSlap / 2, hapticDuration / 2);
+
+                    //Raise sound events
+                    if (gameObject.tag == "Balloon")
+                    {
+                        SlapData.RhandPokeBalloon.Raise();
+                    }
+                }
+                //HIT LEFT HAND
+                else if (collision.gameObject.name == "LeftHand")
+                {
+                    //Vibrate
+                    if (controllerL != null) controllerL.SendHapticImpulse(hapticImpulseOnSlap / 2, hapticDuration / 2);
+
+                    //Raise sound events
+                    if (gameObject.tag == "Balloon")
+                    {
+                        SlapData.LhandPokeBalloon.Raise();
+                    }
+                }
+            }
         }
         else if (collision.relativeVelocity.magnitude >= SlapStrengthThreshold)
         {
             PreviousHitVelocity = collision.relativeVelocity.normalized;
             OnSlap.Invoke();
-        }
+        }     
     }
 
 
@@ -123,5 +155,6 @@ public class SlapDetection : MonoBehaviour
         spawnedObj.transform.LookAt(cam.transform);
     }
     //  if (collision.relativeVelocity.magnitude != 0) Debug.Log("Relative Force: " + collision.relativeVelocity.magnitude.ToString() + ". " + gameObject.name);
+
 }
 
