@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 264331200668079371}
   - component: {fileID: 264331200668079364}
   - component: {fileID: 264331200668079365}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 264331200754995118}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   - component: {fileID: 264331200900086469}
   - component: {fileID: 264331200900086470}
   - component: {fileID: 264331200900086471}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -674,7 +674,7 @@ GameObject:
   - component: {fileID: 264331201041081287}
   - component: {fileID: 264331201041081280}
   - component: {fileID: 264331201041081281}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -987,7 +987,7 @@ GameObject:
   - component: {fileID: 264331201728202230}
   - component: {fileID: 264331201728202231}
   - component: {fileID: 264331201728202224}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2141,15 +2141,9 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 0}
   m_IsSelectable: 1
-  m_SelectedFaces: 00000000
-  m_SelectedEdges:
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  - a: 0
-    b: 0
-  m_SelectedVertices: 000000000000000000000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!23 &264331201728202230
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2228,7 +2222,7 @@ GameObject:
   - component: {fileID: 264331201894180828}
   - component: {fileID: 264331201894180829}
   - component: {fileID: 264331201894180830}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

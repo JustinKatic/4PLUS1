@@ -23080,6 +23080,7 @@ GameObject:
   - component: {fileID: 7898138387380756307}
   - component: {fileID: 7898138387380756308}
   - component: {fileID: 7898138387380756309}
+  - component: {fileID: 1927691654}
   m_Layer: 0
   m_Name: BeachballPF
   m_TagString: Balloon
@@ -23133,6 +23134,26 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1927691654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7898138387380756310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticImpulseOnSlap: 1
+  hapticDuration: 1
+  SlapStrengthThreshold: 2
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls: []
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &7898138387423910447
 GameObject:
   m_ObjectHideFlags: 0
@@ -25965,13 +25986,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e12fca2420b29140ad6aacb196545d2, type: 3}
---- !u!4 &7643007112488629741 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3e12fca2420b29140ad6aacb196545d2, type: 3}
-  m_PrefabInstance: {fileID: 7898138385877193222}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7015124797484658519 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3e12fca2420b29140ad6aacb196545d2, type: 3}
+  m_PrefabInstance: {fileID: 7898138385877193222}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7643007112488629741 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3e12fca2420b29140ad6aacb196545d2, type: 3}
   m_PrefabInstance: {fileID: 7898138385877193222}
   m_PrefabAsset: {fileID: 0}

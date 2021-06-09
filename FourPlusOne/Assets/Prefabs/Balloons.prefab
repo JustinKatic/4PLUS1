@@ -18,7 +18,7 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
-  SlapData: {fileID: 0}
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
   PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &893417517734836815
 MonoBehaviour:
@@ -38,7 +38,7 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
-  SlapData: {fileID: 0}
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
   PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &7472745531070686926
 MonoBehaviour:
@@ -58,7 +58,7 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
-  SlapData: {fileID: 0}
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
   PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &8358690197930888665
 MonoBehaviour:
@@ -78,7 +78,7 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
-  SlapData: {fileID: 0}
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
   PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &8608232187535208678
 MonoBehaviour:
@@ -98,7 +98,7 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
-  SlapData: {fileID: 0}
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
   PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &8494429748289065649
 MonoBehaviour:
@@ -118,7 +118,7 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
-  SlapData: {fileID: 0}
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
   PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &6620096392601947850
 MonoBehaviour:
@@ -138,7 +138,7 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
-  SlapData: {fileID: 0}
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
   PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &2912601956276353127
 MonoBehaviour:
@@ -158,7 +158,7 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
-  SlapData: {fileID: 0}
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
   PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &6259094730658314562
 MonoBehaviour:
@@ -178,7 +178,7 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
-  SlapData: {fileID: 0}
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
   PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &5529909269848416244
 GameObject:

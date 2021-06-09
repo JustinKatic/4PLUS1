@@ -16,4 +16,7 @@ public class SlapDetectionData : ScriptableObject
     public GameEvent LhandSlapBalloon;
     public GameEvent RhandSlapBalloon;
 
+    public GameEvent LhandPokeBalloon;
+    public GameEvent RhandPokeBalloon;
+
 }
