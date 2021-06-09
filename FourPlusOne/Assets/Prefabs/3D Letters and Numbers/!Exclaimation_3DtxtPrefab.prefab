@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: -876371991445392117}
   - component: {fileID: 2423096560935034782}
   m_Layer: 0
-  m_Name: Exclaimation_3DtxtPrefab
+  m_Name: '!Exclaimation_3DtxtPrefab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
