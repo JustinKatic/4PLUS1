@@ -31,6 +31,8 @@ public class Hand : MonoBehaviour
 
     public AudioClip slapObj;
     public AudioClip slapPerson;
+    public AudioClip slapBaloon;
+
 
 
 
@@ -64,6 +66,11 @@ public class Hand : MonoBehaviour
     public void PlaySlapObjectSound()
     {
         source.PlayOneShot(slapObj);
+    }
+
+    public void PlaySlapBalloonSound()
+    {
+        source.PlayOneShot(slapBaloon);
     }
 
 

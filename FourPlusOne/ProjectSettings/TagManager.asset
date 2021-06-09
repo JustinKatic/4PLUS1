@@ -9,6 +9,7 @@ TagManager:
   - Debrie
   - Person
   - Object
+  - Ballon
   layers:
   - Default
   - TransparentFX
