@@ -9514,8 +9514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllerL: {fileID: 0}
-  controllerR: {fileID: 0}
   hapticImpulseOnSlap: 0
   hapticDuration: 0
   SlapStrengthThreshold: 0.1

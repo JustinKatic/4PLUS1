@@ -70,7 +70,7 @@ public class Hand : MonoBehaviour
 
     public void PlaySlapBalloonSound()
     {
-        source.PlayOneShot(slapBaloon);
+        source.PlayOneShot(slapBaloon,50);
     }
 
 
