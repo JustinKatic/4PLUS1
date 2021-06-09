@@ -265,8 +265,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllerL: {fileID: 0}
-  controllerR: {fileID: 0}
   hapticImpulseOnSlap: 0
   hapticDuration: 0
   SlapStrengthThreshold: 0.1
@@ -297,9 +295,5 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  comicTxtToSpawn: {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
-  LhandSlapPerson: {fileID: 0}
-  RhandSlapPerson: {fileID: 0}
-  LhandSlapObject: {fileID: 0}
-  RhandSlapObject: {fileID: 0}
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
   PreviousHitVelocity: {x: 0, y: 0, z: 0}

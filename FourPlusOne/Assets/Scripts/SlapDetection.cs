@@ -61,7 +61,7 @@ public class SlapDetection : MonoBehaviour
                     }
                     else if (gameObject.tag == "Balloon")
                     {
-                        SlapData.RhandSlapObject.Raise();
+                        SlapData.RhandSlapBalloon.Raise();
                     }
 
                     //Spawn effect object
@@ -86,7 +86,7 @@ public class SlapDetection : MonoBehaviour
                     }
                     else if (gameObject.tag == "Balloon")
                     {
-                        SlapData.RhandSlapObject.Raise();
+                        SlapData.LhandSlapBalloon.Raise();
                     }
                     
                     //Spawn effect object
