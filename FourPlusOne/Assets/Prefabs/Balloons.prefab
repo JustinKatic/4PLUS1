@@ -1,5 +1,293 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &5672087108881377015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2272174968898468499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerL: {fileID: 0}
+  controllerR: {fileID: 0}
+  hapticImpulseOnSlap: 1
+  hapticDuration: 1
+  SlapStrengthThreshold: 2
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls: []
+  comicTxtToSpawn:
+  - {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+  - {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+  - {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
+  - {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+  LhandSlapPerson: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+  RhandSlapPerson: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+  LhandSlapObject: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+  RhandSlapObject: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+  LhandBalloonEvent: {fileID: 11400000, guid: 2b81a4b305ca7c94d9635f184960c07b, type: 2}
+  RhandBalloonEvent: {fileID: 11400000, guid: b412825a41fdcc34bb27463f74f770a2, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &893417517734836815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2272174968955998487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerL: {fileID: 0}
+  controllerR: {fileID: 0}
+  hapticImpulseOnSlap: 1
+  hapticDuration: 1
+  SlapStrengthThreshold: 2
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls: []
+  comicTxtToSpawn:
+  - {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+  - {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+  - {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
+  - {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+  LhandSlapPerson: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+  RhandSlapPerson: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+  LhandSlapObject: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+  RhandSlapObject: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+  LhandBalloonEvent: {fileID: 11400000, guid: 2b81a4b305ca7c94d9635f184960c07b, type: 2}
+  RhandBalloonEvent: {fileID: 11400000, guid: b412825a41fdcc34bb27463f74f770a2, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &7472745531070686926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2272174969080153672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerL: {fileID: 0}
+  controllerR: {fileID: 0}
+  hapticImpulseOnSlap: 1
+  hapticDuration: 1
+  SlapStrengthThreshold: 2
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls: []
+  comicTxtToSpawn:
+  - {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+  - {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+  - {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
+  - {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+  LhandSlapPerson: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+  RhandSlapPerson: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+  LhandSlapObject: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+  RhandSlapObject: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+  LhandBalloonEvent: {fileID: 11400000, guid: 2b81a4b305ca7c94d9635f184960c07b, type: 2}
+  RhandBalloonEvent: {fileID: 11400000, guid: b412825a41fdcc34bb27463f74f770a2, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &8358690197930888665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2272174969256720747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerL: {fileID: 0}
+  controllerR: {fileID: 0}
+  hapticImpulseOnSlap: 1
+  hapticDuration: 1
+  SlapStrengthThreshold: 2
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls: []
+  comicTxtToSpawn:
+  - {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+  - {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+  - {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
+  - {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+  LhandSlapPerson: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+  RhandSlapPerson: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+  LhandSlapObject: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+  RhandSlapObject: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+  LhandBalloonEvent: {fileID: 11400000, guid: 2b81a4b305ca7c94d9635f184960c07b, type: 2}
+  RhandBalloonEvent: {fileID: 11400000, guid: b412825a41fdcc34bb27463f74f770a2, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &8608232187535208678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2272174969786514628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerL: {fileID: 0}
+  controllerR: {fileID: 0}
+  hapticImpulseOnSlap: 1
+  hapticDuration: 1
+  SlapStrengthThreshold: 2
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls: []
+  comicTxtToSpawn:
+  - {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+  - {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+  - {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
+  - {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+  LhandSlapPerson: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+  RhandSlapPerson: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+  LhandSlapObject: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+  RhandSlapObject: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+  LhandBalloonEvent: {fileID: 11400000, guid: 2b81a4b305ca7c94d9635f184960c07b, type: 2}
+  RhandBalloonEvent: {fileID: 11400000, guid: b412825a41fdcc34bb27463f74f770a2, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &8494429748289065649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2272174970033515559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerL: {fileID: 0}
+  controllerR: {fileID: 0}
+  hapticImpulseOnSlap: 1
+  hapticDuration: 1
+  SlapStrengthThreshold: 2
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls: []
+  comicTxtToSpawn:
+  - {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+  - {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+  - {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
+  - {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+  LhandSlapPerson: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+  RhandSlapPerson: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+  LhandSlapObject: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+  RhandSlapObject: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+  LhandBalloonEvent: {fileID: 11400000, guid: 2b81a4b305ca7c94d9635f184960c07b, type: 2}
+  RhandBalloonEvent: {fileID: 11400000, guid: b412825a41fdcc34bb27463f74f770a2, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &6620096392601947850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2272174970352901918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerL: {fileID: 0}
+  controllerR: {fileID: 0}
+  hapticImpulseOnSlap: 1
+  hapticDuration: 1
+  SlapStrengthThreshold: 2
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls: []
+  comicTxtToSpawn:
+  - {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+  - {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+  - {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
+  - {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+  LhandSlapPerson: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+  RhandSlapPerson: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+  LhandSlapObject: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+  RhandSlapObject: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+  LhandBalloonEvent: {fileID: 11400000, guid: 2b81a4b305ca7c94d9635f184960c07b, type: 2}
+  RhandBalloonEvent: {fileID: 11400000, guid: b412825a41fdcc34bb27463f74f770a2, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &2912601956276353127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2272174970368290225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerL: {fileID: 0}
+  controllerR: {fileID: 0}
+  hapticImpulseOnSlap: 1
+  hapticDuration: 1
+  SlapStrengthThreshold: 2
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls: []
+  comicTxtToSpawn:
+  - {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+  - {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+  - {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
+  - {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+  LhandSlapPerson: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+  RhandSlapPerson: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+  LhandSlapObject: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+  RhandSlapObject: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+  LhandBalloonEvent: {fileID: 11400000, guid: 2b81a4b305ca7c94d9635f184960c07b, type: 2}
+  RhandBalloonEvent: {fileID: 11400000, guid: b412825a41fdcc34bb27463f74f770a2, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &6259094730658314562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2272174970480569362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controllerL: {fileID: 0}
+  controllerR: {fileID: 0}
+  hapticImpulseOnSlap: 1
+  hapticDuration: 1
+  SlapStrengthThreshold: 2
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls: []
+  comicTxtToSpawn:
+  - {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+  - {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+  - {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
+  - {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+  LhandSlapPerson: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+  RhandSlapPerson: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+  LhandSlapObject: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+  RhandSlapObject: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+  LhandBalloonEvent: {fileID: 11400000, guid: 2b81a4b305ca7c94d9635f184960c07b, type: 2}
+  RhandBalloonEvent: {fileID: 11400000, guid: b412825a41fdcc34bb27463f74f770a2, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &5529909269848416244
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,7 +365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 0.11799997
+      value: 0.11800003
       objectReference: {fileID: 0}
     - target: {fileID: 3524578807128782025, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -131,12 +419,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balloon (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+      propertyPath: m_TagString
+      value: Balloon
+      objectReference: {fileID: 0}
     - target: {fileID: 6112073115813665857, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e317e2bb64790ee42b122094328e5870, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+--- !u!1 &2272174969786514628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+  m_PrefabInstance: {fileID: 5529909269519566664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8595062809591150363 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4321735149814509651, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
@@ -155,7 +452,7 @@ PrefabInstance:
       objectReference: {fileID: 5529909269848416247}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.17799997
+      value: 0.178
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -213,8 +510,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balloon (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+      propertyPath: m_TagString
+      value: Balloon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+--- !u!1 &2272174968955998487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+  m_PrefabInstance: {fileID: 5529909269762812571}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8595062808760638152 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4321735149814509651, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
@@ -233,7 +539,7 @@ PrefabInstance:
       objectReference: {fileID: 5529909269848416247}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.43400002
+      value: 0.434
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -241,7 +547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 0.08700001
+      value: 0.08699989
       objectReference: {fileID: 0}
     - target: {fileID: 3524578807128782025, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -295,12 +601,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balloon (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+      propertyPath: m_TagString
+      value: Balloon
+      objectReference: {fileID: 0}
     - target: {fileID: 6112073115813665857, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d4c1e0b47b1915d4dba89776d282d093, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+--- !u!1 &2272174968898468499 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+  m_PrefabInstance: {fileID: 5529909269837119775}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8595062808835223884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4321735149814509651, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
@@ -319,7 +634,7 @@ PrefabInstance:
       objectReference: {fileID: 5529909269848416247}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.17799997
+      value: 0.178
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -327,7 +642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -0.03700003
+      value: -0.03700018
       objectReference: {fileID: 0}
     - target: {fileID: 4321735149814509651, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_RootOrder
@@ -377,8 +692,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balloon (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+      propertyPath: m_TagString
+      value: Balloon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+--- !u!1 &2272174969080153672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+  m_PrefabInstance: {fileID: 5529909270025125316}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8595062808956095895 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4321735149814509651, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
@@ -397,7 +721,7 @@ PrefabInstance:
       objectReference: {fileID: 5529909269848416247}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.17500019
+      value: -0.17500001
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -405,7 +729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -0.284
+      value: -0.28399992
       objectReference: {fileID: 0}
     - target: {fileID: 3524578807128782025, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -459,12 +783,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balloon (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+      propertyPath: m_TagString
+      value: Balloon
+      objectReference: {fileID: 0}
     - target: {fileID: 6112073115813665857, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c479fcaec42faa844b2b3e286def2cb7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+--- !u!1 &2272174969256720747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+  m_PrefabInstance: {fileID: 5529909270065611495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8595062808996344500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4321735149814509651, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
@@ -483,7 +816,7 @@ PrefabInstance:
       objectReference: {fileID: 5529909269848416247}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.46299982
+      value: 0.463
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -491,7 +824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -0.281
+      value: -0.28100014
       objectReference: {fileID: 0}
     - target: {fileID: 3524578807128782025, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -545,6 +878,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balloon (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+      propertyPath: m_TagString
+      value: Balloon
+      objectReference: {fileID: 0}
     - target: {fileID: 6112073115813665857, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -554,6 +891,11 @@ PrefabInstance:
 --- !u!4 &8595062809829631992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4321735149814509651, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+  m_PrefabInstance: {fileID: 5529909270831929259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2272174970033515559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
   m_PrefabInstance: {fileID: 5529909270831929259}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5529909271151060114
@@ -569,7 +911,7 @@ PrefabInstance:
       objectReference: {fileID: 5529909269848416247}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.0069999695
+      value: 0.0069999993
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -577,7 +919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -0.215
+      value: -0.21500015
       objectReference: {fileID: 0}
     - target: {fileID: 3524578807128782025, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -631,12 +973,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balloon (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+      propertyPath: m_TagString
+      value: Balloon
+      objectReference: {fileID: 0}
     - target: {fileID: 6112073115813665857, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d4c1e0b47b1915d4dba89776d282d093, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+--- !u!1 &2272174970352901918 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+  m_PrefabInstance: {fileID: 5529909271151060114}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8595062810081907905 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4321735149814509651, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
@@ -655,7 +1006,7 @@ PrefabInstance:
       objectReference: {fileID: 5529909269848416247}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.22599983
+      value: 0.226
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -663,7 +1014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -0.326
+      value: -0.3260002
       objectReference: {fileID: 0}
     - target: {fileID: 3524578807128782025, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -717,12 +1068,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balloon (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+      propertyPath: m_TagString
+      value: Balloon
+      objectReference: {fileID: 0}
     - target: {fileID: 6112073115813665857, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2b871263c78995648ad47a1a991c5b5d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+--- !u!1 &2272174970480569362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+  m_PrefabInstance: {fileID: 5529909271291303838}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8595062810222159821 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4321735149814509651, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
@@ -741,7 +1101,7 @@ PrefabInstance:
       objectReference: {fileID: 5529909269848416247}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.46899986
+      value: 0.469
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.y
@@ -749,7 +1109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1893755769, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 0.007000029
+      value: 0.0069999695
       objectReference: {fileID: 0}
     - target: {fileID: 3524578807128782025, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -803,12 +1163,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Balloon (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+      propertyPath: m_TagString
+      value: Balloon
+      objectReference: {fileID: 0}
     - target: {fileID: 6112073115813665857, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c479fcaec42faa844b2b3e286def2cb7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+--- !u!1 &2272174970368290225 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5996063749313805196, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
+  m_PrefabInstance: {fileID: 5529909271303018045}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8595062810300687982 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4321735149814509651, guid: 57f7967d97133934f8774c817c58a86f, type: 3}

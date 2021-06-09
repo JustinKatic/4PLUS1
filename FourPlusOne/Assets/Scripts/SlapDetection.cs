@@ -28,6 +28,9 @@ public class SlapDetection : MonoBehaviour
     public GameEvent LhandSlapObject;
     public GameEvent RhandSlapObject;
 
+    public GameEvent LhandBalloonEvent;
+    public GameEvent RhandBalloonEvent;
+
     private bool hasSlappedObj = false;
 
     [HideInInspector]
@@ -54,9 +57,19 @@ public class SlapDetection : MonoBehaviour
                     {
                         RhandSlapPerson.Raise();
                     }
-                    if (gameObject.tag == "Object")
+                    else if (gameObject.tag == "Object")
                     {
                         RhandSlapObject.Raise();
+                    }
+                    else if (gameObject.tag == "Balloon")
+                    {
+                        RhandSlapObject.Raise();
+                    }
+
+
+                    if (hasSlappedObj == false)
+                    {
+                        SpawnComicText(collision.contacts[0].point);
                     }
                 }
                 else if (collision.gameObject.name == "LeftHand")
@@ -66,16 +79,22 @@ public class SlapDetection : MonoBehaviour
                     {
                         LhandSlapPerson.Raise();
                     }
-                    if (gameObject.tag == "Object")
+                    else if (gameObject.tag == "Object")
                     {
                         LhandSlapObject.Raise();
                     }
+                    else if (gameObject.tag == "Balloon")
+                    {
+                        RhandSlapObject.Raise();
+                    }
+
+
+                    if (hasSlappedObj == false)
+                    {
+                        SpawnComicText(collision.contacts[0].point);
+                    }
                 }
 
-                if (hasSlappedObj == false)
-                {
-                    SpawnComicText(collision.contacts[0].point);
-                }
                 PreviousHitVelocity = collision.rigidbody.velocity.normalized;
                 OnSlap.Invoke();
                 StartCoroutine(HasSlapped());
@@ -84,10 +103,10 @@ public class SlapDetection : MonoBehaviour
         else if (collision.relativeVelocity.magnitude >= SlapStrengthThreshold)
         {
             PreviousHitVelocity = collision.relativeVelocity.normalized;
-            SpawnComicText(collision.contacts[0].point);
             OnSlap.Invoke();
         }
     }
+
 
     IEnumerator HasSlapped()
     {
