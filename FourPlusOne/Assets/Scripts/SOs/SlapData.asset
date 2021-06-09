@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 461e612ef9991f04d96aff3697d5a311, type: 3}
+  m_Name: SlapData
+  m_EditorClassIdentifier: 
+  comicTxtToSpawn:
+  - {fileID: 9002056140731500060, guid: 7a334d071b6142045bbb15180fe807e7, type: 3}
+  - {fileID: 9002056140731500060, guid: 6e8ac7325f0523c4dbec062b9810fc1f, type: 3}
+  - {fileID: 9002056140731500060, guid: b9df0be7dadd5c8448070f8bbf60a5dc, type: 3}
+  - {fileID: 9002056140731500060, guid: 547e654b17f15f2418771d36b8ede630, type: 3}
+  LhandSlapPerson: {fileID: 11400000, guid: 88754d21c1642a947bed84397901dc85, type: 2}
+  RhandSlapPerson: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
+  LhandSlapObject: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
+  RhandSlapObject: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}

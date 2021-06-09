@@ -6,8 +6,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class SlapDetection : MonoBehaviour
 {
-    public ActionBasedController controllerL;
-    public ActionBasedController controllerR;
+    private ActionBasedController controllerL;
+    private ActionBasedController controllerR;
 
     [Range(0, 1)]
     [SerializeField] private float hapticImpulseOnSlap;
@@ -20,16 +20,7 @@ public class SlapDetection : MonoBehaviour
 
 
     private Camera cam;
-    public GameObject[] comicTxtToSpawn;
-
-    public GameEvent LhandSlapPerson;
-    public GameEvent RhandSlapPerson;
-
-    public GameEvent LhandSlapObject;
-    public GameEvent RhandSlapObject;
-
-    public GameEvent LhandBalloonEvent;
-    public GameEvent RhandBalloonEvent;
+    public SlapDetectionData SlapData;
 
     private bool hasSlappedObj = false;
 
@@ -39,6 +30,10 @@ public class SlapDetection : MonoBehaviour
     private void Start()
     {
         cam = Camera.main;
+
+        // Find L and R controllers in scene
+        controllerL = GameObject.FindGameObjectWithTag("LHand").GetComponent<ActionBasedController>();
+        controllerR = GameObject.FindGameObjectWithTag("RHand").GetComponent<ActionBasedController>();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -52,21 +47,24 @@ public class SlapDetection : MonoBehaviour
             {
                 if (collision.gameObject.name == "RightHand")
                 {
-                    controllerR.SendHapticImpulse(hapticImpulseOnSlap, hapticDuration);
+                    //Vibrate
+                    if(controllerR != null) controllerR.SendHapticImpulse(hapticImpulseOnSlap, hapticDuration);
+
+                    //Raise sound events
                     if (gameObject.tag == "Person")
                     {
-                        RhandSlapPerson.Raise();
+                        SlapData.RhandSlapPerson.Raise();
                     }
                     else if (gameObject.tag == "Object")
                     {
-                        RhandSlapObject.Raise();
+                        SlapData.RhandSlapObject.Raise();
                     }
                     else if (gameObject.tag == "Balloon")
                     {
-                        RhandSlapObject.Raise();
+                        SlapData.RhandSlapObject.Raise();
                     }
 
-
+                    //Spawn effect object
                     if (hasSlappedObj == false)
                     {
                         SpawnComicText(collision.contacts[0].point);
@@ -74,21 +72,24 @@ public class SlapDetection : MonoBehaviour
                 }
                 else if (collision.gameObject.name == "LeftHand")
                 {
-                    controllerL.SendHapticImpulse(hapticImpulseOnSlap, hapticDuration);
+                    //Vibrate
+                    if (controllerL != null) controllerL.SendHapticImpulse(hapticImpulseOnSlap, hapticDuration);
+
+                    //Raise sound events
                     if (gameObject.tag == "Person")
                     {
-                        LhandSlapPerson.Raise();
+                        SlapData.LhandSlapPerson.Raise();
                     }
                     else if (gameObject.tag == "Object")
                     {
-                        LhandSlapObject.Raise();
+                        SlapData.LhandSlapObject.Raise();
                     }
                     else if (gameObject.tag == "Balloon")
                     {
-                        RhandSlapObject.Raise();
+                        SlapData.RhandSlapObject.Raise();
                     }
-
-
+                    
+                    //Spawn effect object
                     if (hasSlappedObj == false)
                     {
                         SpawnComicText(collision.contacts[0].point);
@@ -118,7 +119,7 @@ public class SlapDetection : MonoBehaviour
 
     public void SpawnComicText(Vector3 pos)
     {
-        GameObject spawnedObj = Instantiate(comicTxtToSpawn[Random.Range(0, comicTxtToSpawn.Length)], pos, Quaternion.identity);
+        GameObject spawnedObj = Instantiate(SlapData.comicTxtToSpawn[Random.Range(0, SlapData.comicTxtToSpawn.Length)], pos, Quaternion.identity);
         spawnedObj.transform.LookAt(cam.transform);
     }
     //  if (collision.relativeVelocity.magnitude != 0) Debug.Log("Relative Force: " + collision.relativeVelocity.magnitude.ToString() + ". " + gameObject.name);
