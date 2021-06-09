@@ -206,6 +206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialougeBox
       objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665376, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3897058164497665378, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
       propertyPath: m_RootOrder
       value: 1
