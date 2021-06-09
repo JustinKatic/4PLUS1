@@ -54,7 +54,6 @@ public class DialougeBox : MonoBehaviour
 
     public void InterupDialouge()
     {
-        Debug.Log("AHHHHHHHHHHHHHH");
         TextElement.UseTypewritter = false;
         enabled = false;
 

@@ -93,6 +93,8 @@ public class Text3D : MonoBehaviour
         charAvailable = 0;
         TypeWrittingDone = false;
 
+        bool sameWord = false;
+
         CreateLetters();
 
         for (int i = 0; i < text.Length; i++)
@@ -107,12 +109,17 @@ public class Text3D : MonoBehaviour
                 int length = 0;
                 float temp = 0;
 
-                while (i < text.Length && text[i] != ' ' && storedLetters.ContainsKey(text.ToUpper()[i]))
+                if (!sameWord)
                 {
-                    temp += storedLetters[text.ToUpper()[i]].LetterBounds.size.x + Kerning;
-                    length++;
-                    i++;
+                    while (i < text.Length && text[i] != ' ' && storedLetters.ContainsKey(text.ToUpper()[i]))
+                    {
+                        temp += storedLetters[text.ToUpper()[i]].LetterBounds.size.x + Kerning;
+                        length++;
+                        i++; 
+                    }
+                    sameWord = true;
                 }
+
                 XDiff -= temp;
 
                 if (Mathf.Abs(XDiff) >= MaxWidth)
@@ -135,6 +142,7 @@ public class Text3D : MonoBehaviour
             else if (text[i] == ' ')
             {
                 XDiff -= letter.LetterBounds.size.x + (Kerning * 4f);
+                sameWord = false;
             }
         }
     }

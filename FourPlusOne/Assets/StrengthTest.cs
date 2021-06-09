@@ -12,7 +12,7 @@ public class StrengthTest : MonoBehaviour
     {
         if(Indecator.IsSleeping())
         {
-            Indecator.AddForce(Vector3.up * slap.PreviousHitVelocity.magnitude* StrengthScale, ForceMode.Impulse);
+            Indecator.AddForce(Vector3.up * slap.PreviousHitVelocity.magnitude * StrengthScale, ForceMode.Impulse);
             Debug.Log(slap.PreviousHitVelocity.magnitude.ToString());
         }
     }
