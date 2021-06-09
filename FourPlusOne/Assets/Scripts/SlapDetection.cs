@@ -100,7 +100,7 @@ public class SlapDetection : MonoBehaviour
                     }
                 }
 
-                PreviousHitVelocity = collision.rigidbody.velocity.normalized;
+                PreviousHitVelocity = collision.rigidbody.velocity;
                 OnSlap.Invoke();
                 StartCoroutine(HasSlapped());
             }
@@ -135,7 +135,7 @@ public class SlapDetection : MonoBehaviour
         }
         else if (collision.relativeVelocity.magnitude >= SlapStrengthThreshold)
         {
-            PreviousHitVelocity = collision.relativeVelocity.normalized;
+            PreviousHitVelocity = collision.relativeVelocity;
             OnSlap.Invoke();
         }     
     }
