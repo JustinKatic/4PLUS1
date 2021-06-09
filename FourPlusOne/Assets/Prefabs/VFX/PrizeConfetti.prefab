@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6120009820080450512}
   - component: {fileID: 8906392158898175893}
   - component: {fileID: 6636131114160780526}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Confetti
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4874,7 +4874,7 @@ GameObject:
   - component: {fileID: 7019666133294254831}
   - component: {fileID: 3419966649117480405}
   - component: {fileID: 567609042871218187}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Confetti (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9771,7 +9771,7 @@ GameObject:
   - component: {fileID: 9200168106418507365}
   - component: {fileID: 4472324889802740781}
   - component: {fileID: 3164649186284839828}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
