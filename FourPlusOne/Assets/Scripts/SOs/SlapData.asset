@@ -21,3 +21,5 @@ MonoBehaviour:
   RhandSlapPerson: {fileID: 11400000, guid: 72975f8681f23c9458a4a70ff35d37ff, type: 2}
   LhandSlapObject: {fileID: 11400000, guid: c8d45ecde83fcb941b17f40b016644dc, type: 2}
   RhandSlapObject: {fileID: 11400000, guid: 92e09f84281b98e40948dfe187a006cc, type: 2}
+  LhandSlapBalloon: {fileID: 11400000, guid: 2b81a4b305ca7c94d9635f184960c07b, type: 2}
+  RhandSlapBalloon: {fileID: 11400000, guid: b412825a41fdcc34bb27463f74f770a2, type: 2}
