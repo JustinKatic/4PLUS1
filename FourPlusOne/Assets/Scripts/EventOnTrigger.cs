@@ -10,7 +10,10 @@ public class EventOnTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        OnEnterTrigger.Invoke();
-        if (OnlyOnce) enabled = false;
+        if (other.gameObject.tag == "Player")
+        {
+            OnEnterTrigger.Invoke();
+            if (OnlyOnce) enabled = false;
+        }
     }
 }
