@@ -29,7 +29,7 @@ public class MeshDestroy : MonoBehaviour
 
     public void DestoryMesh(SlapDetection slapSource)
     {
-        if(ClipToPlayOnBreak != null)
+        if(ClipToPlayOnBreak != null && SoundPooler.SharedInstance != null)
         {
             SoundPooler.SoundObject sobj = SoundPooler.SharedInstance.GetPooledObject("SoundObject");
 
