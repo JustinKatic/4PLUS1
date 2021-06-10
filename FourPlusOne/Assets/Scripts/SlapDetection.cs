@@ -16,6 +16,7 @@ public class SlapDetection : MonoBehaviour
     [Min(0)]
     [Tooltip("The velocity the gameobject needs to be hit by to Invoke OnSlap.")]
     public float SlapStrengthThreshold = 5;
+    public bool ShouldSpawnComicText = true;
     public UnityEvent OnSlap;
 
 
@@ -151,6 +152,7 @@ public class SlapDetection : MonoBehaviour
 
     public void SpawnComicText(Vector3 pos)
     {
+        if (!ShouldSpawnComicText) return;
         GameObject spawnedObj = Instantiate(SlapData.comicTxtToSpawn[Random.Range(0, SlapData.comicTxtToSpawn.Length)], pos, Quaternion.identity);
         spawnedObj.transform.LookAt(cam.transform);
     }
