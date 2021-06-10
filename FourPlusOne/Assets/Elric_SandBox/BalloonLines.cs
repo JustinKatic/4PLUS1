@@ -16,8 +16,11 @@ public class BalloonLines : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        line.SetPosition(0, knot.position);
-        line.SetPosition(1, transform.parent.position);       
+        if (transform.parent != null)
+        {
+            line.SetPosition(0, knot.position);
+            line.SetPosition(1, transform.parent.position);
+        }
     }
     private void OnJointBreak(float breakForce)
     {
