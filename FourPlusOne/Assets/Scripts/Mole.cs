@@ -39,6 +39,7 @@ public class Mole : MonoBehaviour
     {
         initalScale = transform.localScale;
         ScaleSpring = new Spring(1);
+        Rotspring = new Spring(0);
 
         popoutChange = TimeBeforePopout + Random.Range(-PopoutTimeVariance, PopoutTimeVariance);
     }
@@ -47,7 +48,8 @@ public class Mole : MonoBehaviour
     {
         //Make object scale down or up depending on Active
         transform.localScale = initalScale * ScaleSpring.UpdateSpring((Active)? 1f : 0,Stiffness, Damping,ValueThresh,VelocityThresh);
-        //transform.localRotation = ScaleSpring.UpdateSpring(0, Stiffness, Damping, ValueThresh, VelocityThresh) * RotDirection;
+        Rotspring.UpdateSpring(0, Stiffness, Damping, ValueThresh, VelocityThresh);
+        transform.localRotation = Quaternion.Euler(Vector3.Slerp(Vector3.zero, RotDirection.eulerAngles,Rotspring.Value));
 
         timer += Time.deltaTime;
 
@@ -68,6 +70,12 @@ public class Mole : MonoBehaviour
                 Active = true;
             }
         }
+
+        if(Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            Rotspring = new Spring(1);
+            RotDirection = Quaternion.FromToRotation(transform.up, new Vector3(Random.Range(-1f,1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f) * 0.2f)) * transform.localRotation;
+        }
     }
 
     public void MoleHit(SlapDetection slap)
@@ -77,6 +85,7 @@ public class Mole : MonoBehaviour
             if(slap != null)
             {
                 Rotspring = new Spring(slap.PreviousHitVelocity.magnitude);
+                RotDirection = Quaternion.FromToRotation(transform.up,slap.PreviousHitVelocity.normalized * 0.1f) * transform.localRotation;
             }
 
             timer = 0;
