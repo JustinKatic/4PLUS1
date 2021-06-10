@@ -7,7 +7,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class WaypointNavmesh : MonoBehaviour
 {
-    public List<Vector3> WayPoints;
+    public List<Vector3> WayPoints = new List<Vector3>();
 
     private NavMeshAgent navAgent;
     private int currentPoint = 0;

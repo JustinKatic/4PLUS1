@@ -8,6 +8,7 @@ using UnityEngine;
 public class WaypointNavmeshEditor : Editor
 {
     WaypointNavmesh wayPoints;
+    SerializedObject obj;
     GUIStyle uiStyle = new GUIStyle();
 
     public int selectedNode = 0;
@@ -15,11 +16,12 @@ public class WaypointNavmeshEditor : Editor
     private void OnEnable()
     {
         wayPoints = (WaypointNavmesh)target;
+        obj = new SerializedObject(target);
 
         uiStyle.alignment = TextAnchor.MiddleCenter;
         uiStyle.fontStyle = FontStyle.Bold;
 
-        if(wayPoints.WayPoints == null || wayPoints.WayPoints.Count == 0)
+        if(wayPoints.WayPoints == null || wayPoints.WayPoints.Count <= 0)
         {
             wayPoints.WayPoints.Add(wayPoints.transform.position + wayPoints.transform.forward);
         }
@@ -27,7 +29,11 @@ public class WaypointNavmeshEditor : Editor
 
     public override void OnInspectorGUI()
     {
-        if(GUILayout.Button("Add Point"))
+        obj.Update();
+
+        EditorGUILayout.PropertyField(obj.FindProperty("WayPoints"));
+
+        if (GUILayout.Button("Add Point"))
         {
             int pointCount = wayPoints.WayPoints.Count;
             if (pointCount <= 1)
@@ -41,6 +47,8 @@ public class WaypointNavmeshEditor : Editor
             }
             SceneView.RepaintAll();
         }
+
+        obj.ApplyModifiedProperties();
 
         if (GUI.changed)
         {
