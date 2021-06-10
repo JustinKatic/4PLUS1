@@ -351,7 +351,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Score: 0
   GameLengthInSeconds: 360
-  TextToUpdate: []
+  TextToUpdate:
+  - {fileID: 3961101421525039976}
 --- !u!136 &1278075681
 CapsuleCollider:
   m_ObjectHideFlags: 0
