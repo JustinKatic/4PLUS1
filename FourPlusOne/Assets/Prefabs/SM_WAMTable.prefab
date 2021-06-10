@@ -31,7 +31,7 @@ MonoBehaviour:
   Damping: 15
   ValueThresh: 0.1
   VelocityThresh: 0.1
-  HealthBeforeBreak: 30
+  HealthBeforeBreak: 29
   StayDuration: 2
   TimeBeforePopout: 2
   PopoutTimeVariance: 0.25
@@ -39,12 +39,12 @@ MonoBehaviour:
   OnMoleBreak:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1278075685}
+      - m_Target: {fileID: 567343849}
         m_TargetAssemblyTypeName: MeshDestroy, Assembly-CSharp
         m_MethodName: DestoryMesh
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 567343848}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -70,12 +70,12 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1278075680}
+      - m_Target: {fileID: 567343844}
         m_TargetAssemblyTypeName: Mole, Assembly-CSharp
         m_MethodName: MoleHit
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1278075684}
+          m_ObjectArgument: {fileID: 567343848}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 2
+  CutCascades: 3
   ExplodeForce: 25
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
@@ -131,7 +131,7 @@ MonoBehaviour:
   Damping: 15
   ValueThresh: 0.1
   VelocityThresh: 0.1
-  HealthBeforeBreak: 30
+  HealthBeforeBreak: 29
   StayDuration: 2
   TimeBeforePopout: 2
   PopoutTimeVariance: 0.25
@@ -139,12 +139,12 @@ MonoBehaviour:
   OnMoleBreak:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1278075685}
+      - m_Target: {fileID: 1006822575}
         m_TargetAssemblyTypeName: MeshDestroy, Assembly-CSharp
         m_MethodName: DestoryMesh
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1006822574}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -170,12 +170,12 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1278075680}
+      - m_Target: {fileID: 1006822570}
         m_TargetAssemblyTypeName: Mole, Assembly-CSharp
         m_MethodName: MoleHit
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1278075684}
+          m_ObjectArgument: {fileID: 1006822574}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 2
+  CutCascades: 3
   ExplodeForce: 25
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
@@ -270,7 +270,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6271573414225017425, guid: 3586750d549895a419d0a4719d9f8603, type: 3}
+  - {fileID: 2100000, guid: 336739672c871b647b9bbec230c15409, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -383,7 +383,7 @@ MonoBehaviour:
   Damping: 15
   ValueThresh: 0.1
   VelocityThresh: 0.1
-  HealthBeforeBreak: 30
+  HealthBeforeBreak: 29
   StayDuration: 2
   TimeBeforePopout: 2
   PopoutTimeVariance: 0.25
@@ -396,7 +396,7 @@ MonoBehaviour:
         m_MethodName: DestoryMesh
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1278075684}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -448,7 +448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 2
+  CutCascades: 3
   ExplodeForce: 25
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
@@ -483,7 +483,7 @@ MonoBehaviour:
   Damping: 15
   ValueThresh: 0.1
   VelocityThresh: 0.1
-  HealthBeforeBreak: 30
+  HealthBeforeBreak: 29
   StayDuration: 2
   TimeBeforePopout: 2
   PopoutTimeVariance: 0.25
@@ -491,12 +491,12 @@ MonoBehaviour:
   OnMoleBreak:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1278075685}
+      - m_Target: {fileID: 570191746}
         m_TargetAssemblyTypeName: MeshDestroy, Assembly-CSharp
         m_MethodName: DestoryMesh
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 570191745}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -522,12 +522,12 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1278075680}
+      - m_Target: {fileID: 570191741}
         m_TargetAssemblyTypeName: Mole, Assembly-CSharp
         m_MethodName: MoleHit
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1278075684}
+          m_ObjectArgument: {fileID: 570191745}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -548,7 +548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 2
+  CutCascades: 3
   ExplodeForce: 25
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
@@ -583,7 +583,7 @@ MonoBehaviour:
   Damping: 15
   ValueThresh: 0.1
   VelocityThresh: 0.1
-  HealthBeforeBreak: 30
+  HealthBeforeBreak: 29
   StayDuration: 2
   TimeBeforePopout: 2
   PopoutTimeVariance: 0.25
@@ -591,12 +591,12 @@ MonoBehaviour:
   OnMoleBreak:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1278075685}
+      - m_Target: {fileID: 143261246}
         m_TargetAssemblyTypeName: MeshDestroy, Assembly-CSharp
         m_MethodName: DestoryMesh
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 143261245}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -622,12 +622,12 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1278075680}
+      - m_Target: {fileID: 143261241}
         m_TargetAssemblyTypeName: Mole, Assembly-CSharp
         m_MethodName: MoleHit
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1278075684}
+          m_ObjectArgument: {fileID: 143261245}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -648,7 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 2
+  CutCascades: 3
   ExplodeForce: 25
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
@@ -683,7 +683,7 @@ MonoBehaviour:
   Damping: 15
   ValueThresh: 0.1
   VelocityThresh: 0.1
-  HealthBeforeBreak: 30
+  HealthBeforeBreak: 29
   StayDuration: 2
   TimeBeforePopout: 2
   PopoutTimeVariance: 0.25
@@ -691,12 +691,12 @@ MonoBehaviour:
   OnMoleBreak:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1278075685}
+      - m_Target: {fileID: 1270400730}
         m_TargetAssemblyTypeName: MeshDestroy, Assembly-CSharp
         m_MethodName: DestoryMesh
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 1270400729}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -727,7 +727,7 @@ MonoBehaviour:
         m_MethodName: MoleHit
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1278075684}
+          m_ObjectArgument: {fileID: 1270400729}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -748,7 +748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 2
+  CutCascades: 3
   ExplodeForce: 25
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
@@ -783,7 +783,7 @@ MonoBehaviour:
   Damping: 15
   ValueThresh: 0.1
   VelocityThresh: 0.1
-  HealthBeforeBreak: 30
+  HealthBeforeBreak: 29
   StayDuration: 2
   TimeBeforePopout: 2
   PopoutTimeVariance: 0.25
@@ -791,12 +791,12 @@ MonoBehaviour:
   OnMoleBreak:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1278075685}
+      - m_Target: {fileID: 860448292}
         m_TargetAssemblyTypeName: MeshDestroy, Assembly-CSharp
         m_MethodName: DestoryMesh
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 860448291}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -822,12 +822,12 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1278075680}
+      - m_Target: {fileID: 860448287}
         m_TargetAssemblyTypeName: Mole, Assembly-CSharp
         m_MethodName: MoleHit
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1278075684}
+          m_ObjectArgument: {fileID: 860448291}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -848,7 +848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 2
+  CutCascades: 3
   ExplodeForce: 25
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
@@ -883,7 +883,7 @@ MonoBehaviour:
   Damping: 15
   ValueThresh: 0.1
   VelocityThresh: 0.1
-  HealthBeforeBreak: 30
+  HealthBeforeBreak: 29
   StayDuration: 2
   TimeBeforePopout: 2
   PopoutTimeVariance: 0.25
@@ -891,12 +891,12 @@ MonoBehaviour:
   OnMoleBreak:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1278075685}
+      - m_Target: {fileID: 577692463}
         m_TargetAssemblyTypeName: MeshDestroy, Assembly-CSharp
         m_MethodName: DestoryMesh
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 577692462}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -922,12 +922,12 @@ MonoBehaviour:
   OnSlap:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1278075680}
+      - m_Target: {fileID: 577692458}
         m_TargetAssemblyTypeName: Mole, Assembly-CSharp
         m_MethodName: MoleHit
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1278075684}
+          m_ObjectArgument: {fileID: 577692462}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -948,7 +948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CutCascades: 2
+  CutCascades: 3
   ExplodeForce: 25
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}

@@ -40,7 +40,7 @@ public class Mole : MonoBehaviour
     {
         initalPos = transform.localPosition;
         initalScale = transform.localScale;
-        ScaleSpring = new Spring(1);
+        ScaleSpring = new Spring(0);
         Rotspring = new Spring(0);
 
         popoutChange = TimeBeforePopout + Random.Range(-PopoutTimeVariance, PopoutTimeVariance);
@@ -49,8 +49,8 @@ public class Mole : MonoBehaviour
     public void Update()
     {
         //Make object scale down or up depending on Active
-        transform.localPosition = initalPos + ((transform.up * 0.125f) * ScaleSpring.UpdateSpring((Active)? 1f : 0,Stiffness, Damping,ValueThresh,VelocityThresh));
-        transform.localScale = initalScale * (1f + (ScaleSpring.UpdateSpring((Active)? 1f : 0,Stiffness, Damping,ValueThresh,VelocityThresh) * 0.1f));
+        transform.localPosition = initalPos + ((transform.up * 0.15f) * ScaleSpring.UpdateSpring((Active)? 1f : 0,Stiffness, Damping,ValueThresh,VelocityThresh));
+        transform.localScale = initalScale * (1f + (ScaleSpring.UpdateSpring((Active)? 1f : -1f,Stiffness, Damping,ValueThresh,VelocityThresh) * 0.2f));
         Rotspring.UpdateSpring(0, Stiffness, Damping, ValueThresh, VelocityThresh);
         transform.localRotation = Quaternion.Euler(Vector3.Slerp(Vector3.zero, RotDirection.eulerAngles,Rotspring.Value));
 
@@ -78,6 +78,7 @@ public class Mole : MonoBehaviour
         {
             Rotspring = new Spring(1);
             RotDirection = Quaternion.FromToRotation(transform.up, new Vector3(Random.Range(-1f,1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f) * 0.2f)) * transform.localRotation;
+            MoleHit(null);
         }
     }
 
@@ -88,7 +89,7 @@ public class Mole : MonoBehaviour
             if(slap != null)
             {
                 Rotspring = new Spring(slap.PreviousHitVelocity.magnitude);
-                RotDirection = Quaternion.FromToRotation(transform.up,slap.PreviousHitVelocity.normalized * 0.1f) * transform.localRotation;
+                RotDirection = Quaternion.FromToRotation(transform.up,slap.PreviousHitVelocity.normalized * 0.2f) * transform.localRotation;
             }
 
             timer = 0;

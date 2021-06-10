@@ -184,6 +184,71 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+--- !u!1 &143261239 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6370785307072655116, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+  m_PrefabInstance: {fileID: 1631337395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &143261241 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 143261241, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+  m_PrefabInstance: {fileID: 1631337395}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143261239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd7329850a07124bb6cca1958caf8bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &143261245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143261239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticImpulseOnSlap: 0
+  hapticDuration: 0
+  SlapStrengthThreshold: 3
+  ShouldSpawnComicText: 1
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 143261241}
+        m_TargetAssemblyTypeName: Mole, Assembly-CSharp
+        m_MethodName: MoleHit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 143261245}
+          m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &143261246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143261239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CutCascades: 3
+  ExplodeForce: 25
+  DestoryTinyPieces: 1
+  LastSlapSource: {fileID: 0}
 --- !u!1 &189118517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,6 +1111,136 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &567343842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 256177478081729556, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+  m_PrefabInstance: {fileID: 1631337395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &567343844 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 567343844, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+  m_PrefabInstance: {fileID: 1631337395}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567343842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd7329850a07124bb6cca1958caf8bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &567343848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567343842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticImpulseOnSlap: 0
+  hapticDuration: 0
+  SlapStrengthThreshold: 3
+  ShouldSpawnComicText: 1
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 567343844}
+        m_TargetAssemblyTypeName: Mole, Assembly-CSharp
+        m_MethodName: MoleHit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 567343848}
+          m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &567343849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567343842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CutCascades: 3
+  ExplodeForce: 25
+  DestoryTinyPieces: 1
+  LastSlapSource: {fileID: 0}
+--- !u!1 &570191739 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5696108275621108409, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+  m_PrefabInstance: {fileID: 1631337395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &570191741 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 570191741, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+  m_PrefabInstance: {fileID: 1631337395}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570191739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd7329850a07124bb6cca1958caf8bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &570191745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570191739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticImpulseOnSlap: 0
+  hapticDuration: 0
+  SlapStrengthThreshold: 3
+  ShouldSpawnComicText: 1
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 570191741}
+        m_TargetAssemblyTypeName: Mole, Assembly-CSharp
+        m_MethodName: MoleHit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 570191745}
+          m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &570191746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570191739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CutCascades: 3
+  ExplodeForce: 25
+  DestoryTinyPieces: 1
+  LastSlapSource: {fileID: 0}
 --- !u!43 &575105061
 Mesh:
   m_ObjectHideFlags: 0
@@ -1210,6 +1405,71 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &577692456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7420777137555990069, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+  m_PrefabInstance: {fileID: 1631337395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &577692458 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 577692458, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+  m_PrefabInstance: {fileID: 1631337395}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577692456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd7329850a07124bb6cca1958caf8bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &577692462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577692456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticImpulseOnSlap: 0
+  hapticDuration: 0
+  SlapStrengthThreshold: 3
+  ShouldSpawnComicText: 1
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 577692458}
+        m_TargetAssemblyTypeName: Mole, Assembly-CSharp
+        m_MethodName: MoleHit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 577692462}
+          m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &577692463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577692456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CutCascades: 3
+  ExplodeForce: 25
+  DestoryTinyPieces: 1
+  LastSlapSource: {fileID: 0}
 --- !u!1 &681713970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,6 +2203,71 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &860448285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6461963878664973731, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+  m_PrefabInstance: {fileID: 1631337395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &860448287 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 860448287, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+  m_PrefabInstance: {fileID: 1631337395}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860448285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd7329850a07124bb6cca1958caf8bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &860448291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860448285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticImpulseOnSlap: 0
+  hapticDuration: 0
+  SlapStrengthThreshold: 3
+  ShouldSpawnComicText: 1
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 860448287}
+        m_TargetAssemblyTypeName: Mole, Assembly-CSharp
+        m_MethodName: MoleHit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 860448291}
+          m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &860448292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860448285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CutCascades: 3
+  ExplodeForce: 25
+  DestoryTinyPieces: 1
+  LastSlapSource: {fileID: 0}
 --- !u!43 &906351039
 Mesh:
   m_ObjectHideFlags: 0
@@ -2340,6 +2665,71 @@ PrefabInstance:
       objectReference: {fileID: 793193867}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7b07215c2014be4fab8f6c27601fa0f, type: 3}
+--- !u!1 &1006822568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2689047127089151331, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+  m_PrefabInstance: {fileID: 1631337395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1006822570 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1006822570, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+  m_PrefabInstance: {fileID: 1631337395}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006822568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd7329850a07124bb6cca1958caf8bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1006822574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006822568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticImpulseOnSlap: 0
+  hapticDuration: 0
+  SlapStrengthThreshold: 3
+  ShouldSpawnComicText: 1
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1006822570}
+        m_TargetAssemblyTypeName: Mole, Assembly-CSharp
+        m_MethodName: MoleHit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1006822574}
+          m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &1006822575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006822568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CutCascades: 3
+  ExplodeForce: 25
+  DestoryTinyPieces: 1
+  LastSlapSource: {fileID: 0}
 --- !u!43 &1084749252
 Mesh:
   m_ObjectHideFlags: 0
@@ -2940,17 +3330,6 @@ MonoBehaviour:
   - {x: -3.8050652, y: 1.2487438, z: -46.4273}
   - {x: 9.009861, y: 0.8182458, z: -53.98591}
   - {x: -3.4594321, y: 0.78932273, z: -63.161724}
---- !u!114 &1210021433 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3961101421525039976, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
-  m_PrefabInstance: {fileID: 1631337395}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4effcc73b2f969044b09b05af4ecfa74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!43 &1256920274
 Mesh:
   m_ObjectHideFlags: 0
@@ -3125,6 +3504,125 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1270400723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6407230964912760293, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+  m_PrefabInstance: {fileID: 1631337395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1270400729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270400723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticImpulseOnSlap: 0
+  hapticDuration: 0
+  SlapStrengthThreshold: 3
+  ShouldSpawnComicText: 1
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1278075680}
+        m_TargetAssemblyTypeName: Mole, Assembly-CSharp
+        m_MethodName: MoleHit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1270400729}
+          m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &1270400730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270400723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CutCascades: 3
+  ExplodeForce: 25
+  DestoryTinyPieces: 1
+  LastSlapSource: {fileID: 0}
+--- !u!1 &1278075678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5380021194627022999, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+  m_PrefabInstance: {fileID: 1631337395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1278075680 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1278075680, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+  m_PrefabInstance: {fileID: 1631337395}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278075678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd7329850a07124bb6cca1958caf8bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1278075684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278075678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticImpulseOnSlap: 0
+  hapticDuration: 0
+  SlapStrengthThreshold: 3
+  ShouldSpawnComicText: 1
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1278075680}
+        m_TargetAssemblyTypeName: Mole, Assembly-CSharp
+        m_MethodName: MoleHit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1278075684}
+          m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &1278075685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278075678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CutCascades: 3
+  ExplodeForce: 25
+  DestoryTinyPieces: 1
+  LastSlapSource: {fileID: 0}
 --- !u!1 &1453753658
 GameObject:
   m_ObjectHideFlags: 0
@@ -3389,14 +3887,294 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2630508446507505142, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
-      propertyPath: TextToUpdate.Array.size
+    - target: {fileID: 143261241, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: HealthBeforeBreak
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 143261241, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2630508446507505142, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
-      propertyPath: TextToUpdate.Array.data[0]
+    - target: {fileID: 143261241, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 143261241, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1210021433}
+      objectReference: {fileID: 143261246}
+    - target: {fileID: 143261241, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 143261241, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DestoryMesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 143261241, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MeshDestroy, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 143261241, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 143261245}
+    - target: {fileID: 143261241, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 567343844, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: HealthBeforeBreak
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 567343844, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 567343844, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 567343844, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 567343849}
+    - target: {fileID: 567343844, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 567343844, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DestoryMesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 567343844, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MeshDestroy, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 567343844, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 567343848}
+    - target: {fileID: 567343844, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 570191741, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: HealthBeforeBreak
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 570191741, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 570191741, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 570191741, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 570191746}
+    - target: {fileID: 570191741, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 570191741, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DestoryMesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 570191741, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MeshDestroy, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 570191741, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 570191745}
+    - target: {fileID: 570191741, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 577692458, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: HealthBeforeBreak
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 577692458, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577692458, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 577692458, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 577692463}
+    - target: {fileID: 577692458, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 577692458, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DestoryMesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 577692458, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MeshDestroy, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 577692458, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 577692462}
+    - target: {fileID: 577692458, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 860448287, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: HealthBeforeBreak
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 860448287, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 860448287, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 860448287, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 860448292}
+    - target: {fileID: 860448287, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 860448287, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DestoryMesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 860448287, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MeshDestroy, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 860448287, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 860448291}
+    - target: {fileID: 860448287, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006822570, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: HealthBeforeBreak
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006822570, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006822570, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006822570, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1006822575}
+    - target: {fileID: 1006822570, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006822570, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DestoryMesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006822570, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MeshDestroy, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1006822570, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1006822574}
+    - target: {fileID: 1006822570, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270400725, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: HealthBeforeBreak
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270400725, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270400725, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270400725, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1270400730}
+    - target: {fileID: 1270400725, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270400725, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DestoryMesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270400725, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MeshDestroy, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1270400725, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1270400729}
+    - target: {fileID: 1270400725, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1278075680, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: HealthBeforeBreak
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1278075680, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1278075680, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1278075680, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1278075685}
+    - target: {fileID: 1278075680, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1278075680, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DestoryMesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 1278075680, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MeshDestroy, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1278075680, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1278075684}
+    - target: {fileID: 1278075680, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: OnMoleBreak.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: SlapDetection, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2799285694110734122, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
       propertyPath: m_Name
       value: SM_WAMTable
@@ -3445,6 +4223,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4456861526311188223, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 336739672c871b647b9bbec230c15409, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 288a40d383722d94c8956f4a4e97ef85, type: 3}
 --- !u!43 &1688837340
