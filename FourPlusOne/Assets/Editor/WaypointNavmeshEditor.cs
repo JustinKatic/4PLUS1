@@ -21,7 +21,7 @@ public class WaypointNavmeshEditor : Editor
         uiStyle.alignment = TextAnchor.MiddleCenter;
         uiStyle.fontStyle = FontStyle.Bold;
 
-        if(wayPoints.WayPoints == null || wayPoints.WayPoints.Count == 0)
+        if(wayPoints.WayPoints == null || wayPoints.WayPoints.Count <= 0)
         {
             wayPoints.WayPoints.Add(wayPoints.transform.position + wayPoints.transform.forward);
         }
