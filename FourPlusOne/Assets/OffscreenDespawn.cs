@@ -13,15 +13,20 @@ public class OffscreenDespawn : MonoBehaviour
 
     private void OnBecameInvisible()
     {
-        destoryRoutine = DeswpawnAfterTime();
-        StartCoroutine(destoryRoutine);
-        Debug.Log("invis");
+        if (gameObject.activeInHierarchy)
+        {
+            destoryRoutine = DeswpawnAfterTime();
+            StartCoroutine(destoryRoutine);
+        }
     }
 
     private void OnBecameVisible()
     {
-        if (destoryRoutine != null) StopCoroutine(destoryRoutine);
-        destoryRoutine = null;
+        if (gameObject.activeInHierarchy)
+        {
+            if (destoryRoutine != null) StopCoroutine(destoryRoutine);
+            destoryRoutine = null;
+        }
     }
 
     IEnumerator DeswpawnAfterTime()
