@@ -41,13 +41,15 @@ public class DialougeBox : MonoBehaviour
 
         if(BetweenMessageTimer >= TimeBeforeNextMessage)
         {
-            BetweenMessageTimer = 0;
-            TextElement.Text = Messages[messageIndex];
             messageIndex++;
-
             if (messageIndex >= Messages.Count)
             {
                 enabled = false;
+            }
+            else
+            {
+                BetweenMessageTimer = 0;
+                TextElement.Text = Messages[messageIndex];
             }
         }
     }
