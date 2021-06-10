@@ -140,6 +140,8 @@ GameObject:
   - component: {fileID: 8229373835079558423}
   - component: {fileID: 8510820306658700066}
   - component: {fileID: 5994268966918691762}
+  - component: {fileID: 1080758342649531504}
+  - component: {fileID: 176303634090233502}
   m_Layer: 0
   m_Name: Speaker
   m_TagString: Untagged
@@ -3757,3 +3759,51 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &1080758342649531504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4616334288181944121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CutCascades: 3
+  ExplodeForce: 50
+  DestoryTinyPieces: 1
+  LastSlapSource: {fileID: 0}
+--- !u!114 &176303634090233502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4616334288181944121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticImpulseOnSlap: 0
+  hapticDuration: 0
+  SlapStrengthThreshold: 5
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1080758342649531504}
+        m_TargetAssemblyTypeName: MeshDestroy, Assembly-CSharp
+        m_MethodName: DestoryMesh
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 176303634090233502}
+          m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
