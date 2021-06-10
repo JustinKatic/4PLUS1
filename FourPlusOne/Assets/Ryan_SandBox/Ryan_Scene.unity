@@ -221,7 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hapticImpulseOnSlap: 1
   hapticDuration: 0.5
-  SlapStrengthThreshold: 5
+  SlapStrengthThreshold: 7
   OnSlap:
     m_PersistentCalls:
       m_Calls:
