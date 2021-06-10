@@ -13,8 +13,9 @@ public class OffscreenDespawn : MonoBehaviour
 
     private void OnBecameInvisible()
     {
-        if (gameObject.activeInHierarchy)
+        if (gameObject.activeSelf)
         {
+            Debug.Log("Invis");
             destoryRoutine = DeswpawnAfterTime();
             StartCoroutine(destoryRoutine);
         }
@@ -22,8 +23,10 @@ public class OffscreenDespawn : MonoBehaviour
 
     private void OnBecameVisible()
     {
-        if (gameObject.activeInHierarchy)
+        if (gameObject.activeSelf)
         {
+            Debug.Log("Devis");
+
             if (destoryRoutine != null) StopCoroutine(destoryRoutine);
             destoryRoutine = null;
         }
