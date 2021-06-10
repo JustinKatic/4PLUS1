@@ -104,17 +104,17 @@ public class Hand : MonoBehaviour
 
     private void GripPress(InputAction.CallbackContext obj)
     {
-        if (colliderBufferCo != null)
-            StopCoroutine(colliderBufferCo);
-        foreach (var col in cols)
-        {
-            col.enabled = false;
-        }
+        //if (colliderBufferCo != null)
+        //    StopCoroutine(colliderBufferCo);
+        //foreach (var col in cols)
+        //{
+        //    col.enabled = false;
+        //}
     }
     private void GripReleased(InputAction.CallbackContext obj)
     {
-        colliderBufferCo = DisableColliders();
-        StartCoroutine(colliderBufferCo);
+        //colliderBufferCo = DisableColliders();
+        //StartCoroutine(colliderBufferCo);
 
     }
 
