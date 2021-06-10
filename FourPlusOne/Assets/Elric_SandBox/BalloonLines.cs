@@ -23,6 +23,6 @@ public class BalloonLines : MonoBehaviour
     {
         line.enabled = false;
         Destroy(gameObject, 20);
-
+        transform.parent = null;
     }
 }
