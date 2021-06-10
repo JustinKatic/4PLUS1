@@ -75,6 +75,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  dialogueBox: {fileID: 0}
 --- !u!1 &3062800411560146284
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,6 +203,30 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3897058164435643084, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164435643084, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.583
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164435643087, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Kerning
+      value: 0.025
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164435643087, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: MaxWidth
+      value: 7.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164435643087, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Letters.Array.size
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164435643087, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Letters.Array.data[41]
+      value: 
+      objectReference: {fileID: 1273711065493536408, guid: 6f8a161bff2f46b4fba0438b3df822a1, type: 3}
     - target: {fileID: 3897058164497665376, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
       propertyPath: m_Name
       value: DialougeBox
@@ -255,16 +280,255 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.size
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
       propertyPath: Messages.Array.data[0]
-      value: Hey!!!
+      value: One ticket to the carnival come right up-
       objectReference: {fileID: 0}
     - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
       propertyPath: Messages.Array.data[1]
-      value: Am I annoying))
+      value: Anyway, I need to read you the mandatory welcome speech-
       objectReference: {fileID: 0}
     - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
       propertyPath: Messages.Array.data[2]
-      value: You Suck!   just--- ew!
+      value: '` Hello and welcome to Carls Crazy Carnival`-'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[3]
+      value: I used to know a guy named carl he was a fun dude always up to something
+        fun-
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[4]
+      value: I had to stop hanging out with him my doctor said it was too much of
+        a strain on my heart-
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[5]
+      value: Anyway, back to the speech-
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[6]
+      value: '`Hello and welcome to Carls Crazy Carnival`-'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[7]
+      value: '`Where fun and imagination come to flourish` -'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[8]
+      value: '`Come see all of your great boths` -'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[9]
+      value: Oops it says booths can see too good without my glasses-
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[10]
+      value: I lost them while waiting in line at the bank, when I saw that my shoelace
+        was united-
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[11]
+      value: "I took them off to tie them, I find it easier to tie them when I don\u2019t
+        have them on-"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[12]
+      value: And when I look up, they where gone, so after I was done at the bank
+        I had to go and order some new ones-
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[13]
+      value: Janice and the optometrist said that they would take 5 business days
+        to get here-
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[14]
+      value: "It usually takes 2 business days, so I asked her why it\u2019s goanna
+        take 5 business days and not 2 like normal-"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[15]
+      value: "She said that they switch leans providers and that they don\u2019t
+        carry my prescription-"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[16]
+      value: "So, they had to make a custom order that\u2019s why it would take 5
+        business days to get here-"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[17]
+      value: "That\u2019s why I\u2019m having trouble reading this out to you-"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[18]
+      value: '`Hello and welcome to Carls Crazy Carnival` -'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[19]
+      value: '`Where fun and imagination come to flourish` -'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[20]
+      value: '`Come see all of your great booths` -'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[21]
+      value: '`Our amazing rides`-'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[22]
+      value: You know I tried to ride the Farris wheel once scared-
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[23]
+      value: I have a fear of heights you know-
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[24]
+      value: "I don\u2019t understand why they have to go so high-"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[25]
+      value: 'If I wanted to fly I would by a plane ticket- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[26]
+      value: 'That reminds me of when I went to visit my sister- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[27]
+      value: 'She lives in New Zealand where they filmed the hobbit- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[28]
+      value: 'We watched that movie money ball- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[29]
+      value: 'Its about a man that uses statistics analyse and logic to win at baseball- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[30]
+      value: "It\u2019s my favourite movie except when they actually play baseball
+        that part is too exciting for me- "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[31]
+      value: 'Back to the speech, form the top- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[32]
+      value: '`Hello and welcome to Carls Crazy Carnival`- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[33]
+      value: '`Where fun and imagination come to flourish`- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[34]
+      value: '`Come see all of your great booths`- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[35]
+      value: '`Our amazing rides`- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[36]
+      value: '`Our grate food`-'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[37]
+      value: '`and have a grate and whimsical time with the whole family`- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[38]
+      value: '`Now asbestos free`'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[39]
+      value: "I\u2019m really sad that the got rid of that I used to eat it when
+        everyone else went home- "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[40]
+      value: 'It tase like moms Sunday chicken roast- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[41]
+      value: "The doctor said that if I eat anymore, I\u2019ll become so boring,"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[42]
+      value: "I won\u2019t be able to speak to anyone with having them die from boredom- "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[43]
+      value: "Won\u2019t be the first time it\u2019s happened- "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[44]
+      value: "I\u2019ve been convicted of 3rd degree man slaughter 8 time- "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[45]
+      value: 'Biopsy report said that their subconscious just shut themselves down- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[46]
+      value: 'In order to protect the rest of the brain- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[47]
+      value: 'Anyway, if you got all that then just say I got it and you can go through- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[48]
+      value: "Why aren\u2019t you saying anything-  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[49]
+      value: 'Please just say something- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[50]
+      value: Um---------
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058164497665379, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Messages.Array.data[51]
+      value: "Ok I guess I\u2019ll just go through all this again-  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058165213259392, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058165213259392, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058165213259406, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 8.533698
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058165213259406, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4866211
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058165213259406, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.9302
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058165213259406, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897058165213259406, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.000000089407
       objectReference: {fileID: 0}
     - target: {fileID: 8447269621202005314, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
       propertyPath: m_Mesh
