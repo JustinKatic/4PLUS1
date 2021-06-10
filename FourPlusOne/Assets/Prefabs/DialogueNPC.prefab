@@ -330,12 +330,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3897058164435643087, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
       propertyPath: Letters.Array.size
-      value: 42
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 3897058164435643087, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
       propertyPath: Letters.Array.data[41]
       value: 
       objectReference: {fileID: 1273711065493536408, guid: 6f8a161bff2f46b4fba0438b3df822a1, type: 3}
+    - target: {fileID: 3897058164435643087, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
+      propertyPath: Letters.Array.data[42]
+      value: 
+      objectReference: {fileID: 6535020786342715003, guid: 5f02ff01da1440140a26856413b05b82, type: 3}
     - target: {fileID: 3897058164497665376, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
       propertyPath: m_Name
       value: DialougeBox
