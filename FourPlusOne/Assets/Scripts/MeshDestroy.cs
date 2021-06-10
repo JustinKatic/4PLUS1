@@ -13,7 +13,6 @@ public class MeshDestroy : MonoBehaviour
     private Vector2 edgeUV = Vector2.zero;
     private Plane edgePlane = new Plane();
 
-    AudioSource audioSource;
     public AudioClip ClipToPlayOnBreak;
 
 
@@ -28,15 +27,16 @@ public class MeshDestroy : MonoBehaviour
     [HideInInspector]
     public SlapDetection LastSlapSource;
 
-
-    private void Awake()
-    {
-        audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.spatialBlend = 1f;
-    }
     public void DestoryMesh(SlapDetection slapSource)
     {
-        audioSource.PlayOneShot(ClipToPlayOnBreak, 50);
+        if(ClipToPlayOnBreak != null)
+        {
+            SoundPooler.SoundObject sobj = SoundPooler.SharedInstance.GetPooledObject("SoundObject");
+
+            sobj.WorldObject.transform.position = transform.position;
+            sobj.WorldObject.SetActive(true);
+            sobj.Source.PlayOneShot(ClipToPlayOnBreak);
+        }
 
         LastSlapSource = slapSource;
 
