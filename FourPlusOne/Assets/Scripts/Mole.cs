@@ -17,7 +17,7 @@ public class Mole : MonoBehaviour
     public float VelocityThresh = 0;
 
     [Header("Mole Values")]
-    [Min(1)]
+
     public float HealthBeforeBreak = 150f;
 
     [Tooltip("How long a mole will stay ")]
