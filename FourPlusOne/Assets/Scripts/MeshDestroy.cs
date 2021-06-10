@@ -13,7 +13,11 @@ public class MeshDestroy : MonoBehaviour
     private Vector2 edgeUV = Vector2.zero;
     private Plane edgePlane = new Plane();
 
-    [Range(1,5)]
+    AudioSource audioSource;
+    public AudioClip ClipToPlayOnBreak;
+
+
+    [Range(1, 5)]
     [Tooltip("How many cuts, usually recommend 2-3")]
     public int CutCascades = 1;
     public float ExplodeForce = 0;
@@ -24,8 +28,17 @@ public class MeshDestroy : MonoBehaviour
     [HideInInspector]
     public SlapDetection LastSlapSource;
 
+
+    private void Awake()
+    {
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.spatialBlend = 1f;
+    }
     public void DestoryMesh(SlapDetection slapSource)
     {
+        if (ClipToPlayOnBreak != null)
+            audioSource.PlayOneShot(ClipToPlayOnBreak);
+
         LastSlapSource = slapSource;
 
         Mesh originalMesh = GetComponent<MeshFilter>().mesh;
@@ -38,11 +51,11 @@ public class MeshDestroy : MonoBehaviour
         PartMesh mainPart = new PartMesh();
 
         // Set parts variables
-        mainPart.UV             = originalMesh.uv;
-        mainPart.Verticies      = originalMesh.vertices;
-        mainPart.Normals        = originalMesh.normals;
-        mainPart.Triangles      = new int[originalMesh.subMeshCount][];
-        mainPart.ObjectBounds   = originalMesh.bounds;
+        mainPart.UV = originalMesh.uv;
+        mainPart.Verticies = originalMesh.vertices;
+        mainPart.Normals = originalMesh.normals;
+        mainPart.Triangles = new int[originalMesh.subMeshCount][];
+        mainPart.ObjectBounds = originalMesh.bounds;
 
         // Add Triangles to Main Part
         for (int i = 0; i < originalMesh.subMeshCount; i++)
@@ -76,8 +89,8 @@ public class MeshDestroy : MonoBehaviour
             parts[i].MakeGameObject(this);
 
             //Give force to the parts
-            if(parts[i].SpawnedObject.WorldObject != null)
-            parts[i].SpawnedObject.Body.AddForceAtPosition(parts[i].ObjectBounds.center * ExplodeForce, transform.position);
+            if (parts[i].SpawnedObject.WorldObject != null)
+                parts[i].SpawnedObject.Body.AddForceAtPosition(parts[i].ObjectBounds.center * ExplodeForce, transform.position);
         }
 
         Destroy(gameObject);
@@ -118,9 +131,9 @@ public class MeshDestroy : MonoBehaviour
                 // Cut Points
                 int singleIndex = (sideB == sideC) ? 0 : ((sideA == sideC) ? 1 : 2);
 
-                int triIndex1 = triangles[j+singleIndex];
-                int triIndex2 = triangles[j+((singleIndex + 1) % 3)];
-                int triIndex3 = triangles[j+((singleIndex + 2) % 3)];
+                int triIndex1 = triangles[j + singleIndex];
+                int triIndex2 = triangles[j + ((singleIndex + 1) % 3)];
+                int triIndex3 = triangles[j + ((singleIndex + 2) % 3)];
 
                 ray1.origin = original.Verticies[triIndex1];
                 Vector3 dir1 = original.Verticies[triIndex2] - original.Verticies[triIndex1];
@@ -284,7 +297,7 @@ public class MeshDestroy : MonoBehaviour
 
             ObjectBounds = mesh.bounds;
 
-            if(ObjectBounds.size.magnitude < 0.1f)
+            if (ObjectBounds.size.magnitude < 0.1f)
             {
                 SpawnedObject.WorldObject.SetActive(false);
                 SpawnedObject.WorldObject = null;
@@ -302,9 +315,9 @@ public class MeshDestroy : MonoBehaviour
 
             SpawnedObject.Collider.convex = true; // Needs to be true so rigidbodies work with mesh colliders
 
-            if(originalBody !=  null) 
+            if (originalBody != null)
             {
-                SpawnedObject.Body.AddRelativeForce(originalBody.velocity + ((original.LastSlapSource != null)? original.LastSlapSource.PreviousHitVelocity :  Vector3.zero), ForceMode.Impulse);
+                SpawnedObject.Body.AddRelativeForce(originalBody.velocity + ((original.LastSlapSource != null) ? original.LastSlapSource.PreviousHitVelocity : Vector3.zero), ForceMode.Impulse);
                 float massMulti = (ObjectBounds.size.magnitude / originalFilter.mesh.bounds.size.magnitude);
                 SpawnedObject.Body.mass = originalBody.mass * massMulti; // Gives a very rough apporximation of the objects mass
             }
