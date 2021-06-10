@@ -45,5 +45,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _itemsToPool:
   - _amountToPool: 250
-    _objectToPool: {fileID: 0}
+    _objectToPool: {fileID: 4211966609121486850, guid: 9664483d73a0d814292c6a8c03be0136, type: 3}
     _shouldExpand: 1
