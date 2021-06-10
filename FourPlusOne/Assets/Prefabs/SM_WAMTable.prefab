@@ -51,6 +51,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1052528423}
+        m_TargetAssemblyTypeName: SlapAMoleTable, Assembly-CSharp
+        m_MethodName: SubtractMole
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &567343848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,6 +90,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 567343848}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2630508446507505142}
+        m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
+        m_MethodName: AddScore
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -152,6 +176,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1052528423}
+        m_TargetAssemblyTypeName: SlapAMoleTable, Assembly-CSharp
+        m_MethodName: SubtractMole
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1006822574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +215,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 1006822574}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2630508446507505142}
+        m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
+        m_MethodName: AddScore
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -214,6 +262,8 @@ GameObject:
   - component: {fileID: 1890672607740740149}
   - component: {fileID: 4456861526311188223}
   - component: {fileID: 446432799011310864}
+  - component: {fileID: 1052528424}
+  - component: {fileID: 1052528423}
   m_Layer: 0
   m_Name: SM_WAMTable
   m_TagString: Untagged
@@ -235,7 +285,6 @@ Transform:
   - {fileID: 3322172948552263641}
   - {fileID: 6026060603510128479}
   - {fileID: 5990425046041474486}
-  - {fileID: 4920029626438205443}
   - {fileID: 5973551315661059865}
   - {fileID: 7903876521086762127}
   - {fileID: 632175907837316782}
@@ -308,6 +357,58 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5489580474788145598, guid: 3586750d549895a419d0a4719d9f8603, type: 3}
+--- !u!114 &1052528424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2799285694110734122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClipToPlayOnBreak: {fileID: 8300000, guid: 55cd7b0376c98c94798d42731d5bbd2a, type: 3}
+  CutCascades: 5
+  ExplodeForce: 50
+  DestoryTinyPieces: 1
+  LastSlapSource: {fileID: 0}
+--- !u!114 &1052528423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2799285694110734122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040c76b4f08d7ab4ab41a03f6372fe8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Moles:
+  - {fileID: 2689047127089151331}
+  - {fileID: 6407230964912760293}
+  - {fileID: 6370785307072655116}
+  - {fileID: 6461963878664973731}
+  - {fileID: 7420777137555990069}
+  - {fileID: 256177478081729556}
+  - {fileID: 5380021194627022999}
+  OnMolesEmpty:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1052528424}
+        m_TargetAssemblyTypeName: MeshDestroy, Assembly-CSharp
+        m_MethodName: DestoryMesh
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4394873971512259335
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +438,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3283932464635825552}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2630508446507505142
 MonoBehaviour:
@@ -406,6 +507,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1052528423}
+        m_TargetAssemblyTypeName: SlapAMoleTable, Assembly-CSharp
+        m_MethodName: SubtractMole
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1278075684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,6 +550,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2630508446507505142}
+        m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
+        m_MethodName: AddScore
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
   PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!114 &1278075685
@@ -446,107 +571,6 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5380021194627022999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ClipToPlayOnBreak: {fileID: 0}
-  CutCascades: 3
-  ExplodeForce: 25
-  DestoryTinyPieces: 1
-  LastSlapSource: {fileID: 0}
---- !u!136 &570191742
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5696108275621108409}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.02315387
-  m_Height: 0.09367121
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &570191741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5696108275621108409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbd7329850a07124bb6cca1958caf8bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RotDirection: {x: 0, y: 0, z: 0, w: 1}
-  Stiffness: 250
-  Damping: 15
-  ValueThresh: 0.1
-  VelocityThresh: 0.1
-  HealthBeforeBreak: 29
-  StayDuration: 2
-  TimeBeforePopout: 2
-  PopoutTimeVariance: 0.25
-  Active: 0
-  OnMoleBreak:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 570191746}
-        m_TargetAssemblyTypeName: MeshDestroy, Assembly-CSharp
-        m_MethodName: DestoryMesh
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 570191745}
-          m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &570191745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5696108275621108409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hapticImpulseOnSlap: 0
-  hapticDuration: 0
-  SlapStrengthThreshold: 1
-  ShouldSpawnComicText: 1
-  OnSlap:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 570191741}
-        m_TargetAssemblyTypeName: Mole, Assembly-CSharp
-        m_MethodName: MoleHit
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 570191745}
-          m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
-  PreviousHitVelocity: {x: 0, y: 0, z: 0}
---- !u!114 &570191746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5696108275621108409}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
@@ -608,6 +632,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1052528423}
+        m_TargetAssemblyTypeName: SlapAMoleTable, Assembly-CSharp
+        m_MethodName: SubtractMole
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &143261245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -635,6 +671,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 143261245}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2630508446507505142}
+        m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
+        m_MethodName: AddScore
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -709,6 +757,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1052528423}
+        m_TargetAssemblyTypeName: SlapAMoleTable, Assembly-CSharp
+        m_MethodName: SubtractMole
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1270400729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,6 +796,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 1270400729}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2630508446507505142}
+        m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
+        m_MethodName: AddScore
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -810,6 +882,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1052528423}
+        m_TargetAssemblyTypeName: SlapAMoleTable, Assembly-CSharp
+        m_MethodName: SubtractMole
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &860448291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -837,6 +921,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 860448291}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2630508446507505142}
+        m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
+        m_MethodName: AddScore
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -911,6 +1007,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1052528423}
+        m_TargetAssemblyTypeName: SlapAMoleTable, Assembly-CSharp
+        m_MethodName: SubtractMole
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &577692462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -938,6 +1046,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 577692462}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2630508446507505142}
+        m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
+        m_MethodName: AddScore
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -990,7 +1110,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3283932464635825552}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -36.897, y: 0, z: 0}
 --- !u!114 &3961101421525039976
 MonoBehaviour:
@@ -1048,7 +1168,7 @@ MonoBehaviour:
   - {fileID: 6535020786342715003, guid: dfd8a6e102efc2a4bb3103cde016277d, type: 3}
   Kerning: 0.05
   VerticalSpacing: 0.25
-  StartText: Infinity
+  StartText: 0
   TypeWrittingDone: 0
   UseTypewritter: 1
   TimeBetweeenLetters: 0.1
@@ -1062,7 +1182,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
       propertyPath: m_LocalScale.x
@@ -1211,85 +1331,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
   m_PrefabInstance: {fileID: 2994897929298493490}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &4885787248290834408
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3283932464635825552}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 3.4375
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3.4375
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3.4375
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.48738733
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.41752172
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.037984066
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9996445
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.026664317
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-      propertyPath: m_Name
-      value: SM_MoleBrown (6)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
---- !u!4 &4920029626438205443 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-  m_PrefabInstance: {fileID: 4885787248290834408}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5696108275621108409 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-  m_PrefabInstance: {fileID: 4885787248290834408}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5073521671967358406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1299,7 +1340,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
       propertyPath: m_LocalScale.x
@@ -1359,14 +1400,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
---- !u!1 &5380021194627022999 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-  m_PrefabInstance: {fileID: 5073521671967358406}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4747493747739154989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
+  m_PrefabInstance: {fileID: 5073521671967358406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5380021194627022999 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
   m_PrefabInstance: {fileID: 5073521671967358406}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6064773426429499572
@@ -1536,7 +1577,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
       propertyPath: m_LocalScale.x
@@ -1596,14 +1637,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
---- !u!4 &5973551315661059865 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-  m_PrefabInstance: {fileID: 6155550121266647282}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6461963878664973731 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
+  m_PrefabInstance: {fileID: 6155550121266647282}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5973551315661059865 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
   m_PrefabInstance: {fileID: 6155550121266647282}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7654585190208002916
@@ -1615,7 +1656,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
       propertyPath: m_LocalScale.x
@@ -1675,13 +1716,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
---- !u!1 &7420777137555990069 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
-  m_PrefabInstance: {fileID: 7654585190208002916}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7903876521086762127 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
+  m_PrefabInstance: {fileID: 7654585190208002916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7420777137555990069 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e6cf8d46cbd89d4ebb000b524e2d219, type: 3}
   m_PrefabInstance: {fileID: 7654585190208002916}
   m_PrefabAsset: {fileID: 0}
