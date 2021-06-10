@@ -10,6 +10,7 @@ TagManager:
   - Person
   - Object
   - Balloon
+  - BigHand
   layers:
   - Default
   - TransparentFX

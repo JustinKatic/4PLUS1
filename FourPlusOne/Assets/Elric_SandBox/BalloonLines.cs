@@ -17,8 +17,7 @@ public class BalloonLines : MonoBehaviour
     void FixedUpdate()
     {
         line.SetPosition(0, knot.position);
-        line.SetPosition(1, transform.parent.position);
-        
+        line.SetPosition(1, transform.parent.position);       
     }
     private void OnJointBreak(float breakForce)
     {
