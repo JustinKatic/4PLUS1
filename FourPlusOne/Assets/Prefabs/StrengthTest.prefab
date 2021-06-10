@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticImpulseOnSlap: 0
+  hapticImpulseOnSlap: 0.059
   hapticDuration: 1
   SlapStrengthThreshold: 0.1
   ShouldSpawnComicText: 1
