@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Game Scene.unity
+    guid: 7396f538ea0103a43b0362a4e5ca7136
+  - enabled: 1
     path: Assets/JustinSandbox/JustinSandbox.unity
     guid: 1bff4b62bdf1b3b4bb921ba5d192a58e
   - enabled: 1

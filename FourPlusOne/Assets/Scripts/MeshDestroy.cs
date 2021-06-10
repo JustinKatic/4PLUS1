@@ -36,8 +36,7 @@ public class MeshDestroy : MonoBehaviour
     }
     public void DestoryMesh(SlapDetection slapSource)
     {
-        if (ClipToPlayOnBreak != null)
-            audioSource.PlayOneShot(ClipToPlayOnBreak);
+        audioSource.PlayOneShot(ClipToPlayOnBreak, 50);
 
         LastSlapSource = slapSource;
 
