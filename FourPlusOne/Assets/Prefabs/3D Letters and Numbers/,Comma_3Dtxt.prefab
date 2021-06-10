@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: -7211411584274159058}
   - component: {fileID: 7589617287743156071}
   m_Layer: 0
-  m_Name: Comma_3Dtxt
+  m_Name: ',Comma_3Dtxt'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
