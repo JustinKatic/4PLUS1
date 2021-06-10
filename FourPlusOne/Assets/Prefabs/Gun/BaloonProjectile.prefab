@@ -67,7 +67,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3711153432080319929, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_RelativeForce.x
-      value: -10
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4321735149814509651, guid: 57f7967d97133934f8774c817c58a86f, type: 3}
       propertyPath: m_RootOrder

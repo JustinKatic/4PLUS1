@@ -28,6 +28,7 @@ public class Mole : MonoBehaviour
 
     public bool Active = false;
 
+    private Vector3 initalPos;
     private Vector3 initalScale;
     private float timer = 0;
     private float popoutChange = 0;
@@ -37,6 +38,7 @@ public class Mole : MonoBehaviour
 
     public void Start()
     {
+        initalPos = transform.localPosition;
         initalScale = transform.localScale;
         ScaleSpring = new Spring(1);
         Rotspring = new Spring(0);
@@ -47,7 +49,8 @@ public class Mole : MonoBehaviour
     public void Update()
     {
         //Make object scale down or up depending on Active
-        transform.localScale = initalScale * ScaleSpring.UpdateSpring((Active)? 1f : 0,Stiffness, Damping,ValueThresh,VelocityThresh);
+        transform.localPosition = initalPos + ((transform.up * 0.125f) * ScaleSpring.UpdateSpring((Active)? 1f : 0,Stiffness, Damping,ValueThresh,VelocityThresh));
+        transform.localScale = initalScale * (1f + (ScaleSpring.UpdateSpring((Active)? 1f : 0,Stiffness, Damping,ValueThresh,VelocityThresh) * 0.1f));
         Rotspring.UpdateSpring(0, Stiffness, Damping, ValueThresh, VelocityThresh);
         transform.localRotation = Quaternion.Euler(Vector3.Slerp(Vector3.zero, RotDirection.eulerAngles,Rotspring.Value));
 
