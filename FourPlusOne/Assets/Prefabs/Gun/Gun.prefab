@@ -875,6 +875,7 @@ MonoBehaviour:
   hapticImpulseOnSlap: 0.25
   hapticDuration: 0.2
   SlapStrengthThreshold: 2.5
+  ShouldSpawnComicText: 0
   OnSlap:
     m_PersistentCalls:
       m_Calls:
