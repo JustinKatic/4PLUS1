@@ -8,7 +8,7 @@ public class SlapAMoleTable : MonoBehaviour
     public List<GameObject> Moles = new List<GameObject>();
     public UnityEvent OnMolesEmpty;
 
-    private int moleCount = 0;
+    public int moleCount = 0;
 
     public void Start()
     {
