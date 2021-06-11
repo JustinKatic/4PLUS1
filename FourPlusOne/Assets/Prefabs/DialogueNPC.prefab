@@ -346,7 +346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3897058164435643087, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
       propertyPath: MaxWidth
-      value: 7.59
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3897058164435643087, guid: d3011abaad69d7942b4538495f46e0b0, type: 3}
       propertyPath: Letters.Array.size
