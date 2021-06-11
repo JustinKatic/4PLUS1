@@ -25,14 +25,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123170909412400527}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.02, y: 0.29, z: 1.31}
+  m_LocalRotation: {x: -0, y: -0.30588523, z: -0, w: 0.95206845}
+  m_LocalPosition: {x: 14.35, y: 0.29, z: 16.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2066212238711594362}
   m_Father: {fileID: 4948876904709246782}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -35.623, z: 0}
 --- !u!135 &7016574703651079237
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -133,14 +133,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6179600602346494345}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2, y: 0.29, z: 2.2}
+  m_LocalRotation: {x: -0, y: -0.18331246, z: -0, w: 0.98305476}
+  m_LocalPosition: {x: 9.47, y: 0.29, z: -0.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3174251442842902700}
   m_Father: {fileID: 4948876904709246782}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -21.126, z: 0}
 --- !u!135 &813519114132588771
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -208,14 +208,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8303493966558171626}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.44, y: 0.29, z: 3.33}
+  m_LocalRotation: {x: -0, y: -0.40621963, z: -0, w: 0.9137755}
+  m_LocalPosition: {x: -14.539, y: 0.29, z: 8.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1639706795777818275}
   m_Father: {fileID: 4948876904709246782}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -47.935, z: 0}
 --- !u!135 &8948872500815123853
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -321,6 +321,22 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[0]
+      value: Wow your sooooooo strong-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[1]
+      value: Your lack of workouts is really showing-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[2]
+      value: Come on swing those noodle arms-
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
 --- !u!1 &3174251442842902698 stripped
@@ -396,6 +412,22 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[0]
+      value: Out of my way loser, hot stuff coming through-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[1]
+      value: You snooze you lose-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[2]
+      value: What are you gonna do slap me, I dare you-
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
 --- !u!1 &2066212238711594364 stripped
@@ -470,6 +502,22 @@ PrefabInstance:
     - target: {fileID: 6532061373600825908, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[0]
+      value: Yeah, you showed that inanimate object-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[1]
+      value: Dose it make you feel good slapping helpless moles around-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[2]
+      value: Did you know Mole are an endangered species, I bet you did you monster-
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}

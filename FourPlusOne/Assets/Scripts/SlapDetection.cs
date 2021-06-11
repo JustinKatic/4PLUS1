@@ -39,7 +39,7 @@ public class SlapDetection : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (hasSlappedObj)
+        if (hasSlappedObj || collision.gameObject.tag == "3DLetter")
             return;
 
         if (collision.rigidbody != null)

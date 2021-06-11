@@ -261,9 +261,9 @@ GameObject:
   - component: {fileID: 4456861526311188223}
   - component: {fileID: 446432799011310864}
   - component: {fileID: 1052528424}
-  - component: {fileID: 1052528423}
   - component: {fileID: 1544803176513286471}
   - component: {fileID: 6450246968305775214}
+  - component: {fileID: 3425600384410008967}
   m_Layer: 0
   m_Name: SM_WAMTable
   m_TagString: Untagged
@@ -374,42 +374,6 @@ MonoBehaviour:
   ExplodeForce: 50
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
---- !u!114 &1052528423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2799285694110734122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 040c76b4f08d7ab4ab41a03f6372fe8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Moles:
-  - {fileID: 2689047127089151331}
-  - {fileID: 6407230964912760293}
-  - {fileID: 6370785307072655116}
-  - {fileID: 6461963878664973731}
-  - {fileID: 7420777137555990069}
-  - {fileID: 256177478081729556}
-  - {fileID: 5380021194627022999}
-  OnMolesEmpty:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1052528424}
-        m_TargetAssemblyTypeName: MeshDestroy, Assembly-CSharp
-        m_MethodName: DestoryMesh
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  moleCount: 0
 --- !u!114 &1544803176513286471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,12 +402,24 @@ MonoBehaviour:
         m_MethodName: DestoryMesh
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 3425600384410008967}
           m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   moleCount: 0
 --- !u!114 &6450246968305775214
@@ -463,6 +439,27 @@ MonoBehaviour:
   ExplodeForce: 50
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
+--- !u!114 &3425600384410008967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2799285694110734122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticImpulseOnSlap: 0
+  hapticDuration: 0
+  SlapStrengthThreshold: 10000
+  ShouldSpawnComicText: 1
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls: []
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &4394873971512259335
 GameObject:
   m_ObjectHideFlags: 0

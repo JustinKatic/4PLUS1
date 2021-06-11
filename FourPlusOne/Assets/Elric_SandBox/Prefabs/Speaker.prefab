@@ -3771,7 +3771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClipToPlayOnBreak: {fileID: 8300000, guid: 26079db48719cf34fbf45a44a5d7f209, type: 3}
+  ClipToPlayOnBreak: {fileID: 8300000, guid: c3cd58de9c08d0743a9522bcec2f07e4, type: 3}
   CutCascades: 3
   ExplodeForce: 50
   DestoryTinyPieces: 1
