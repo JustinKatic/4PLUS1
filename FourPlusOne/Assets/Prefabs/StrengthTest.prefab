@@ -217,6 +217,19 @@ MonoBehaviour:
   ExplodeForce: 50
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
+--- !u!114 &8192269721412533305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4147962032805117183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf77fccc5b63424aae40dc81bbbe6ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objToInstantiate: {fileID: 0}
 --- !u!1 &6024710976315909597
 GameObject:
   m_ObjectHideFlags: 0
