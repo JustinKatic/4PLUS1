@@ -21,6 +21,8 @@ public class Text3D : MonoBehaviour
     public float Kerning = 0.05f;
     public float VerticalSpacing = 0.25f;
 
+    public bool Center = false;
+
     [TextArea(5,5)]
     public string StartText = "";
 
@@ -94,6 +96,7 @@ public class Text3D : MonoBehaviour
         TypeWrittingDone = false;
 
         bool sameWord = false;
+        List<Transform> previouvSpawnedCharecter = new List<Transform>();
 
         CreateLetters();
 
@@ -121,9 +124,11 @@ public class Text3D : MonoBehaviour
                 }
 
                 XDiff -= temp;
+                float oldDifX = 0;
 
                 if (Mathf.Abs(XDiff) >= MaxWidth)
                 {
+                    oldDifX = XDiff;
                     YDiff -= VerticalSpacing;
                     XDiff = 0;
                 }
@@ -137,13 +142,31 @@ public class Text3D : MonoBehaviour
                 GameObject obje = Instantiate(letter.LetterObject, transform.TransformPoint(new Vector3(XDiff, YDiff, 0)), transform.rotation, transform);
                 if (UseTypewritter) obje.SetActive(false);
                 XDiff -= letter.LetterBounds.size.x + Kerning;
+                
 
+                if(oldDifX != 0)
+                {
+                    CenterLine(previouvSpawnedCharecter, MaxWidth);
+                    previouvSpawnedCharecter.Clear();
+                }
+                previouvSpawnedCharecter.Add(obje.transform);
             }
             else if (text[i] == ' ')
             {
                 XDiff -= letter.LetterBounds.size.x + (Kerning * 4f);
                 sameWord = false;
             }
+        }
+
+        CenterLine(previouvSpawnedCharecter, XDiff);
+        previouvSpawnedCharecter.Clear();
+    }
+
+    private void CenterLine(List<Transform> text,float xSpace)
+    {
+        for(int i = 0; i < text.Count; i++)
+        {
+            text[i].localPosition -= new Vector3((MaxWidth*0.5f) + (xSpace*0.5f),0,0);
         }
     }
 
