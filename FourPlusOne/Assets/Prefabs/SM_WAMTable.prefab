@@ -74,8 +74,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticImpulseOnSlap: 0
-  hapticDuration: 0
+  hapticImpulseOnSlap: 1
+  hapticDuration: 0.2
   SlapStrengthThreshold: 1
   ShouldSpawnComicText: 1
   OnSlap:
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ClipToPlayOnBreak: {fileID: 0}
-  CutCascades: 1
+  CutCascades: 4
   ExplodeForce: 25
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
@@ -198,8 +198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticImpulseOnSlap: 0
-  hapticDuration: 0
+  hapticImpulseOnSlap: 1
+  hapticDuration: 0.2
   SlapStrengthThreshold: 1
   ShouldSpawnComicText: 1
   OnSlap:
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ClipToPlayOnBreak: {fileID: 0}
-  CutCascades: 1
+  CutCascades: 4
   ExplodeForce: 25
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
@@ -583,8 +583,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticImpulseOnSlap: 0
-  hapticDuration: 0
+  hapticImpulseOnSlap: 1
+  hapticDuration: 0.2
   SlapStrengthThreshold: 1
   ShouldSpawnComicText: 1
   OnSlap:
@@ -629,7 +629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ClipToPlayOnBreak: {fileID: 0}
-  CutCascades: 1
+  CutCascades: 4
   ExplodeForce: 25
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
@@ -707,8 +707,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticImpulseOnSlap: 0
-  hapticDuration: 0
+  hapticImpulseOnSlap: 1
+  hapticDuration: 0.2
   SlapStrengthThreshold: 1
   ShouldSpawnComicText: 1
   OnSlap:
@@ -753,7 +753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ClipToPlayOnBreak: {fileID: 0}
-  CutCascades: 1
+  CutCascades: 4
   ExplodeForce: 25
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
@@ -831,8 +831,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticImpulseOnSlap: 0
-  hapticDuration: 0
+  hapticImpulseOnSlap: 1
+  hapticDuration: 0.2
   SlapStrengthThreshold: 1
   ShouldSpawnComicText: 1
   OnSlap:
@@ -877,7 +877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ClipToPlayOnBreak: {fileID: 0}
-  CutCascades: 1
+  CutCascades: 4
   ExplodeForce: 25
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
@@ -955,8 +955,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticImpulseOnSlap: 0
-  hapticDuration: 0
+  hapticImpulseOnSlap: 1
+  hapticDuration: 0.2
   SlapStrengthThreshold: 1
   ShouldSpawnComicText: 1
   OnSlap:
@@ -1001,7 +1001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ClipToPlayOnBreak: {fileID: 0}
-  CutCascades: 1
+  CutCascades: 4
   ExplodeForce: 25
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
@@ -1079,8 +1079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticImpulseOnSlap: 0
-  hapticDuration: 0
+  hapticImpulseOnSlap: 1
+  hapticDuration: 0.2
   SlapStrengthThreshold: 1
   ShouldSpawnComicText: 1
   OnSlap:
@@ -1125,7 +1125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ClipToPlayOnBreak: {fileID: 0}
-  CutCascades: 1
+  CutCascades: 4
   ExplodeForce: 25
   DestoryTinyPieces: 1
   LastSlapSource: {fileID: 0}
