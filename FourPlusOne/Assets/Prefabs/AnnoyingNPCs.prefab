@@ -321,6 +321,22 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[0]
+      value: Wow your sooooooo strong-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[1]
+      value: Your lack of workouts is really showing-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[2]
+      value: Come on swing those noodle arms-
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
 --- !u!1 &3174251442842902698 stripped
@@ -396,6 +412,22 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[0]
+      value: Out of my way loser, hot stuff coming through-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[1]
+      value: You snooze you lose-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[2]
+      value: What are you gonna do slap me, I dare you-
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
 --- !u!1 &2066212238711594364 stripped
@@ -470,6 +502,22 @@ PrefabInstance:
     - target: {fileID: 6532061373600825908, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[0]
+      value: Yeah, you showed that inanimate object-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[1]
+      value: Dose it make you feel good slapping helpless moles around-
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832792153948968131, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
+      propertyPath: Messages.Array.data[2]
+      value: Did you know Mole are an endangered species, I bet you did you monster-
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c906159e2e1d411488acde4c9254b2d3, type: 3}
