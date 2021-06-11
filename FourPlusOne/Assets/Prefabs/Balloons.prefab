@@ -15,7 +15,7 @@ MonoBehaviour:
   hapticImpulseOnSlap: 1
   hapticDuration: 1
   SlapStrengthThreshold: 2
-  ShouldSpawnComicText: 1
+  ShouldSpawnComicText: 0
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
@@ -36,7 +36,7 @@ MonoBehaviour:
   hapticImpulseOnSlap: 1
   hapticDuration: 1
   SlapStrengthThreshold: 2
-  ShouldSpawnComicText: 1
+  ShouldSpawnComicText: 0
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
@@ -57,7 +57,7 @@ MonoBehaviour:
   hapticImpulseOnSlap: 1
   hapticDuration: 1
   SlapStrengthThreshold: 2
-  ShouldSpawnComicText: 1
+  ShouldSpawnComicText: 0
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
@@ -78,7 +78,7 @@ MonoBehaviour:
   hapticImpulseOnSlap: 1
   hapticDuration: 1
   SlapStrengthThreshold: 2
-  ShouldSpawnComicText: 1
+  ShouldSpawnComicText: 0
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
@@ -99,7 +99,7 @@ MonoBehaviour:
   hapticImpulseOnSlap: 1
   hapticDuration: 1
   SlapStrengthThreshold: 2
-  ShouldSpawnComicText: 1
+  ShouldSpawnComicText: 0
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
@@ -120,7 +120,7 @@ MonoBehaviour:
   hapticImpulseOnSlap: 1
   hapticDuration: 1
   SlapStrengthThreshold: 2
-  ShouldSpawnComicText: 1
+  ShouldSpawnComicText: 0
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
@@ -141,7 +141,7 @@ MonoBehaviour:
   hapticImpulseOnSlap: 1
   hapticDuration: 1
   SlapStrengthThreshold: 2
-  ShouldSpawnComicText: 1
+  ShouldSpawnComicText: 0
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
@@ -162,7 +162,7 @@ MonoBehaviour:
   hapticImpulseOnSlap: 1
   hapticDuration: 1
   SlapStrengthThreshold: 2
-  ShouldSpawnComicText: 1
+  ShouldSpawnComicText: 0
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
@@ -183,7 +183,7 @@ MonoBehaviour:
   hapticImpulseOnSlap: 1
   hapticDuration: 1
   SlapStrengthThreshold: 2
-  ShouldSpawnComicText: 1
+  ShouldSpawnComicText: 0
   OnSlap:
     m_PersistentCalls:
       m_Calls: []

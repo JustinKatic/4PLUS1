@@ -9,45 +9,26 @@ public class OffscreenDespawn : MonoBehaviour
     public bool DestroyParent = false;
     [Min(1)]
     public int ParentDepth = 0;
-    private IEnumerator destoryRoutine;
 
-    private void OnBecameInvisible()
+    public float MaxAliveTime = 10f;
+    private float timer = 0f;
+
+    private void Update()
     {
-        if (gameObject.activeSelf)
+        timer += Time.deltaTime;
         {
-            Debug.Log("Invis");
-            destoryRoutine = DeswpawnAfterTime();
-            StartCoroutine(destoryRoutine);
-        }
-    }
-
-    private void OnBecameVisible()
-    {
-        if (gameObject.activeSelf)
-        {
-            Debug.Log("Devis");
-
-            if (destoryRoutine != null) StopCoroutine(destoryRoutine);
-            destoryRoutine = null;
-        }
-    }
-
-    IEnumerator DeswpawnAfterTime()
-    {
-        yield return new WaitForSeconds(5f);
-
-        //Destroy correct object
-        GameObject obj = gameObject;
-        if (DestroyParent)
-        {
-            for (int i = 0; i < ParentDepth; i++)
+            GameObject obj = gameObject;
+            if (DestroyParent)
             {
-                if (obj.transform.parent != null)
-                    obj = obj.transform.parent.gameObject;
+                for (int i = 0; i < ParentDepth; i++)
+                {
+                    if (obj.transform.parent != null)
+                        obj = obj.transform.parent.gameObject;
+                }
             }
-        }
 
-        if (UseDestroy) Destroy(obj);
-        else gameObject.SetActive(false);
+            if (UseDestroy) Destroy(obj);
+            else gameObject.SetActive(false);
+        }
     }
 }
