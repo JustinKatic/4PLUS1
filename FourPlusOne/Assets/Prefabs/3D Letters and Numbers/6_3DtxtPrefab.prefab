@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: -4106564441201476030}
   m_Layer: 0
   m_Name: 6_3DtxtPrefab
-  m_TagString: Untagged
+  m_TagString: 3DLetter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
