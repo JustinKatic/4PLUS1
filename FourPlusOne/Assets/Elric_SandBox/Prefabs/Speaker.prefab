@@ -3771,6 +3771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ClipToPlayOnBreak: {fileID: 8300000, guid: c3cd58de9c08d0743a9522bcec2f07e4, type: 3}
   CutCascades: 3
   ExplodeForce: 50
   DestoryTinyPieces: 1
@@ -3790,6 +3791,7 @@ MonoBehaviour:
   hapticImpulseOnSlap: 0
   hapticDuration: 0
   SlapStrengthThreshold: 5
+  ShouldSpawnComicText: 1
   OnSlap:
     m_PersistentCalls:
       m_Calls:

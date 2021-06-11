@@ -86,6 +86,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!65 &54689997
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3522441222925449805}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.60882217, y: 0.14399338, z: 0.13396859}
+  m_Center: {x: 0.0022135335, y: -0.00000011920929, z: 0.28996742}
+--- !u!65 &54689998
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3522441222925449805}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25066698, y: 0.14399338, z: 0.42763287}
+  m_Center: {x: -0.0013906322, y: 0, z: 0.04910856}
 --- !u!65 &6966316874949105929
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -97,8 +123,24 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.24101283, y: 0.14399338, z: 0.5054213}
-  m_Center: {x: -0.0062858737, y: -0.00000011920929, z: 0.113515355}
+  m_Size: {x: 0.4478382, y: 0.14399338, z: 0.09402929}
+  m_Center: {x: -0.000582046, y: -0.00000011920929, z: -0.118426636}
+--- !u!54 &4943243573687306157
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4147962032805117183}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!64 &5865701390241476716
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -110,9 +152,59 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8201437419870775723, guid: 6c5e89c9167f13948aaf94763ef4cfc0, type: 3}
+--- !u!114 &6907815204203358752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4147962032805117183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e862ae0abe944fa8a2cb848837ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hapticImpulseOnSlap: 1
+  hapticDuration: 0.2
+  SlapStrengthThreshold: 15
+  ShouldSpawnComicText: 1
+  OnSlap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7311914848128666861}
+        m_TargetAssemblyTypeName: MeshDestroy, Assembly-CSharp
+        m_MethodName: DestoryMesh
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6907815204203358752}
+          m_ObjectArgumentAssemblyTypeName: SlapDetection, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
+  PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!114 &7311914848128666861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4147962032805117183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92541346217a2314ba825badd86ecec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClipToPlayOnBreak: {fileID: 0}
+  CutCascades: 3
+  ExplodeForce: 50
+  DestoryTinyPieces: 1
+  LastSlapSource: {fileID: 0}
 --- !u!1 &6024710976315909597
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5774c41dad67a0f4aa7ab7f3b0bb45e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Indecator: {fileID: 0}
+  Indecator: {fileID: 5076429337440146914}
   StrengthScale: 4
 --- !u!64 &4064898819068713451
 MeshCollider:
@@ -239,7 +331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6c5e89c9167f13948aaf94763ef4cfc0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.91
+      value: 6.95
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6c5e89c9167f13948aaf94763ef4cfc0, type: 3}
       propertyPath: m_LocalPosition.z
