@@ -25,7 +25,7 @@ public class DialougeBox : MonoBehaviour
             if(TextElement != null)
             {
                 //Accuratly place text object
-                TextElement.MaxWidth = TextSpace.bounds.size.x * 0.9f;
+                //TextElement.MaxWidth = TextSpace.bounds.size.x * 0.9f;
 
                 if(Messages != null && Messages.Count > 0)
                 TextElement.Text = Messages[0];
