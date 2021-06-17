@@ -16,6 +16,7 @@ public class OffscreenDespawn : MonoBehaviour
     private void Update()
     {
         timer += Time.deltaTime;
+        if (timer >= MaxAliveTime)
         {
             GameObject obj = gameObject;
             if (DestroyParent)
