@@ -9329,11 +9329,14 @@ MonoBehaviour:
   - {fileID: 6535020786342715003, guid: dfd8a6e102efc2a4bb3103cde016277d, type: 3}
   Kerning: 0.05
   VerticalSpacing: 0.25
+  Center: 0
   StartText: Infinity
   TypeWrittingDone: 0
   UseTypewritter: 1
   TimeBetweeenLetters: 0.1
   MaxWidth: 7.5
+  UseColor: 0
+  TextColour: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &3897058164497665376
 GameObject:
   m_ObjectHideFlags: 0
@@ -9516,6 +9519,7 @@ MonoBehaviour:
   hapticImpulseOnSlap: 0
   hapticDuration: 0
   SlapStrengthThreshold: 0.1
+  ShouldSpawnComicText: 1
   OnSlap:
     m_PersistentCalls:
       m_Calls:
@@ -9543,5 +9547,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  SlapData: {fileID: 0}
+  OnlyHands: 1
+  SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
   PreviousHitVelocity: {x: 0, y: 0, z: 0}
