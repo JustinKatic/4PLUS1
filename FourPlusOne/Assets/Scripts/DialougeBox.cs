@@ -18,16 +18,18 @@ public class DialougeBox : MonoBehaviour
     private float BetweenMessageTimer = 0;
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
-        if(TextSpace != null)
+        BetweenMessageTimer = 0;
+        messageIndex = 0;
+        if (TextSpace != null)
         {
             if(TextElement != null)
             {
                 //Accuratly place text object
                 //TextElement.MaxWidth = TextSpace.bounds.size.x * 0.9f;
 
-                if(Messages != null && Messages.Count > 0)
+                if(Messages.Count > 0)
                 TextElement.Text = Messages[0];
             }
         }
