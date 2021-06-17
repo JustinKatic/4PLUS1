@@ -13,8 +13,8 @@ public class Hand : MonoBehaviour
     [SerializeField] InputActionReference controllerActionGrip;
     [SerializeField] InputActionReference controllerActionTrigger;
 
-    [SerializeField] private float followSpeed = 30f;
-    [SerializeField] private float rotateSpeed = 100f;
+    [SerializeField] private float followSpeed = 200f;
+    [SerializeField] private float rotateSpeed = 300f;
     [Space]
     [SerializeField] private Vector3 positionOffset;
     [SerializeField] private Vector3 rotationOffset;
