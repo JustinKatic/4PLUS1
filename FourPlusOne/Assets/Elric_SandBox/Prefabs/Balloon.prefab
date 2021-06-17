@@ -1,19 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!64 &1723384513
-MeshCollider:
+--- !u!135 &4163593996989979033
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070552624961261676}
-  m_Material: {fileID: 13400000, guid: de6b15df776fa80419a3326f872f586f, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2837682660325928517, guid: 232bfe0acd06437429352e5ff7d7d774, type: 3}
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0.00000023841858, z: 0.038}
 --- !u!1 &5996063749313805196
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,7 +186,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: -3.2089999, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -6.641, y: -0.94599986, z: 0.496}
+  m_ConnectedAnchor: {x: 15.070001, y: -1.2389998, z: 5.92}
   serializedVersion: 2
   m_Spring: 10
   m_Damper: 0.2
