@@ -19,6 +19,7 @@ public class SlapDetection : MonoBehaviour
     public bool ShouldSpawnComicText = true;
     public UnityEvent OnSlap;
 
+    public bool OnlyHands = false; 
 
     private Camera cam;
     public SlapDetectionData SlapData;
@@ -46,10 +47,11 @@ public class SlapDetection : MonoBehaviour
         {
             if (collision.rigidbody.velocity.magnitude >= SlapStrengthThreshold)
             {
-
+                bool isHand = false;
                 //HIT RIGHT HAND
                 if (collision.gameObject.name == "RightHand")
                 {
+                    isHand = true;
                     //Vibrate
                     if (controllerR != null) controllerR.SendHapticImpulse(hapticImpulseOnSlap, hapticDuration);
 
@@ -77,6 +79,7 @@ public class SlapDetection : MonoBehaviour
                 //HIT LEFT HAND
                 else if (collision.gameObject.name == "LeftHand")
                 {
+                    isHand = true;
                     //Vibrate
                     if (controllerL != null) controllerL.SendHapticImpulse(hapticImpulseOnSlap, hapticDuration);
 
@@ -101,9 +104,18 @@ public class SlapDetection : MonoBehaviour
                     }
                 }
 
-                PreviousHitVelocity = collision.rigidbody.velocity;
-                OnSlap.Invoke();
-                StartCoroutine(HasSlapped());
+                if (OnlyHands && isHand)
+                {
+                    PreviousHitVelocity = collision.rigidbody.velocity;
+                    OnSlap.Invoke();
+                    StartCoroutine(HasSlapped());
+                }
+                else if(!OnlyHands)
+                {
+                    PreviousHitVelocity = collision.rigidbody.velocity;
+                    OnSlap.Invoke();
+                    StartCoroutine(HasSlapped());
+                }
             }
             else if (collision.relativeVelocity.magnitude <= SlapStrengthThreshold)
             {
@@ -134,13 +146,12 @@ public class SlapDetection : MonoBehaviour
                 }
             }
         }
-        else if (collision.relativeVelocity.magnitude >= SlapStrengthThreshold)
+        else if (collision.relativeVelocity.magnitude >= SlapStrengthThreshold && !OnlyHands)
         {
             PreviousHitVelocity = collision.relativeVelocity;
             OnSlap.Invoke();
         }     
     }
-
 
     IEnumerator HasSlapped()
     {
@@ -157,6 +168,5 @@ public class SlapDetection : MonoBehaviour
         spawnedObj.transform.LookAt(cam.transform);
     }
     //  if (collision.relativeVelocity.magnitude != 0) Debug.Log("Relative Force: " + collision.relativeVelocity.magnitude.ToString() + ". " + gameObject.name);
-
 }
 
