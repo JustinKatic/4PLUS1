@@ -144,7 +144,7 @@ public class Text3D : MonoBehaviour
                 XDiff -= letter.LetterBounds.size.x + Kerning;
                 
 
-                if(oldDifX != 0)
+                if(oldDifX != 0 && Center)
                 {
                     CenterLine(previouvSpawnedCharecter, MaxWidth);
                     previouvSpawnedCharecter.Clear();
@@ -158,8 +158,11 @@ public class Text3D : MonoBehaviour
             }
         }
 
-        CenterLine(previouvSpawnedCharecter, XDiff);
-        previouvSpawnedCharecter.Clear();
+        if (Center)
+        {
+            CenterLine(previouvSpawnedCharecter, XDiff);
+            previouvSpawnedCharecter.Clear();
+        }
     }
 
     private void CenterLine(List<Transform> text,float xSpace)
