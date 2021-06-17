@@ -15,6 +15,8 @@ public class RestartGame : MonoBehaviour
     public void OnEnable()
     {
         FadeController.FadeIn();
+        timer = 0;
+        hasFaded = false;
     }
 
     public void Update()
