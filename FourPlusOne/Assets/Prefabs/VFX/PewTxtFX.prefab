@@ -220,6 +220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9002056140731500063}
   - component: {fileID: 5470147329868249737}
+  - component: {fileID: 582590165091751758}
   m_Layer: 0
   m_Name: PewTxtFX
   m_TagString: Untagged
@@ -254,6 +255,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22593d83db79a1745a52ea81c76231a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &582590165091751758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9002056140731500060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32706da78d00c844bae1a52edcf5c2f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseDestroy: 1
+  DestroyParent: 0
+  ParentDepth: 0
+  MaxAliveTime: 10
 --- !u!1001 &1893272982564915181
 PrefabInstance:
   m_ObjectHideFlags: 0

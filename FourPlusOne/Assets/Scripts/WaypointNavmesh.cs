@@ -30,7 +30,7 @@ public class WaypointNavmesh : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(!navAgent.pathPending && navAgent.remainingDistance < 0.25f)
         {

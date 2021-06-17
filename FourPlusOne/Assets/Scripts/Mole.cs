@@ -56,21 +56,21 @@ public class Mole : MonoBehaviour
 
         if (Active)
         {
-            collider.isTrigger = false;
             if (timer >= StayDuration)
             {
                 timer = 0;
                 Active = false;
                 popoutChange = TimeBeforePopout + Random.Range(-PopoutTimeVariance, PopoutTimeVariance);
+                collider.isTrigger = true;
             }
         }
         else
         {
-            collider.isTrigger = true;
             if (timer >= popoutChange)
             {
                 timer = 0;
                 Active = true;
+                collider.isTrigger = false;
             }
         }
 

@@ -39,14 +39,6 @@ public class SlapDetection : MonoBehaviour
         controllerR = GameObject.FindGameObjectWithTag("RHand").GetComponent<ActionBasedController>();
     }
 
-    private void Update()
-    {
-        if(Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
-            OnSlap.Invoke();
-        }
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
         if (hasSlappedObj || collision.gameObject.tag == "3DLetter")
