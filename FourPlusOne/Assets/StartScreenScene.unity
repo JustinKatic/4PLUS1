@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.3
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.07086742, g: 0.19765513, b: 0.22877887, a: 0.3}
+  m_IndirectSpecularColor: {r: 0.07086742, g: 0.19765513, b: 0.22877888, a: 0.3}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -296,6 +296,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caff514de9b15ad48ab85dcff5508221, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!20 &303002910 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8192131513190060140, guid: b40a02af8225e204f9bd05faf9ef6b6f, type: 3}
+  m_PrefabInstance: {fileID: 808187051}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &615142995
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,6 +535,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnlyHands: 0
   SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
   PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!64 &743820006
@@ -637,13 +643,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1312869229959799045, guid: 9817cd7e9dd06544580ee0fa18f3e1db, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 303002910}
     - target: {fileID: 1312869229959799064, guid: 9817cd7e9dd06544580ee0fa18f3e1db, type: 3}
       propertyPath: m_Name
       value: FadeCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1312869229959799064, guid: 9817cd7e9dd06544580ee0fa18f3e1db, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9817cd7e9dd06544580ee0fa18f3e1db, type: 3}
