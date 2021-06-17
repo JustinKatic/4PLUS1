@@ -23149,9 +23149,11 @@ MonoBehaviour:
   hapticImpulseOnSlap: 1
   hapticDuration: 1
   SlapStrengthThreshold: 2
+  ShouldSpawnComicText: 1
   OnSlap:
     m_PersistentCalls:
       m_Calls: []
+  OnlyHands: 0
   SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
   PreviousHitVelocity: {x: 0, y: 0, z: 0}
 --- !u!1 &7898138387423910447
