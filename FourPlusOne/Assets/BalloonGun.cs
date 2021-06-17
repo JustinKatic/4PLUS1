@@ -9,6 +9,10 @@ public class BalloonGun : MonoBehaviour
     public GameObject BalloonPrefab;
     public GameObject HandPrefab;
 
+    public AudioSource Source;
+    public AudioClip HandSound;
+    public AudioClip BalloonSound;
+
     public void ShootGun()
     {
         if(Random.Range(0,5) >= 4)
@@ -17,6 +21,8 @@ public class BalloonGun : MonoBehaviour
             if (BalloonPrefab != null)
             {
                 Instantiate(BalloonPrefab, GunFront.position + (GunFront.forward * 0.1f), GunFront.rotation);
+                Source.clip = BalloonSound;
+                Source.Play();
             }
         }
         else
@@ -26,6 +32,8 @@ public class BalloonGun : MonoBehaviour
             if(HandPrefab != null)
             {
                 Instantiate(HandPrefab, GunFront.position + (GunFront.forward * 0.1f), GunFront.rotation);
+                Source.clip = HandSound;
+                Source.Play();
             }
         }
     }
