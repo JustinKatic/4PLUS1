@@ -35,6 +35,10 @@ public class Hand : MonoBehaviour
 
     bool canPlayBalloonPokeSound = true;
 
+    public float minRotationDiff = 15f;
+    public float rotationStrength = 40f;
+
+
 
 
 
@@ -47,6 +51,8 @@ public class Hand : MonoBehaviour
         _body.interpolation = RigidbodyInterpolation.Interpolate;
         _body.mass = 20f;
         _body.maxAngularVelocity = 20f;
+        _body.ResetInertiaTensor();
+        _body.ResetCenterOfMass();
 
         cols = gameObject.GetComponentsInChildren<Collider>();
 
@@ -138,23 +144,65 @@ public class Hand : MonoBehaviour
     }
 
 
-    void Update()
+    private void FixedUpdate()
     {
         PhysicsMove();
     }
 
     private void PhysicsMove()
     {
-        //Position
         var positionWithOffset = _followTarget.TransformPoint(positionOffset);
         var distance = Vector3.Distance(positionWithOffset, transform.position);
-        _body.velocity = (positionWithOffset - transform.position).normalized * (followSpeed * distance);
+        if (distance < 0.01)
+        {
+            transform.position = _followTarget.position;
+        }
+        else
+        {
 
-        //Rotation
-        var rotationWithOffset = _followTarget.rotation * Quaternion.Euler(rotationOffset);
-        var q = rotationWithOffset * Quaternion.Inverse(_body.rotation);
-        q.ToAngleAxis(out float angle, out Vector3 axis);
-        _body.angularVelocity = axis * (angle * Mathf.Deg2Rad * rotateSpeed);
+            _body.velocity = (positionWithOffset - transform.position).normalized * (followSpeed * distance);
+        }
+        //Position
+
+
+        // If the difference in angle is less than min, set the rotation
+        if (Quaternion.Angle(_body.rotation, _followTarget.rotation) < minRotationDiff)
+        {
+            _body.MoveRotation(_followTarget.rotation);
+        }
+        else
+        {
+            // Constants relating to rotation strength. Could be calculated in awake, but leave here so strength can be changed in play mode
+            float rotConst1 = (6 * rotationStrength) * (6 * rotationStrength) * 0.25f;
+            float rotConst2 = 4.5f * rotationStrength;
+
+
+
+            // Get the tracked rotation relitive to this, then conver it to axis angle
+            Quaternion localTrackedRot = _followTarget.rotation * Quaternion.Inverse(transform.rotation);
+            localTrackedRot.ToAngleAxis(out float xMag, out Vector3 x);
+            x = x.normalized * Mathf.Deg2Rad;
+
+
+
+            // Find the change in angular momentum
+            Vector3 torque = rotConst1 * x * xMag - rotConst2 * _body.angularVelocity;
+            // Transform by inertia tensor
+            Quaternion rotInertiaToWorld = _body.inertiaTensorRotation * transform.rotation;
+            torque = Quaternion.Inverse(rotInertiaToWorld) * torque;
+            torque.Scale(_body.inertiaTensor);
+            torque = rotInertiaToWorld * torque;
+
+
+
+            // Apply torque
+            _body.AddTorque(torque);
+        }
+
+
+
+
+
     }
 }
 
