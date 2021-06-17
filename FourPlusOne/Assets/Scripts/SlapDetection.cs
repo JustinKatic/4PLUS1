@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class SlapDetection : MonoBehaviour
@@ -36,6 +37,14 @@ public class SlapDetection : MonoBehaviour
         // Find L and R controllers in scene
         controllerL = GameObject.FindGameObjectWithTag("LHand").GetComponent<ActionBasedController>();
         controllerR = GameObject.FindGameObjectWithTag("RHand").GetComponent<ActionBasedController>();
+    }
+
+    private void Update()
+    {
+        if(Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            OnSlap.Invoke();
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

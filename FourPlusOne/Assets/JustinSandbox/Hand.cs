@@ -48,6 +48,16 @@ public class Hand : MonoBehaviour
         _body.mass = 20f;
         _body.maxAngularVelocity = 20f;
 
+        cols = gameObject.GetComponentsInChildren<Collider>();
+
+        foreach (var col in cols)
+        {
+            col.enabled = false;
+        }
+
+        colliderBufferCo = EnableColliders();
+        StartCoroutine(colliderBufferCo);
+
         //Teleport hands
         _body.position = _followTarget.position;
         _body.rotation = _followTarget.rotation;
@@ -56,7 +66,6 @@ public class Hand : MonoBehaviour
         controllerActionGrip.action.canceled += GripReleased;
         controllerActionTrigger.action.performed += TriggerPress;
         controllerActionTrigger.action.canceled += TriggerReleased;
-        cols = gameObject.GetComponentsInChildren<Collider>();
 
     }
 
@@ -113,12 +122,12 @@ public class Hand : MonoBehaviour
     }
     private void GripReleased(InputAction.CallbackContext obj)
     {
-        colliderBufferCo = DisableColliders();
+        colliderBufferCo = EnableColliders();
         StartCoroutine(colliderBufferCo);
 
     }
 
-    IEnumerator DisableColliders()
+    IEnumerator EnableColliders()
     {
         yield return new WaitForSeconds(1f);
 
