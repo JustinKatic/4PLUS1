@@ -12,6 +12,11 @@ public class RestartGame : MonoBehaviour
 
     private float timer = 0;
 
+    public void OnEnable()
+    {
+        FadeController.FadeIn();
+    }
+
     public void Update()
     {
         timer += Time.deltaTime;
