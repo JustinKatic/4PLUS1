@@ -24,6 +24,7 @@ public class Text3D : MonoBehaviour
     public float VerticalSpacing = 0.25f;
 
     public bool Center = false;
+    private bool ignore = false;
 
     [TextArea(5,5)]
     public string StartText = "";
@@ -37,6 +38,7 @@ public class Text3D : MonoBehaviour
 
         set
         {
+            ignore = true;
             text = value;
             CleanText();
         }
@@ -69,8 +71,11 @@ public class Text3D : MonoBehaviour
 
     private void Start()
     {
-        Text = StartText;
-        CreateLetters();
+        if (!ignore)
+        {
+            Text = StartText;
+            CreateLetters();
+        }
     }
 
     private void CreateLetters()
