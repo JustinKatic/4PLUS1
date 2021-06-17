@@ -19,8 +19,8 @@ public struct Spring
 
     public float UpdateSpring(float targetValue, float stiffness, float damping, float valueThresh, float velocityThresh)
     {
-        float dampfactor = Mathf.Max(0, 1 - damping * Time.deltaTime);
-        float accel = (targetValue - Value) * stiffness * Time.deltaTime;
+        float dampfactor = Mathf.Max(0, 1 - damping * Time.fixedDeltaTime);
+        float accel = (targetValue - Value) * stiffness * Time.fixedDeltaTime;
         velocity = velocity * dampfactor + accel;
         Value += velocity * Time.deltaTime;
 
