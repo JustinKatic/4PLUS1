@@ -51,7 +51,7 @@ public class Fade : MonoBehaviour
 
     public void FadeOut()
     {
-        FadeInGroup.alpha = 1;
+        FadeInGroup.alpha = 0;
         fadeIn = false;
     }
 }

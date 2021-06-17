@@ -9,9 +9,11 @@ public class Text3D : MonoBehaviour
     {
         public GameObject LetterObject;
         public Bounds LetterBounds;
+        public MeshRenderer MeshRend;
         public LetterInfo(GameObject letter)
         {
             LetterObject = letter;
+            MeshRend = (LetterObject.GetComponentInChildren<MeshRenderer>());
             LetterBounds = (LetterObject.GetComponentInChildren<MeshFilter>().sharedMesh.bounds);
         }
     }
@@ -51,6 +53,9 @@ public class Text3D : MonoBehaviour
     [Min(0.01f)]
     public float TimeBetweeenLetters = 0.1f;
     public float MaxWidth = 4;
+
+    public bool UseColor = false;
+    public Color TextColour = Color.black;
 
     private float typewritterTimer = 0;
     private int charAvailable = 0;
@@ -141,6 +146,11 @@ public class Text3D : MonoBehaviour
 
                 GameObject obje = Instantiate(letter.LetterObject, transform.TransformPoint(new Vector3(XDiff, YDiff, 0)), transform.rotation, transform);
                 if (UseTypewritter) obje.SetActive(false);
+                if (UseColor)
+                {
+                    obje.GetComponentInChildren<MeshRenderer>().material.SetColor("_BaseColor", TextColour);
+                }
+
                 XDiff -= letter.LetterBounds.size.x + Kerning;
                 
 

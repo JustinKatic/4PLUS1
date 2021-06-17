@@ -46,7 +46,7 @@ public class AngryPersonSpawner : MonoBehaviour
 
     public void MoveTargetToTransform(Transform teleportPoint)
     {
-        Target.position = teleportPoint.position;
+        Target.gameObject.transform.position = teleportPoint.position;
     }
 
     public void ChangeTargetTransform(Transform newTarget)

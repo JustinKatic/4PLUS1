@@ -15,6 +15,7 @@ MonoBehaviour:
   UseDestroy: 1
   DestroyParent: 1
   ParentDepth: 2
+  MaxAliveTime: 10
 --- !u!114 &5041624989901991147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30,6 +31,7 @@ MonoBehaviour:
   UseDestroy: 1
   DestroyParent: 1
   ParentDepth: 2
+  MaxAliveTime: 10
 --- !u!114 &1309256869251471821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45,6 +47,7 @@ MonoBehaviour:
   UseDestroy: 1
   DestroyParent: 0
   ParentDepth: 0
+  MaxAliveTime: 10
 --- !u!114 &1309070053775531989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,6 +63,7 @@ MonoBehaviour:
   UseDestroy: 1
   DestroyParent: 0
   ParentDepth: 0
+  MaxAliveTime: 10
 --- !u!114 &7775763387818209221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,6 +79,7 @@ MonoBehaviour:
   UseDestroy: 1
   DestroyParent: 0
   ParentDepth: 0
+  MaxAliveTime: 10
 --- !u!114 &7950549452734426917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +95,7 @@ MonoBehaviour:
   UseDestroy: 1
   DestroyParent: 1
   ParentDepth: 2
+  MaxAliveTime: 10
 --- !u!1 &9002056138987652826
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,6 +335,7 @@ MonoBehaviour:
   UseDestroy: 1
   DestroyParent: 0
   ParentDepth: 0
+  MaxAliveTime: 10
 --- !u!114 &3355491660582339586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,6 +351,7 @@ MonoBehaviour:
   UseDestroy: 1
   DestroyParent: 1
   ParentDepth: 2
+  MaxAliveTime: 10
 --- !u!1001 &9002056138859232937
 PrefabInstance:
   m_ObjectHideFlags: 0
