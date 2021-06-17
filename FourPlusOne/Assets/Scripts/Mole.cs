@@ -46,7 +46,7 @@ public class Mole : MonoBehaviour
         popoutChange = TimeBeforePopout + Random.Range(-PopoutTimeVariance, PopoutTimeVariance);
     }
 
-    public void Update()
+    public void FixedUpdate()
     {
         // Make object scale down or up depending on Active
         transform.localPosition = initalPos + ((transform.up * 0.15f) * ScaleSpring.UpdateSpring((Active)? 1f : 0,Stiffness, Damping,ValueThresh,VelocityThresh));
