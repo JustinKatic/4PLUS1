@@ -26,8 +26,9 @@ public class NpcSlap : MonoBehaviour
         {
             BodyParts[i].isKinematic = false;
             BodyParts[i].useGravity = true;
-            BodyParts[i].AddForce(Vector3.up * 10);
+            BodyParts[i].AddForce(Vector3.up * 1000,ForceMode.Impulse);
         }
         NPCKilled.Invoke();
+        Destroy(gameObject, 4f);
     }
 }
