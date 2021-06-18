@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7139849766561707442}
   - component: {fileID: 1098998885408853207}
   - component: {fileID: 1169925877840688051}
+  - component: {fileID: 6256783756898125160}
   m_Layer: 0
   m_Name: SM_Glass
   m_TagString: Untagged
@@ -258,3 +259,16 @@ MonoBehaviour:
   OnlyHands: 0
   SlapData: {fileID: 11400000, guid: 737365f5902f26a4282e01a25f2686ef, type: 2}
   PreviousHitVelocity: {x: 0, y: 0, z: 0}
+--- !u!65 &6256783756898125160
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3900890952798618519}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03582731, y: 0.035827316, z: 0.044157397}
+  m_Center: {x: 0.0014789077, y: 0.0003120835, z: 0.0018951935}
