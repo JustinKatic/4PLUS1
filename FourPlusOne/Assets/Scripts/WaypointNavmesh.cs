@@ -12,6 +12,8 @@ public class WaypointNavmesh : MonoBehaviour
     private NavMeshAgent navAgent;
     private int currentPoint = 0;
 
+    private float timer = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +34,14 @@ public class WaypointNavmesh : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(!navAgent.pathPending && navAgent.remainingDistance < 0.25f)
+        timer += Time.deltaTime;
+        if (timer >= 0.25f)
         {
-            GoToNextPoint();
+            if (!navAgent.pathPending && navAgent.remainingDistance < 0.25f)
+            {
+                GoToNextPoint();
+            }
+            timer = 0;
         }
     }
 }
