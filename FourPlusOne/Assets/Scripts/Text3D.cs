@@ -69,13 +69,11 @@ public class Text3D : MonoBehaviour
         Gizmos.DrawLine(transform.position, transform.position - (transform.right * MaxWidth));
     }
 
-    private void Start()
+
+    private void OnEnable()
     {
-        if (!ignore)
-        {
             Text = StartText;
-            CreateLetters();
-        }
+            CreateLetters();     
     }
 
     private void CreateLetters()

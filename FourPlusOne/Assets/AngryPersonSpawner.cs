@@ -12,6 +12,8 @@ public class AngryPersonSpawner : MonoBehaviour
     public UnityEvent OnPlayerFailEvent;
     public UnityEvent OnFadededOut;
 
+    public GameObject[] objectsToDisable;
+
     private bool done = false;
 
     private void Start()
@@ -22,21 +24,20 @@ public class AngryPersonSpawner : MonoBehaviour
             angry.TargetTransform = Target;
             angry.WithTransform = OnPlayerFailEvent;
         }
-        OnPlayerFailEvent.Invoke();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Random.Range(0f,1f) > 0.99f)
+        if (Random.Range(0f, 1f) > 0.99f)
         {
             //SpawnPrefab
-            Instantiate(AngryPersonPrefab,transform.position + new Vector3(Random.Range(-2,2),0, Random.Range(-2, 2)),Quaternion.identity);
+            Instantiate(AngryPersonPrefab, transform.position + new Vector3(Random.Range(-2, 2), 0, Random.Range(-2, 2)), Quaternion.identity).SetActive(true);
         }
 
-        if(done)
+        if (done)
         {
-            if(FadeController.FadeDone)
+            if (FadeController.FadeDone)
             {
                 OnFadededOut.Invoke();
                 enabled = false;
@@ -62,7 +63,17 @@ public class AngryPersonSpawner : MonoBehaviour
 
     public void WaveDone()
     {
-        done = true;
-        FadeController.FadeOut();
+        if (!done)
+        {
+            done = true;
+            FadeController.FadeOut();
+        }
+    }
+    public void DisableObjects()
+    {
+        foreach (var item in objectsToDisable)
+        {
+            item.SetActive(false);
+        }
     }
 }

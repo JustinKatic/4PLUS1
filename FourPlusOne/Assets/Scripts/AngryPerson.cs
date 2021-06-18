@@ -18,16 +18,17 @@ public class AngryPerson : MonoBehaviour
         selfAgent = GetComponent<NavMeshAgent>();
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (enabled && other.gameObject.tag == "HitZone")
+            WithTransform.Invoke();
+    }
+
     public void Update()
     {
         if (TargetTransform != null && selfAgent != null && selfAgent.isOnNavMesh)
         {
             selfAgent.destination = TargetTransform.position;
-
-            if(Vector3.Distance(TargetTransform.position,transform.position) < 0.4f)
-            {
-                WithTransform.Invoke();
-            }
         }
     }
 }

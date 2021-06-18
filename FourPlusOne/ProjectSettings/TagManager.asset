@@ -12,6 +12,8 @@ TagManager:
   - Balloon
   - BigHand
   - 3DLetter
+  - SoundObject
+  - HitZone
   layers:
   - Default
   - TransparentFX
@@ -25,7 +27,7 @@ TagManager:
   - Hands
   - Ground
   - NotWalkable
-  - 
+  - Enemy
   - 
   - 
   - 
