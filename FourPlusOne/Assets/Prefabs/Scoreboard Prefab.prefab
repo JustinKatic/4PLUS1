@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1764195101038936482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.543, y: -0.294, z: 0.102}
+  m_LocalPosition: {x: 1, y: -0.294, z: 0.102}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4892490885820926361}
@@ -88,13 +88,13 @@ MonoBehaviour:
   Kerning: 0.05
   VerticalSpacing: 0.25
   Center: 1
-  StartText: 0
+  StartText: 
   TypeWrittingDone: 0
   UseTypewritter: 1
   TimeBetweeenLetters: 0.1
-  MaxWidth: 1
-  UseColor: 0
-  TextColour: {r: 0, g: 0, b: 0, a: 1}
+  MaxWidth: 4
+  UseColor: 1
+  TextColour: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &5237209344453448483
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,7 +118,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5237209344453448483}
-  m_LocalRotation: {x: -0, y: 0.75820816, z: -0, w: 0.6520126}
+  m_LocalRotation: {x: 0, y: 0.7582082, z: 0, w: 0.65201247}
   m_LocalPosition: {x: -3.29, y: 0.031965256, z: 14.68}
   m_LocalScale: {x: 1.6, y: 1.6, z: 1.6}
   m_Children:
@@ -191,12 +191,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 321b35d218fcb2f42a4d81b0676f67d6, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 321b35d218fcb2f42a4d81b0676f67d6, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5761ee4ec95a3f24bbfeffb5cf4db35e, type: 2}
     - target: {fileID: 919132149155446097, guid: 321b35d218fcb2f42a4d81b0676f67d6, type: 3}
       propertyPath: m_Name
       value: SM_Circus_Sign (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 321b35d218fcb2f42a4d81b0676f67d6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967294
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 321b35d218fcb2f42a4d81b0676f67d6, type: 3}
