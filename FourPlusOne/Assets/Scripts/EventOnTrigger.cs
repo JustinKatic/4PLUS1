@@ -7,6 +7,7 @@ public class EventOnTrigger : MonoBehaviour
 {
     public bool OnlyOnce = true;
     public UnityEvent OnEnterTrigger;
+    public UnityEvent OnExitTrigger;
 
     public GameObject dialogueBox;
 
@@ -17,6 +18,15 @@ public class EventOnTrigger : MonoBehaviour
             OnEnterTrigger.Invoke();
             dialogueBox.transform.LookAt(other.transform);
             if (OnlyOnce) enabled = false;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            OnExitTrigger.Invoke();
+            //dialogueBox.transform.LookAt(other.transform);
+            if (OnlyOnce) enabled = true;
         }
     }
 }
