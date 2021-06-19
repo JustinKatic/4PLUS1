@@ -523,6 +523,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeManager: {fileID: 801779751}
   TargetBuildIndex: 1
+--- !u!135 &1667719112
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667719110}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.01
+  m_Center: {x: 0, y: 0.0034, z: 0}
 --- !u!4 &1667719113 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9bcde9e1d95050a408dec24e74b1fa3a, type: 3}
